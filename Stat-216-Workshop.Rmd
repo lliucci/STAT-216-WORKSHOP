@@ -6,16 +6,13 @@ runtime: shiny_prerendered
 ---
 
 ```{r setup, include=FALSE}
-# remotes::install_github("rstudio-education/gradethis")
 library(ggplot2)
 library(learnr)
 library(tidyverse)
-library(gradethis)
 library(datasauRus)
 library(gridExtra)
 library(plotly)
-#library(tufte)
-knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
+#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
 
 # Put any code that needs to be run at beginning of App
 
