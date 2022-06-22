@@ -139,6 +139,9 @@ Another important component to `R` is commenting on code without affecting the c
 2 + 2 #Look at how well R can add!
 ```
 
+Comments do not need to be ran for the code to work. However, it is good practice to good documentation of your code through comments so others can easily understand it. Comments can exist on a line alone, after a line with a section of a function, but cannot exist between code on the same line.
+
+
 ### Now You Try!
 
 #### Exercise 1
@@ -175,18 +178,28 @@ Students will also have a link available to them within the STAT 216 page in D2L
 The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -> RStudio.
 
 
+### R is Case-Sensitive
+
+You may have heard this if you took STAT 216 at MSU, but what does this really mean?
+
+Essentially, 'R' is not always very smart. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions. 
+
+
 ### How to View the Dataset and see the Variable Names
 
 
-###
 
-------------------------------------------------------------------------
 
-## General Troubleshooting in RStudio
 
-###
 
-###
+#### Excercise 3
+
+**Referencing the Dataset above, can you find and correct the mistake? Hint: remember that 'R' is case-sensitive!**
+
+```{r Server-Exercise-3, exercise=T}
+
+```
+
 
 
 ------------------------------------------------------------------------
