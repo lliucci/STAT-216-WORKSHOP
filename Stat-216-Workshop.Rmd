@@ -21,6 +21,15 @@ library(plotly)
 
 ## Introduction to R
 
+In order to get started with `R` and `RStudio`, it will be beneficial to understand the User Interface. `RStudio` has the following layout:
+
+-   the **Editor** for your scripts and documents (top-left)\
+-   the `R` **Console** (bottom-left)\
+-   your **Environment (Objects/Variables)/History** (top-right)\
+-   and your **Files/Plots/Packages/Help/Viewer** (bottom-right).
+
+![RStudio layout](rstudio.png)
+
 ------------------------------------------------------------------------
 
 ## Navigating the RStudio Server
