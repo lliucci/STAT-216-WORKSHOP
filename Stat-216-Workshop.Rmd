@@ -35,14 +35,17 @@ A large part of your position is to maintain communication between the students 
 
 ### STAT 216 Course Materials
 
-Students will be required
+Students will be required to purchase a **Coursepack** which will contain the activities and labs they will work through and complete over the course of the semester. This will be available for them to purchase at the MSU Bookstore.
+
+There is also a **Textbook** for the course. Note: __The course textbook is **NOT** the same thing as the coursepack!__ Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) which is located under _Course Materials and Resources_. Here is a direct link to the [Online Textbook] (https://mtstateintrostats.github.io/IntroStatTextbook/) as well.
+
 
 
 ###
 
 
 
-### Resources Availible
+### Other Resources Availible
 
 
 
@@ -185,7 +188,7 @@ The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstate
 ## Using catstats
 
 
-###
+### What is catstats?
 
 
 ### Troubleshooting Common Catstats Coding Issues
@@ -194,7 +197,7 @@ The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstate
 
 ## Advice from Former STAT 216/217 TA's for a Successful Semester
 
-* ___Review the activity/lab for the day **prior** to coming to class!___ There is limited time when students can get real time feedback from the instruction team, so it is crucial that you do not waste extra time during the class period getting familiar with the dataset or assignment questions. This is especialy important if you did not take STAT 216 at MSU.
+* ___Review the activity/lab for the day **prior** to coming to class!___ There is limited time when students can get real time feedback from the instruction team, so it is crucial that you do not waste extra time during the class period getting familiar with the dataset or assignment questions. This is especially important if you did not take STAT 216 at MSU.
 
 * ___Run through the code before the class period.___ Chances are, if you (the TA's) run into an error, the students are very likely to run into it as well. If it can be caught early, it allows for a chance to fix any errors in the code and/or discussion of how to handle the road block when students encounter it.
 
