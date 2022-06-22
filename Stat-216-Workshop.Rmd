@@ -43,6 +43,8 @@ One option is to go through [Montana State University Webpage](montana.edu), sea
 
 Students will also have a link available to them within the STAT 216 page in D2L. 
 
+The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -> RStudio.
+
 
 ### 
 
