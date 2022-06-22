@@ -19,6 +19,13 @@ library(plotly)
 ```
 
 
+## General 
+
+
+
+
+------------------------------------------------------------------------
+
 ## Introduction to R
 
 In order to get started with `R` and `RStudio`, it will be beneficial to understand the User Interface. `RStudio` has the following layout:
@@ -85,9 +92,20 @@ The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstate
 
 ## Plotting with ggplot
 
+### 
+
+
+### Troubleshooting Common ggplot2 Coding Issues
+
 ------------------------------------------------------------------------
 
 ## Using catstats
+
+
+###
+
+
+### Troubleshooting Common Catstats Coding Issues
 
 ------------------------------------------------------------------------
 
