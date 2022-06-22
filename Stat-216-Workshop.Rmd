@@ -19,14 +19,13 @@ library(plotly)
 ```
 
 
-
 --------------
 
 ## Introduction to R
 
 --------------
 
-## RStudio 
+## RStudio Server
 
 --------------
 
@@ -37,24 +36,6 @@ library(plotly)
 ## Using catstats
 
 --------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Montana State University `R` Workshops Team
 
