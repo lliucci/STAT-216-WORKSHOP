@@ -20,9 +20,21 @@ library(plotly)
 
 
 
-------------
+--------------
 
-## Template Page
+## Introduction to R
+
+--------------
+
+## RStudio 
+
+--------------
+
+## Plotting with ggplot
+
+--------------
+
+## Using catstats
 
 --------------
 
