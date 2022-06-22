@@ -56,9 +56,11 @@ The workshops for 2021-2022 involve modifications of materials and are licensed 
 
 The workshops for 2021-2022 involve modifications of materials and are being taught by:
 
+
 ### Sara Mannheimer
 
 * Sara Mannheimer is an Associate Professor and Data Librarian at Montana State University, where she helps shape practices and theories for curation, publication, and preservation of data. Her research examines the social, ethical, and technical issues of a data-driven world. She is the project lead for the MSU Dataset Search, and she is working on a book about data curation to support responsible qualitative data reuse and big social research.
+
 
 ### Greta Linse
 
@@ -69,10 +71,11 @@ The workshops for 2021-2022 involve modifications of materials and are being tau
 
 * Harley Clifton is an undergraduate senior pursuing a degree in Mathematics (Statistics Option) with a minor in Psychology. She enjoys teaching nuanced coding skills and Data Visualization strategies through her experience as a Teaching Assistant for STAT 216 and STAT 408. Harley recently attended the Summer Institute in Biostatistics and Undergraduate Data Science at the University of California Irvine, funded by the National Institute Of Allergy And Infectious Diseases of the National Institutes of Health (under Award Number R25AI170491). Her areas of interest include quantifying behaviors and societal attitudes, behavior modification to reduce discrimination, Deaf culture and history, and women’s health.
 
+
 ### Eliot Liucci
 
+* Eliot Liucci is a senior in the Mathematics (Statistics Option) here at Montana State University. He is currently working on a research project with the Mathematics and Statistics Center to analyze the effect of different time based variables on overall MSC foot traffic and usage. Throughout his experience as a Teaching Assistant for STAT 216 and STAT 217, Eliot has gained a deeper understanding of statistical methods and educational approaches. Eliot will graduate at the end of Fall 2022 with his bachelors, and will start the M.S.in Statistics program in Spring 2023.
 
-* Eliot Liucci is a senior in the Mathematics (Statistics Option) here at Montana State University. He works in the Mathematics Statistics Center and has been a Teaching Assistant for STAT 216 and STAT 217. He hopes to move into Data Analysis and Education in order to help streamline the way Statistics is taught to students and will start the M.S. in Statistics program in Spring 2023.
 
 ### Mark Greenwood
 
