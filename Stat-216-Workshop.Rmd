@@ -1,6 +1,6 @@
 ---
-title: "Stat 216 Workshop "
-author: "Harley Clifton & Eliot Liucci"
+title: "R Bootcamp for STAT 216 Teaching Assistants"
+author: "Montana State University R Workshops Team"
 output: learnr::tutorial
 runtime: shiny_prerendered
 ---
