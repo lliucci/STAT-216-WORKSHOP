@@ -110,11 +110,9 @@ If we want to get a summary of only a certain set of rows or columns from a data
 
 ```{r}
 RollerCoasters[1:5,]
-
-View(RollerCoasters)
 ```
 
-The first line of code is asking for rows 1 through 5 from the dataset while the second line of code presents the entire dataset.
+The code above is providing rows 1 through 5 of the `RollerCoasters` dataset.
 
 We can also run functions on vectors, like `mean()` or `summary()`, that allow us to determine key information.
 
@@ -138,7 +136,7 @@ Another important component to `R` is commenting on code without affecting the c
 
 **Write code in the following code chunk that calculates the mean of a list from 1 to 100 (Hint: You can put `:` between numbers to let `R` know you want a list from the first number to the second).**
 
-```{r}
+```{r Intro-To-R-Exercise-1, exercise=T}
 
 ```
 
@@ -147,7 +145,7 @@ Another important component to `R` is commenting on code without affecting the c
 
 **Write code to print out the 5th and 18th rows from the `RollerCoasters` dataset.**
 
-```{r}
+```{r Intro-To-R-Exercise-2,exercise=T}
 
 ```
 
