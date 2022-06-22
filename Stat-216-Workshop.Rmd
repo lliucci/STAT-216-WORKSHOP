@@ -66,6 +66,12 @@ To store a dataset in `R`
 
 ### Where to Access it
 
+Students will have multiple modes of accessing the 'RStudio' Server.
+
+One option is to go through [Montana State University Webpage](montana.edu), search "rstudio server", and click the [login link](https://rstudio.math.montana.edu/).
+
+Students will also have a link available to them within the STAT 216 page in D2L. 
+
 
 ### 
 
@@ -109,7 +115,7 @@ The workshops for 2021-2022 involve modifications of materials and are being tau
 
 ### Eliot Liucci
 
--   Eliot Liucci is a senior in the Mathematics (Statistics Option) here at Montana State University. He is currently working on a research project with the Mathematics and Statistics Center to analyze the effect of different time based variables on overall MSC foot traffic and usage. Throughout his experience as a Teaching Assistant for STAT 216 and STAT 217, Eliot has gained a deeper understanding of statistical methods and educational approaches. Eliot will graduate at the end of Fall 2022 with his bachelors, and will start the M.S.in Statistics program in Spring 2023.
+-   Eliot Liucci is a senior in the Mathematics (Statistics Option) Program here at Montana State University. He is currently working on a research project with the Mathematics and Statistics Center to analyze the effect of different time based variables on overall MSC foot traffic and usage. Throughout his experience as a Teaching Assistant for STAT 216 and STAT 217, Eliot has gained a deeper understanding of statistical methods and educational approaches. Eliot will graduate at the end of Fall 2022 with his bachelors, and will start the M.S.in Statistics program in Spring 2023. His interests include environmental statistics, video games, and he restores vintage automobiles and motorcycles in his free time.
 
 ### Mark Greenwood
 
