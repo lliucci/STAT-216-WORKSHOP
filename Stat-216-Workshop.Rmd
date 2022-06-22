@@ -7,10 +7,6 @@ runtime: shiny_prerendered
 
 ```{r setup, include=FALSE}
 # remotes::install_github("rstudio-education/gradethis")
-# install.packages("tidyverse")
-# install.packages("learnr")
-# install.packages("ggplot2")
-# install.packages("tufte")
 library(ggplot2)
 library(learnr)
 library(tidyverse)
