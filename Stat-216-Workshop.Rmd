@@ -30,6 +30,35 @@ In order to get started with `R` and `RStudio`, it will be beneficial to underst
 
 ![RStudio layout](rstudio.png)
 
+The color scheme of `RStudio` can also be changed by going to **Tools --> Global Options --> Appearance**. This can make the long days of coding a lot easier on the eyes. Another way to personalize `RStudio` is to change the pane layout. This can be done in **Tools --> Global Options --> Pane Layout**.
+
+Now that `RStudio` is personalized to your specifications, we can start diving into the basics of coding with `R`. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below.
+
+```{r}
+x <- 7
+```
+
+We can then check the value of our variable by simply typing the name of the variable.
+
+```{r}
+x
+```
+
+
+We can also use `R` to do math. This can be combined with variables to do some fun stuff.
+
+```{r}
+x + x * x
+```
+
+Similarly to how we store values as a variable, we can do the same with vectors or even whole data sets! To store a vector as a variable, write the vector inside of `c()` to let `R` know you have a list of values. Vectors can be letters, numbers, or a combination of the two.
+
+```{r}
+My_List <- c(1, 2, 'lettuce', 4, 'tomato')
+```
+
+To store a dataset in `R`
+
 ------------------------------------------------------------------------
 
 ## Navigating the RStudio Server
