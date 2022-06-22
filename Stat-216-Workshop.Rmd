@@ -77,7 +77,13 @@ Similarly to how we store values as a variable, we can do the same with vectors 
 My_List <- c(1, 2, 'lettuce', 4, 'tomato')
 ```
 
-To store a dataset in `R`
+To store a dataset in `R`, we can do something similar. However, we must also include the function `read_csv()` from the `tidyverse` package. We can do this to read a .csv file (Comma Separated Values) into the environment window in `R`.
+
+```{r}
+RollerCoasters <- read_csv('RollerCoasters.csv')
+```
+
+When this is done, we can see some information show up in the Console. We see how many rows and columns the dataset has as well as the variables and their type. Variables can either be 'double' if they are numbers of 'character' if they are words.
 
 ------------------------------------------------------------------------
 
