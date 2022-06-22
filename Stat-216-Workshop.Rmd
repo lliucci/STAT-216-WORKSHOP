@@ -22,7 +22,20 @@ library(gradethis)
 ```
 
 
-## General 
+## General (harley write a better title but brain no work now)
+
+Congratulations on becoming a STAT 216 Teaching Assistant! You may know this from your personal experience if you took STAT 216 at Montana State University, but Teaching Assistants can make a world of difference to students. 
+
+Some students, especially college freshman, may feel intimidated with contacting a professor directly for help. That's where you come in! Your role as TA's consists of aiding students in gaining a nuanced understanding of introductory statistical methods, giving students real-time feedback, and troubleshooting any coding issues that arise. 
+
+
+
+### STAT 216 Materials
+
+Students will be required
+
+
+###
 
 
 
@@ -141,6 +154,12 @@ The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstate
 
 
 ###
+
+------------------------------------------------------------------------
+
+## General Troubleshooting in RStudio
+
+
 
 
 ------------------------------------------------------------------------
