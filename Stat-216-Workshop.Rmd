@@ -22,7 +22,7 @@ library(plotly)
 ```
 
 
-## General (harley write a better title but brain no work now)
+## Getting a Feel for the Class and Your Role
 
 Congratulations on becoming a STAT 216 Teaching Assistant! You may know this from your personal experience if you took STAT 216 at Montana State University, but Teaching Assistants can make a world of difference to students. 
 
@@ -42,20 +42,11 @@ Students will be required
 
 
 
-### Advice from Former STAT 216/217 TA's for a Successful Semester
-
-* ___Review the activity/lab for the day **prior** to coming to class!___ There is limited time when students can get real time feedback from the instruction team, so it is crucial that you do not waste extra time during the class period getting familiar with the dataset or assignment questions. This is especialy important if you did not take STAT 216 at MSU.
-
-* ___Run through the code before the class period.___ Chances are, if you (the TA's) run into an error, the students are very likely to run into it as well. If it can be caught early, it allows for a chance to fix any errors in the code and/or discussion of how to handle the road block when students encounter it.
-
-* ___Attend the Weekly Meetings with your lead instructor as often as possible.___ This is a great time to touch base with your team, communicate any subjects that are particularly challenging, and prepare for upcoming activities and labs.
-
-* ___Be prepared for students to ask you lots of questions!___ As mentioned before, freshmen often feel more comfortable asking a fellow student or TA their questions. Nobody enjoys being belittled for asking questions, so try to encourage them when they do. Additionally, don't be afraid to admit if you are unsure about something and call your lead instructor over to help.
+### Resources Availible
 
 
-* ___Balance Validation and Instruction in your interactions.___ It is inevitable that poorly worded or unclear questions will occasionally arise. I (Harley) have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
 
-* ___Make sure Students are Aware of their resources EARLY in the semester.___
+
 
 
 ------------------------------------------------------------------------
@@ -166,7 +157,7 @@ Students will also have a link available to them within the STAT 216 page in D2L
 The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -> RStudio.
 
 
-### How to View the Dataset and see the variable names
+### How to View the Dataset and see the Variable Names
 
 
 ###
@@ -175,7 +166,9 @@ The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstate
 
 ## General Troubleshooting in RStudio
 
+###
 
+###
 
 
 ------------------------------------------------------------------------
@@ -196,6 +189,23 @@ The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstate
 
 
 ### Troubleshooting Common Catstats Coding Issues
+
+------------------------------------------------------------------------
+
+## Advice from Former STAT 216/217 TA's for a Successful Semester
+
+* ___Review the activity/lab for the day **prior** to coming to class!___ There is limited time when students can get real time feedback from the instruction team, so it is crucial that you do not waste extra time during the class period getting familiar with the dataset or assignment questions. This is especialy important if you did not take STAT 216 at MSU.
+
+* ___Run through the code before the class period.___ Chances are, if you (the TA's) run into an error, the students are very likely to run into it as well. If it can be caught early, it allows for a chance to fix any errors in the code and/or discussion of how to handle the road block when students encounter it.
+
+* ___Attend the Weekly Meetings with your lead instructor as often as possible.___ This is a great time to touch base with your team, communicate any subjects that are particularly challenging, and prepare for upcoming activities and labs.
+
+* ___Be prepared for students to ask you lots of questions!___ As mentioned before, freshmen often feel more comfortable asking a fellow student or TA their questions. Nobody enjoys being belittled for asking questions, so try to encourage them when they do. Additionally, don't be afraid to admit if you are unsure about something and call your lead instructor over to help.
+
+
+* ___Balance Validation and Instruction in your interactions.___ It is inevitable that poorly worded or unclear questions will occasionally arise. I (Harley) have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
+
+* ___Make sure Students are Aware of their resources EARLY in the semester.___ The beginning of the semester can be a bit overwhelming for everyone, so they may have trouble remembering all of the resources available to them. If a students begins to struggle with the material, it can be very discouraging if they are unaware of where to go for help. Don't hesitate to reiterate where they can find resources, even if you think you may be getting pretty repetitive. This also allows you to start the semester on the right foot, and students will understand that you care about their success.
 
 ------------------------------------------------------------------------
 
