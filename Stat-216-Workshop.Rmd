@@ -1,5 +1,5 @@
 ---
-title: "Stat 216 Workshop"
+title: "Stat 216 Workshop "
 author: "Harley Clifton & Eliot Liucci"
 output: learnr::tutorial
 runtime: shiny_prerendered
