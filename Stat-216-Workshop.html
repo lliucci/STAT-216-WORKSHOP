@@ -118,14 +118,74 @@ $(document).ready(function () {
 
 <div class="topics">
 
-<hr />
 <div id="section-introduction-to-r" class="section level2">
 <h2>Introduction to R</h2>
+<p>In order to get started with <code>R</code> and <code>RStudio</code>,
+it will be beneficial to understand the User Interface.
+<code>RStudio</code> has the following layout:</p>
+<ul>
+<li>the <strong>Editor</strong> for your scripts and documents
+(top-left)<br />
+</li>
+<li>the <code>R</code> <strong>Console</strong> (bottom-left)<br />
+</li>
+<li>your <strong>Environment (Objects/Variables)/History</strong>
+(top-right)<br />
+</li>
+<li>and your <strong>Files/Plots/Packages/Help/Viewer</strong>
+(bottom-right).</li>
+</ul>
+<div class="figure">
+<img src="rstudio.png" alt="" />
+<p class="caption">RStudio layout</p>
+</div>
+<p>The color scheme of <code>RStudio</code> can also be changed by going
+to <strong>Tools –&gt; Global Options –&gt; Appearance</strong>. This
+can make the long days of coding a lot easier on the eyes. Another way
+to personalize <code>RStudio</code> is to change the pane layout. This
+can be done in <strong>Tools –&gt; Global Options –&gt; Pane
+Layout</strong>.</p>
+<p>Now that <code>RStudio</code> is personalized to your specifications,
+we can start diving into the basics of coding with <code>R</code>. One
+of the most useful concepts is to store values as a variable. This can
+be done using an arrow <code>&lt;-</code> as shown below.</p>
+<pre class="r"><code>x &lt;- 7</code></pre>
+<p>We can then check the value of our variable by simply typing the name
+of the variable.</p>
+<pre class="r"><code>x</code></pre>
+<pre><code>## [1] 7</code></pre>
+<p>We can also use <code>R</code> to do math. This can be combined with
+variables to do some fun stuff.</p>
+<pre class="r"><code>x + x * x</code></pre>
+<pre><code>## [1] 56</code></pre>
+<p>Similarly to how we store values as a variable, we can do the same
+with vectors or even whole data sets! To store a vector as a variable,
+write the vector inside of <code>c()</code> to let <code>R</code> know
+you have a list of values. Vectors can be letters, numbers, or a
+combination of the two.</p>
+<pre class="r"><code>My_List &lt;- c(1, 2, &#39;lettuce&#39;, 4, &#39;tomato&#39;)</code></pre>
+<p>To store a dataset in <code>R</code></p>
 <hr />
 </div>
-<div id="section-rstudio" class="section level2">
-<h2>RStudio</h2>
+<div id="section-navigating-the-rstudio-server" class="section level2">
+<h2>Navigating the RStudio Server</h2>
+<div id="section-where-to-access-it" class="section level3">
+<h3>Where to Access it</h3>
+<p>Students will have multiple modes of accessing the ‘RStudio’
+Server.</p>
+<p>One option is to go through <a href="montana.edu">Montana State
+University Webpage</a>, search “rstudio server”, and click the <a
+href="https://rstudio.math.montana.edu/">login link</a>.</p>
+<p>Students will also have a link available to them within the STAT 216
+page in D2L.</p>
+</div>
+<div id="section-section" class="section level3">
+<h3></h3>
+</div>
+<div id="section-section-1" class="section level3">
+<h3></h3>
 <hr />
+</div>
 </div>
 <div id="section-plotting-with-ggplot" class="section level2">
 <h2>Plotting with ggplot</h2>
@@ -209,12 +269,17 @@ history, and women’s health.</li>
 <div id="section-eliot-liucci" class="section level3">
 <h3>Eliot Liucci</h3>
 <ul>
-<li>Eliot Liucci is a senior in the Mathematics (Statistics Option) here
-at Montana State University. He works in the Mathematics Statistics
-Center and has been a Teaching Assistant for STAT 216 and STAT 217. He
-hopes to move into Data Analysis and Education in order to help
-streamline the way Statistics is taught to students and will start the
-M.S. in Statistics program in Spring 2023.</li>
+<li>Eliot Liucci is a senior in the Mathematics (Statistics Option)
+Program here at Montana State University. He is currently working on a
+research project with the Mathematics and Statistics Center to analyze
+the effect of different time based variables on overall MSC foot traffic
+and usage. Throughout his experience as a Teaching Assistant for STAT
+216 and STAT 217, Eliot has gained a deeper understanding of statistical
+methods and educational approaches. Eliot will graduate at the end of
+Fall 2022 with his bachelors, and will start the M.S.in Statistics
+program in Spring 2023. His interests include environmental statistics,
+video games, and he restores vintage automobiles and motorcycles in his
+free time.</li>
 </ul>
 </div>
 <div id="section-mark-greenwood" class="section level3">
