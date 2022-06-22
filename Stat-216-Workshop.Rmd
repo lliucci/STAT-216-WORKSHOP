@@ -6,12 +6,15 @@ runtime: shiny_prerendered
 ---
 
 ```{r setup, include=FALSE}
+remotes::install_github("rstudio-education/gradethis")
+library(remotes)
 library(ggplot2)
 library(learnr)
 library(tidyverse)
 library(datasauRus)
 library(gridExtra)
 library(plotly)
+library(gradethis)
 #knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
 
 # Put any code that needs to be run at beginning of App
@@ -71,6 +74,52 @@ RollerCoasters <- read_csv('RollerCoasters.csv')
 ```
 
 When this is done, we can see some information show up in the Console. We see how many rows and columns the dataset has as well as the variables and their type. Variables can either be 'double' if they are numbers of 'character' if they are words.
+
+If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row,column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset.
+
+```{r}
+RollerCoasters[1:5,]
+
+View(RollerCoasters)
+```
+
+The first line of code is asking for rows 1 through 5 from the dataset while the second line of code presents the entire dataset.
+
+We can also run functions on vectors, like `mean()` or `summary()`, that allow us to determine key information.
+
+```{r}
+Counting <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+mean(Counting)
+
+summary(Counting)
+```
+
+Another important component to `R` is commenting on code without affecting the code itself. This can be done by typing a pound symbol `#` before the comment.
+
+```{r}
+2 + 2 #Look at how well R can add!
+```
+
+### Now You Try!
+
+#### Exercise 1
+
+**Write code in the following code chunk that calculates the mean of a list from 1 to 100 (Hint: You can put `:` between numbers to let `R` know you want a list from the first number to the second).**
+
+```{r}
+
+```
+
+
+#### Exercise 2
+
+**Write code to print out the 5th and 18th rows from the `RollerCoasters` dataset.**
+
+```{r}
+
+```
+
 
 ------------------------------------------------------------------------
 
