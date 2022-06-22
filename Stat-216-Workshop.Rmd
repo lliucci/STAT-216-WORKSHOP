@@ -1,0 +1,34 @@
+---
+title: "Stat 216 Workshop"
+author: "Harley Clifton & Eliot Liucci"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+# remotes::install_github("rstudio-education/gradethis")
+# install.packages("tidyverse")
+# install.packages("learnr")
+# install.packages("ggplot2")
+# install.packages("tufte")
+library(ggplot2)
+library(learnr)
+library(tidyverse)
+library(gradethis)
+library(datasauRus)
+library(gridExtra)
+library(plotly)
+#library(tufte)
+knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
+
+# Put any code that needs to be run at beginning of App
+
+```
+
+
+
+------------
+
+## Template Page
+
+--------------
