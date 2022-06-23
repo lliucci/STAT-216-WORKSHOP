@@ -41,15 +41,15 @@ The **activities** and **labs** in the coursepack with often require students to
 
 There are a variety of other resources available for STAT 216 Students:
 
-**1.  The Mathematics and Statistics Center (MSC)**
+**1. The Mathematics and Statistics Center (MSC)**
 
 The MSC is located on the same floor in Romney that the STAT 216 classes are held, so you can't miss it. There are always in-house tutors available that can help students with statistics. Students automatically have access to the MSC through enrolling in STAT 216, and can enter for free by swiping their CatCard. The MSC has the activity solutions so students can check their work and get more in-depth feedback by looking through them.
 
-**2.  SmartyCats Tutoring**
+**2. SmartyCats Tutoring**
 
 If you aren't already aware, there are SmartyCats Tutors available for a wide variety of MSU classes. The majority of tutors have taken the courses before and have a good idea of the instructors expectations. Tutoring Session only cost \$2 a piece, which mean they are very affordable for most students.
 
-**3.  Other Tutoring Opportunities**
+**3. Other Tutoring Opportunities**
 
 There are multiple private tutors as well! There is a bulletin board in the Wilson building where student tutors post their contact information. Since Wilson is a maze and finding the bulletin board can be intimating, students can also reach out to the math department through email as well.
 
@@ -178,6 +178,22 @@ Essentially, 'R' is not always very smart. It matters whether words are capitali
 
 ```
 
+### Using Packages
+
+What is a Package in 'R'? According to [TutorialsPoint.com](https://www.tutorialspoint.com/r/r_packages.htm):
+
+*"R packages are a collection of R functions, complied code and sample data. They are stored under a directory called* library *in the R environment. By default, R installs a set of packages during installation. More packages are added later, when they are needed for some specific purpose. When we start the R console, only the default packages are available by default. Other packages which are already installed have to be loaded explicitly to be used by the R program that is going to use them."*
+
+When working with packages, there are two different steps.
+
+-   First, a package must be installed onto the 'RStudio' server. This step only needs to be done once.
+
+-   Second, you must library the package to use any of the functions in it. This must be done each time a new session in the 'RStudio' server is started.
+
+Here is an analogy that has been extremely helpful when explaining why students must run the 'library( )' codes first whenever they open an RScript file: 
+
+![Library Packages](RInstallvsLibrary.jpeg)
+
 ------------------------------------------------------------------------
 
 ## Plotting with ggplot
@@ -211,8 +227,6 @@ Essentially, 'R' is not always very smart. It matters whether words are capitali
 -   ***Attend the Weekly Meetings with your lead instructor as often as possible.*** This is a great time to touch base with your team, communicate any subjects that are particularly challenging, and prepare for upcoming activities and labs.
 
 -   ***Balance Validation and Instruction in your interactions.*** It is inevitable that poorly worded or unclear questions will occasionally arise. I (Harley) have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
-
-
 
 ------------------------------------------------------------------------
 
