@@ -19,7 +19,7 @@ library(catstats)
 #knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
 
 # Put any code that needs to be run at beginning of App
-
+RollerCoasters <- read_csv("RollerCoasters.csv")
 ```
 
 ## Getting a Feel for the Class and Your Role
@@ -199,9 +199,80 @@ Here is an analogy that has been extremely helpful when explaining why students 
 
 ## Plotting with ggplot
 
-### 
+### What is ggplot?
+
+`ggplot` is a layer-based way of creating graphs within the `tidyverse` package. The main benefit of it over typical graphing code is that it allows us to build on a graph to make it as complex as we would like. Lets take a look at some examples and build them up as we go. For this, we will be working with the `RollerCoasters` data set.
+
+```{r warning=F}
+ggplot(data = RollerCoasters)
+```
+
+We can see that this code simply creates a blank graph. This is because we have not specified what variables we would like to use. Let's take a look at the relationship between the year that the coaster was opened and its top speed.
+
+```{r warning=F}
+ggplot(data = RollerCoasters,
+       mapping = aes(x = Year_Opened, y = Top_Speed))
+```
+
+Now we can see that the variables of interest are on our graph, but the data itself is still absent. That is because we have not specified a way for the data to be presented. There are several ways to do this, the most common of which are as follows:
+  
+      * `geom_point()` for scatter plots, dot plots, etc.
+      * `geom_boxplot()` for boxplots   
+      * `geom_bar()` for bar charts 
+      * `geom_line()` for trend lines, time series, etc.  
+
+For this example, lets create a scatter plot. We can do this by adding the `geom_point` argument to our graph. Note that for each layer that is added on, we must seperate the lines with a plus (+).
+
+```{r warning=F}
+ggplot(data = RollerCoasters,
+       mapping = aes(x = Year_Opened, y = Top_Speed)) +
+  geom_point()
+```
+
+If we wanted to color all of the points the same color, we can put the `color = ` argument in the `geom_point()` layer.
+
+```{r warning=F}
+ggplot(data = RollerCoasters,
+       mapping = aes(x = Year_Opened, y = Top_Speed)) +
+  geom_point(color = 'blue')
+```
+
+If we wanted to add a categorical variable to this graph, we could tell `R` to color the points based on that variable. For the next graph, lets color the points based on the roller coaster `Type`. This will be added into the `aes()` section as it is a variable associated with an aesthetic of our graph.
+
+```{r warning=F}
+ggplot(data = RollerCoasters,
+       mapping = aes(x = Year_Opened, y = Top_Speed, color = Type)) +
+  geom_point()
+```
 
 ### Troubleshooting Common ggplot2 Coding Issues
+
+One of the most common issues that can come up when working with `ggplot` is data sets being mispelled. Let's take a look at what this looks like. Additionally, try to correct the error.
+
+```{r ggplot-troubleshooting-1, exercise = T, warning = F}
+ggplot(data = Rollercoasters,
+       mapping = aes(x = Design, y = Top_Speed)) + 
+  geom_boxplot()
+```
+
+The next most common is the + being in the incorrect spot in the code. The + must be placed at the end of a line rather than at the beginning of a new one. Let's take a look at an example of this. Additionally, try to correct the error.
+
+```{r ggplot-troubleshooting-2, exercise = T, warning = F}
+ggplot(data = RollerCoasters,
+       mapping = aes(x = Year_Opened))
+  + geom_histogram()
+```
+
+Another very common error is when a set of parenthesis is opened, but never closed. One way to avoid this is to turn on "Rainbow Parenthesis" by going to Tools --> Global Options --> Code --> Display --> Rainbow Parenthesis.
+
+However, it is still possible for stray parenthesis to be involved in code. Let's take a look at an example of this. Fix the code by adding or removing parenthesis.
+
+```{r ggplot-troubleshooting-3, exercise = T, warning = F}
+ggplot(data = RollerCoasters,
+       mapping = aes(x = Duration, y = Length))) +
+  geom_point()
+```
+
 
 ------------------------------------------------------------------------
 
