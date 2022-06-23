@@ -21,49 +21,39 @@ library(plotly)
 
 ```
 
-
 ## Getting a Feel for the Class and Your Role
 
-Congratulations on becoming a STAT 216 Teaching Assistant! You may know this from your personal experience if you took STAT 216 at Montana State University, but Teaching Assistants can make a world of difference to students. 
+Congratulations on becoming a STAT 216 Teaching Assistant! You may know this from your personal experience if you took STAT 216 at Montana State University, but Teaching Assistants can make a world of difference to students.
 
-Some students, especially college freshman, may feel intimidated with contacting a professor directly for help. That's where you come in! Your role as TA's consists of aiding students in gaining a nuanced understanding of introductory statistical methods, giving students real-time feedback, and troubleshooting any coding issues that arise. 
+Some students, especially college freshman, may feel intimidated with contacting a professor directly for help. That's where you come in! Your role as TA's consists of aiding students in gaining a nuanced understanding of introductory statistical methods, giving students real-time feedback, and troubleshooting any coding issues that arise.
 
-A large part of your position is to maintain communication between the students and lead instructors. If you see a common issues arising, be sure to communicate this to your lead instructor so they can get everyone on the same page and clear up any misconceptions. 
-
-
+A large part of your position is to maintain communication between the students and lead instructors. If you see a common issues arising, be sure to communicate this to your lead instructor so they can get everyone on the same page and clear up any misconceptions.
 
 ### STAT 216 Course Materials
 
 Students will be required to purchase a **Coursepack** which will contain the activities and labs they will work through and complete over the course of the semester. This will be available for them to purchase at the MSU Bookstore.
 
-There is also a **Textbook** for the course. Note: __The course textbook is **NOT** the same thing as the coursepack!__ Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) which is located under _Course Materials and Resources_. Here is a direct link to the [Online Textbook] (https://mtstateintrostats.github.io/IntroStatTextbook/) as well.
+There is also a **Textbook** for the course. Note: **The course textbook is NOT** the same thing as the coursepack! Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) which is located under *Course Materials and Resources*. Here is a direct link to the [Online Textbook] (<https://mtstateintrostats.github.io/IntroStatTextbook/>) as well.
 
 The **activities** and **labs** in the coursepack with often require students to use an RScript file to complete. This R Bootcamp is meant to help you get a better understand of coding in 'R' so you can help students when they run into issues.
-
-
 
 ### Other Resources Available
 
 There are a variety of other resources available for STAT 216 Students:
 
-1. **The Mathematics and Statistics Center (MSC)**
+1.  **The Mathematics and Statistics Center (MSC)**
 
 The MSC is located on the same floor in Romney that the STAT 216 classes are held, so you can't miss it. There are always in-house tutors available that can help students with statistics. Students automatically have access to the MSC through enrolling in STAT 216, and can enter for free by swiping their CatCard. The MSC has the activity solutions so students can check their work and get more in-depth feedback by looking through them.
 
+2.  **SmartyCats Tutoring**
 
-2. **SmartyCats Tutoring**
+If you aren't already aware, there are SmartyCats Tutors available for a wide variety of MSU classes. The majority of tutors have taken the courses before and have a good idea of the instructors expectations. Tutoring Session only cost \$2 a piece, which mean they are very affordable for most students.
 
-If you aren't already aware, there are SmartyCats Tutors available for a wide variety of MSU classes. The majority of tutors have taken the courses before and have a good idea of the instructors expectations. Tutoring Session only cost $2 a piece, which mean they are very affordable for most students.
-
-
-3. **Other Tutoring Opportunities**
+3.  **Other Tutoring Opportunities**
 
 There are multiple private tutors as well! There is a bulletin board in the Wilson building where student tutors post their contact information. Since Wilson is a maze and finding the bulletin board can be intimating, students can also reach out to the math department through email as well.
 
 If a student is a Veteran or is using a relative's Military Educational Benefits to help pay for school, there are free statistics tutors available to them through the Veterans Center on Campus. The Veterans Support Center is also located in Romney, but on the first floor.
-
-
-
 
 ------------------------------------------------------------------------
 
@@ -80,7 +70,7 @@ In order to get started with `R` and `RStudio`, it will be beneficial to underst
 
 ![RStudio layout](rstudio.png)
 
-The color scheme of `RStudio` can also be changed by going to **Tools --> Global Options --> Appearance**. This can make the long days of coding a lot easier on the eyes. Another way to personalize `RStudio` is to change the pane layout. This can be done in **Tools --> Global Options --> Pane Layout**.
+The color scheme of `RStudio` can also be changed by going to **Tools --\> Global Options --\> Appearance**. This can make the long days of coding a lot easier on the eyes. Another way to personalize `RStudio` is to change the pane layout. This can be done in **Tools --\> Global Options --\> Pane Layout**.
 
 Now that `RStudio` is personalized to your specifications, we can start diving into the basics of coding with `R`. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below.
 
@@ -93,7 +83,6 @@ We can then check the value of our variable by simply typing the name of the var
 ```{r}
 x
 ```
-
 
 We can also use `R` to do math. This can be combined with variables to do some fun stuff.
 
@@ -141,7 +130,6 @@ Another important component to `R` is commenting on code without affecting the c
 
 Comments do not need to be ran for the code to work. However, it is good practice to good documentation of your code through comments so others can easily understand it. Comments can exist on a line alone, after a line with a section of a function, but cannot exist between code on the same line.
 
-
 ### Now You Try!
 
 #### Exercise 1
@@ -152,7 +140,6 @@ Comments do not need to be ran for the code to work. However, it is good practic
 
 ```
 
-
 #### Exercise 2
 
 **Write code to print out the 5th and 18th rows from the `RollerCoasters` dataset.**
@@ -161,11 +148,9 @@ Comments do not need to be ran for the code to work. However, it is good practic
 
 ```
 
-
 ------------------------------------------------------------------------
 
 ## Navigating the RStudio Server
-
 
 ### Where to Access it
 
@@ -173,24 +158,17 @@ Students will have multiple modes of accessing the 'RStudio' Server.
 
 One option is to go through [Montana State University Webpage](montana.edu), search "rstudio server", and click the [login link](https://rstudio.math.montana.edu/).
 
-Students will also have a link available to them within the STAT 216 page in D2L. 
+Students will also have a link available to them within the STAT 216 page in D2L.
 
-The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -> RStudio.
-
+The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -\> RStudio.
 
 ### R is Case-Sensitive
 
 You may have heard this if you took STAT 216 at MSU, but what does this really mean?
 
-Essentially, 'R' is not always very smart. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions. 
-
+Essentially, 'R' is not always very smart. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions.
 
 ### How to View the Dataset and see the Variable Names
-
-
-
-
-
 
 #### Excercise 3
 
@@ -200,14 +178,11 @@ Essentially, 'R' is not always very smart. It matters whether words are capitali
 
 ```
 
-
-
 ------------------------------------------------------------------------
 
 ## Plotting with ggplot
 
 ### 
-
 
 ### Troubleshooting Common ggplot2 Coding Issues
 
@@ -215,9 +190,7 @@ Essentially, 'R' is not always very smart. It matters whether words are capitali
 
 ## Using catstats
 
-
 ### What is catstats?
-
 
 ### Troubleshooting Common Catstats Coding Issues
 
@@ -225,18 +198,21 @@ Essentially, 'R' is not always very smart. It matters whether words are capitali
 
 ## Advice from Former STAT 216/217 TA's for a Successful Semester
 
-* ___Review the activity/lab for the day **prior** to coming to class!___ There is limited time when students can get real time feedback from the instruction team, so it is crucial that you do not waste extra time during the class period getting familiar with the dataset or assignment questions. This is especially important if you did not take STAT 216 at MSU.
+-   ***Make sure Students are Aware of their resources EARLY in the semester.*** The beginning of the semester can be a bit overwhelming for everyone, so they may have trouble remembering all of the resources available to them. If a students begins to struggle with the material, it can be very discouraging if they are unaware of where to go for help. Don't hesitate to reiterate where they can find resources, even if you think you may be getting pretty repetitive. This also allows you to start the semester on the right foot, and students will understand that you care about their success.
 
-* ___Run through the code before the class period.___ Chances are, if you (the TA's) run into an error, the students are very likely to run into it as well. If it can be caught early, it allows for a chance to fix any errors in the code and/or discussion of how to handle the road block when students encounter it.
+-   ***Review the activity/lab for the day prior to coming to class!*** There is limited time when students can get real time feedback from the instruction team, so it is crucial that you do not waste extra time during the class period getting familiar with the dataset or assignment questions. This is especially important if you did not take STAT 216 at MSU.
 
-* ___Attend the Weekly Meetings with your lead instructor as often as possible.___ This is a great time to touch base with your team, communicate any subjects that are particularly challenging, and prepare for upcoming activities and labs.
+-   ***Run through the code before the class period.*** Chances are, if you (the TA's) run into an error, the students are very likely to run into it as well. If it can be caught early, it allows for a chance to fix any errors in the code and/or discussion of how to handle the road block when students encounter it.
 
-* ___Be prepared for students to ask you lots of questions!___ As mentioned before, freshmen often feel more comfortable asking a fellow student or TA their questions. Nobody enjoys being belittled for asking questions, so try to encourage them when they do. Additionally, don't be afraid to admit if you are unsure about something and call your lead instructor over to help.
+-   ***Know how to Navigate any Applet that will be used.*** Accessing the Applets, navigating the applets, and seeing the big picture are common areas where students may run into trouble during class. Come to class knowing how to use the relevant Applet for the activity and be prepared to help when students get stuck!
+
+-   ***Be prepared for students to ask you lots of questions!*** As mentioned before, freshmen often feel more comfortable asking a fellow student or TA their questions. Nobody enjoys being belittled for asking questions, so try to encourage them when they do. Additionally, don't be afraid to admit if you are unsure about something and call your lead instructor over to help.
+
+-   ***Attend the Weekly Meetings with your lead instructor as often as possible.*** This is a great time to touch base with your team, communicate any subjects that are particularly challenging, and prepare for upcoming activities and labs.
+
+-   ***Balance Validation and Instruction in your interactions.*** It is inevitable that poorly worded or unclear questions will occasionally arise. I (Harley) have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
 
 
-* ___Balance Validation and Instruction in your interactions.___ It is inevitable that poorly worded or unclear questions will occasionally arise. I (Harley) have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
-
-* ___Make sure Students are Aware of their resources EARLY in the semester.___ The beginning of the semester can be a bit overwhelming for everyone, so they may have trouble remembering all of the resources available to them. If a students begins to struggle with the material, it can be very discouraging if they are unaware of where to go for help. Don't hesitate to reiterate where they can find resources, even if you think you may be getting pretty repetitive. This also allows you to start the semester on the right foot, and students will understand that you care about their success.
 
 ------------------------------------------------------------------------
 
