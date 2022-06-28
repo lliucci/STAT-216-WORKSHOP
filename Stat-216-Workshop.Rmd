@@ -268,6 +268,8 @@ If we wanted to color all of the points the same color, we can put the `color =`
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed)) +
   geom_point(color = 'blue')
+
+# Colors the all of the points in the plot blue
 ```
 
 If we wanted to add a categorical variable to this graph, we could tell `R` to color the points based on that variable. For the next graph, lets color the points based on the roller coaster `Type`. This will be added into the `aes()` section as it is a variable associated with an aesthetic of our graph.
@@ -276,6 +278,9 @@ If we wanted to add a categorical variable to this graph, we could tell `R` to c
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed, color = Type)) +
   geom_point()
+
+# Colors points in the plot by coaster Type
+# Notice how it automatically adds a legend to the plot! How Nice is that?!
 ```
 
 ### Troubleshooting Common ggplot2 Coding Issues
