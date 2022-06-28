@@ -125,12 +125,15 @@ Each row in this particular dataset holds information for a single roller coaste
 | Inversions        | Whether or not the roller coaster flips passengers at any point (Yes or No) |
 | Num_of_Inversions | Number of times the roller coaster flips passengers                         |
 
-However, students will often have to upload the dataset .csv file to the server before 'R' can read it in like above.
+### Importing a Dataset using the Drop-Down Menu
+
+However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before 'R' can read it in like above.
 
 
 -----> write more instructions on how to do this *****
 
 
+### Viewing the Dataset
 
 Once the dataset is imported into the RStudio Server, it can be viewed by clicking on the **Environment tab** in the upper right corner of the server and double clicking the dataset you want to view. The dataset will be opened in the upper left corner of the server, allowing you to see all the variables and how their names are formatted! The formatting of variable names is very important when coding, and often is the source of early mistakes in STAT 216.
 
