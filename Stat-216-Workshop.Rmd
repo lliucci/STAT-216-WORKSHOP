@@ -163,6 +163,8 @@ Students will also have a link available to them within the STAT 216 page in D2L
 
 The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -\> RStudio.
 
+Once students are directed to the RStudio Server, they will then be prompted to **Sign in** using their **MSU NetID and password** - this will be the same login information they use to access D2L.
+
 ### R is Case-Sensitive
 
 You may have heard this if you took STAT 216 at MSU, but what does this really mean?
