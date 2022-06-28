@@ -171,7 +171,7 @@ You may have heard this if you took STAT 216 at MSU, but what does this really m
 
 Essentially, 'R' is not always very smart. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions.
 
-For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", 'R' will not recognize or understand what you are trying to reference. 
+For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", 'R' will not recognize or understand what you are trying to reference.
 
 ### How to View the Dataset and see the Variable Names
 
@@ -195,7 +195,7 @@ When working with packages, there are two different steps.
 
 -   Second, you must library the package to use any of the functions in it. This must be done each time a new session in the 'RStudio' server is started.
 
-Here is an analogy that has been extremely helpful when explaining why students must run the 'library( )' codes first whenever they open an RScript file: 
+Here is an analogy that has been extremely helpful when explaining why students must run the 'library( )' codes first whenever they open an RScript file:
 
 ![Library Packages](RInstallvsLibrary.jpeg)
 
@@ -205,21 +205,48 @@ Here is an analogy that has been extremely helpful when explaining why students 
 
 ### What is ggplot?
 
-`ggplot` is a layer-based way of creating graphs within the `tidyverse` package. The main benefit of it over typical graphing code is that it allows us to build on a graph to make it as complex as we would like. Lets take a look at some examples and build them up as we go. For this, we will be working with the `RollerCoasters` data set.
+`ggplot` is a layer-based way of creating graphs within the `tidyverse` package. The main benefit of it over typical graphing code is that it allows us to build on a graph to make it as complex as we would like. Let's take a look at some examples and build them up as we go. For this, we will be working with the `RollerCoasters` data set.
+
+Each row holds information for a single -----, and the columns represent (along with some others we will not use):
+
+| Column            | Description                                                                 |
+|--------------------|----------------------------------------------------|
+| Age_Group         | 1:Older (1900-1979), 2:1Recent (1980-1999), 3:Newest (200-Current)          |
+| Coaster           | Name of the roller coaster                                                  |
+| Park              | Name of the park where the roller coaster is located                        |
+| City              | City where the roller coaster is located                                    |
+| State             | State where the roller coaster if located                                   |
+| Type              | Material of track (Steel or Wooden                                          |
+| Design            | How a passenger is positioned in the roller coaster                         |
+| Year_Opened       | Year when the roller coaster opened                                         |
+| Top_Speed         | Maximum speed of the roller coaster (mph)                                   |
+| Max_Height        | Highest point of the roller coaster (ft)                                    |
+| Drop              | Length of largest gap between hgih and low points of roller coaster (ft)    |
+| Length            | Length of the roller coaster track (ft)                                     |
+| Duration          | Time length of roller coaster ride (sec)                                    |
+| Inversions        | Whether or not the roller coaster flips passengers at any point (Yes or No) |
+| Num_of_Inversions | Number of times the roller coaster flips passengers                         |
 
 ```{r warning=F}
 ggplot(data = RollerCoasters)
+
+## Creates a blank ggplot(), referencing the RollerCoasters dataset
 ```
 
 We can see that this code simply creates a blank graph. This is because we have not specified what variables we would like to use. Let's take a look at the relationship between the year that the coaster was opened and its top speed.
 
+To accomplish this, we can define a mapping (using the aesthetic (`aes`) function), by selecting the variables to be plotted and specifying how to present them in the graph, e.g. as x/y positions or characteristics such as size, shape, color, etc.
+
 ```{r warning=F}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed))
+
+# Creates a blank ggplot(), with the variables mapped to the x- and y-axis
+# ggplot() knows where the variables live, since you have defined the data to use
 ```
 
 Now we can see that the variables of interest are on our graph, but the data itself is still absent. That is because we have not specified a way for the data to be presented. There are several ways to do this, the most common of which are as follows:
-  
+
       * `geom_point()` for scatter plots, dot plots, etc.
       * `geom_boxplot()` for boxplots   
       * `geom_bar()` for bar charts 
@@ -231,9 +258,11 @@ For this example, lets create a scatter plot. We can do this by adding the `geom
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed)) +
   geom_point()
+
+ # Adds a point for each row (observation) in the data 
 ```
 
-If we wanted to color all of the points the same color, we can put the `color = ` argument in the `geom_point()` layer.
+If we wanted to color all of the points the same color, we can put the `color =` argument in the `geom_point()` layer.
 
 ```{r warning=F}
 ggplot(data = RollerCoasters,
@@ -267,7 +296,7 @@ ggplot(data = RollerCoasters,
   + geom_histogram()
 ```
 
-Another very common error is when a set of parenthesis is opened, but never closed. One way to avoid this is to turn on "Rainbow Parenthesis" by going to Tools --> Global Options --> Code --> Display --> Rainbow Parenthesis.
+Another very common error is when a set of parenthesis is opened, but never closed. One way to avoid this is to turn on "Rainbow Parenthesis" by going to Tools --\> Global Options --\> Code --\> Display --\> Rainbow Parenthesis.
 
 However, it is still possible for stray parenthesis to be involved in code. Let's take a look at an example of this. Fix the code by adding or removing parenthesis.
 
@@ -276,7 +305,6 @@ ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Length))) +
   geom_point()
 ```
-
 
 ------------------------------------------------------------------------
 
@@ -302,7 +330,7 @@ remotes::install_github("greenwood-stat/catstats")
 
 ### Troubleshooting Common Catstats Coding Issues
 
-One of the first issues that you may run into is if a student tries to install `catstats` without `remotes` being installed. You may get an error code that says something along the lines of **Error in _____ : could not find function "remotes"**.
+One of the first issues that you may run into is if a student tries to install `catstats` without `remotes` being installed. You may get an error code that says something along the lines of **Error in \_\_\_\_\_ : could not find function "remotes"**.
 
 Another common error may be **Error: Failed to install 'unknown package' from GitHub**. This likely means that there is a spelling error in the path within the `install_github` function.
 
@@ -310,7 +338,7 @@ Another common error may be **Error: Failed to install 'unknown package' from Gi
 
 ### Now You Try!
 
-#### Exercise __
+#### Exercise \_\_
 
 **Fix the following code.**
 
@@ -342,7 +370,6 @@ one_proportion_test(
 -   ***Attend the Weekly Meetings with your lead instructor as often as possible.*** This is a great time to touch base with your team, communicate any subjects that are particularly challenging, and prepare for upcoming activities and labs.
 
 -   ***Balance Validation and Instruction in your interactions.*** It is inevitable that poorly worded or unclear questions will occasionally arise. I (Harley) have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
-
 
 ------------------------------------------------------------------------
 
