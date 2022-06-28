@@ -125,7 +125,17 @@ Each row in this particular dataset holds information for a single roller coaste
 | Inversions        | Whether or not the roller coaster flips passengers at any point (Yes or No) |
 | Num_of_Inversions | Number of times the roller coaster flips passengers                         |
 
-If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row,column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset.
+However, students will often have to upload the dataset .csv file to the server before 'R' can read it in like above.
+
+
+-----> write more instructions on how to do this *****
+
+
+
+Once the dataset is imported into the RStudio Server, it can be viewed by clicking on the **Environment tab** in the upper right corner of the server and double clicking the dataset you want to view. The dataset will be opened in the upper left corner of the server, allowing you to see all the variables and how their names are formatted! The formatting of variable names is very important when coding, and often is the source of early mistakes in STAT 216.
+
+
+If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row,column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset by typing the following into the **Console**: View(RollerCoasters) 
 
 ```{r}
 RollerCoasters[1:5,]
@@ -218,6 +228,11 @@ When working with packages, there are two different steps.
 Here is an analogy that has been extremely helpful when explaining why students must run the 'library( )' codes first whenever they open an RScript file:
 
 ![Library Packages](RInstallvsLibrary.jpeg)
+
+### Importing and Explorting Files within the Server
+
+
+
 
 ------------------------------------------------------------------------
 
