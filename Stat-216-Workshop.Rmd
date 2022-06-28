@@ -108,7 +108,7 @@ When this is done, we can see some information show up in the Console. We see ho
 Each row in this particular dataset holds information for a single roller coaster, and the columns represent (along with some others we will not use):
 
 | Column            | Description                                                                 |
-|--------------------|----------------------------------------------------|
+|-------------------|-----------------------------------------------------------------------------|
 | Age_Group         | 1:Older (1900-1979), 2:1Recent (1980-1999), 3:Newest (200-Current)          |
 | Coaster           | Name of the roller coaster                                                  |
 | Park              | Name of the park where the roller coaster is located                        |
@@ -358,7 +358,41 @@ one_proportion_test(
 )
 ```
 
-Another good thing to note while working in 'R', and especially when working with the 'catstats' package and its functions, **an Error message is _NOT_ the same a a Warning message**. An Error prevents the highlighted code from running altogether, while a warning will still run the code but bring important notes to the users attention. Students may occasionally call you over and ask why they are getting a red message, assuming it means an error has occurred, when the are actually just seeing a warning message built into a function and it is completely possible that they have done nothing wrong.
+As mentioned previously, the level of coding ability expected of students is very minimal. Therefore, students will only need to alter a few key areas in the code files that were created to accompany the activities and labs.
+
+Recurrent phrases and words that students will need to find and *replace*:
+
+-   "datasetname" : Students should replace this phrase with the name of the dataset *exactly* how it appears in the Environment window.
+
+-   "variable" : This one is pretty straight forward. When only dealing with one variable of interest, this is where the should put the name of the variable, **making sure to replicate how it appears in the dataset**. Pay attention to Capilatization and lowercase, underscores, and other potentially tricky formatting with variable names.
+
+-   "explanatory" & "response" : Students will need to identify and correctly enter the variable names as they appear in the dataset. Sometimes, if they identify them incorrectly or switch them, output may be incorrect or the code my not run altogether.
+
+-   "xx" : Further into the semester, this phrase will pop up often. Usually, students are expected to replace this with a numeric value, variable name, or level of a variable. To discern which is expected, a comment with almost always follow on the same line of code and describe exactly what should be entered there.
+
+-   Note: students will often need to *replace* these phrases! Not type the answer next to it. When replacing a word or phrase, often students will accidentally delete quotation marks, commmas, or parentheses that are necessary for the function to run correctly. You will be expected to be able to look at catstats functions and ggplot code, assess what is incorrect or missing, and fix the issue.
+
+Common Mistakes include:
+
+A. Replacing the word, or 'call', that the functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else 'R' will not recognize it.
+
+---insert example of give code with no edits
+
+---insert example of the mistake
+
+B. Not running the 'library( )' codes **prior** to attempting to run other code. This is a good time to bring up that handy light bulb metaphor from before. Students must run these each time a new session in the RStudio Server is started.
+
+C. Students may trying to **run functions before reading in the dataset**. The dataset code must be edited correctly and run for 'R' to know what it is referencing and what variable names it is dealing with.
+
+D. ***NOT Reading!*** You'd think that by the time someone has been accepted into college, the would probably know how to read. However, knowing how to and actually doing so are two completely separate things. Many exercises will be presented to the students like this:
+
+```{r}
+
+```
+
+Notice how there is a comment to the right of each line in the code **explicitly telling the student what to replace the corresponding key phrase with**. Despite this, students may call you over to ask what they should replace the phrase with anyway. Just a word of advice, this can get very repetitive so it may be wise to give them some slack early on but still point out where they can find the answer on their own.
+
+Another good thing to note while working in 'R', and especially when working with the 'catstats' package and its functions, **an Error message is *NOT* the same a a Warning message**. An Error prevents the highlighted code from running altogether, while a warning will still run the code but bring important notes to the users attention. Students may occasionally call you over and ask why they are getting a red message, assuming it means an error has occurred, when the are actually just seeing a warning message built into a function and it is completely possible that they have done nothing wrong.
 
 ------------------------------------------------------------------------
 
@@ -377,7 +411,6 @@ Another good thing to note while working in 'R', and especially when working wit
 -   ***Attend the Weekly Meetings with your lead instructor as often as possible.*** This is a great time to touch base with your team, communicate any subjects that are particularly challenging, and prepare for upcoming activities and labs.
 
 -   ***Balance Validation and Instruction in your interactions.*** It is inevitable that poorly worded or unclear questions will occasionally arise. I (Harley) have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
-
 
 Most importantly, don't be afraid to ask questions yourself and learn things alongside the students! Communication and effort go a long way in any situation.
 
