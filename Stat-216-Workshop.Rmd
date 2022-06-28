@@ -312,7 +312,7 @@ ggplot(data = RollerCoasters,
 
 ### What is catstats?
 
-`catstats` is a package containing useful functions and data that is designed for Stat 217 and Stat 216. For more information, visit the [github repository for catstats](https://github.com/greenwood-stat/catstats).
+`catstats` is a package containing useful functions and data that is designed for the STAT 216 and STAT 217 courses at Montana State University. For more information, visit the [github repository for catstats](https://github.com/greenwood-stat/catstats).
 
 ### Installing catstats
 
