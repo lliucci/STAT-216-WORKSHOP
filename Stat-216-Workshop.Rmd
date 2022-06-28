@@ -171,6 +171,8 @@ You may have heard this if you took STAT 216 at MSU, but what does this really m
 
 Essentially, 'R' is not always very smart. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions.
 
+For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", 'R' will not recognize or understand what you are trying to reference. 
+
 ### How to View the Dataset and see the Variable Names
 
 #### Excercise 3
