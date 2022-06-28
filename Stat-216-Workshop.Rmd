@@ -353,6 +353,8 @@ one_proportion_test(
 )
 ```
 
+Another good thing to note while working in 'R', and especially when working with the 'catstats' package and its functions, **an Error message is _NOT_ the same a a Warning message**. An Error prevents the highlighted code from running altogether, while a warning will still run the code but bring important notes to the users attention. Students may occasionally call you over and ask why they are getting a red message, assuming it means an error has occurred, when the are actually just seeing a warning message built into a function and it is completely possible that they have done nothing wrong.
+
 ------------------------------------------------------------------------
 
 ## Advice from Former STAT 216/217 TA's for a Successful Semester
@@ -370,6 +372,9 @@ one_proportion_test(
 -   ***Attend the Weekly Meetings with your lead instructor as often as possible.*** This is a great time to touch base with your team, communicate any subjects that are particularly challenging, and prepare for upcoming activities and labs.
 
 -   ***Balance Validation and Instruction in your interactions.*** It is inevitable that poorly worded or unclear questions will occasionally arise. I (Harley) have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
+
+
+Most importantly, don't be afraid to ask questions yourself and learn things alongside the students! Communication and effort go a long way in any situation.
 
 ------------------------------------------------------------------------
 
