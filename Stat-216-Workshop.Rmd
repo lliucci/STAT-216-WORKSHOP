@@ -207,7 +207,7 @@ Here is an analogy that has been extremely helpful when explaining why students 
 
 `ggplot` is a layer-based way of creating graphs within the `tidyverse` package. The main benefit of it over typical graphing code is that it allows us to build on a graph to make it as complex as we would like. Let's take a look at some examples and build them up as we go. For this, we will be working with the `RollerCoasters` data set.
 
-Each row holds information for a single -----, and the columns represent (along with some others we will not use):
+Each row holds information for a single roller coaster, and the columns represent (along with some others we will not use):
 
 | Column            | Description                                                                 |
 |--------------------|----------------------------------------------------|
