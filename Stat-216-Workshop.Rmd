@@ -63,7 +63,7 @@ If a student is a Veteran or is using a relative's Military Educational Benefits
 
 ## Introduction to R
 
-Coding can be very intimidating, especially for students with no prior coding experience. Thus, the RScript files accompanying activities and labs require pretty minimal amount of alterations by the students. Students will be expected to gradually contribute more in 'R', but are not expected to be expert coders at any point during the course.
+Coding can be very intimidating, especially for students with no prior coding experience. Thus, the `R` script files accompanying activities and labs require pretty minimal amount of alterations by the students. Students will be expected to gradually contribute more in `R`, but are not expected to be expert coders at any point during the course.
 
 In order to get started with `R` and `RStudio`, it will be beneficial to understand the User Interface. `RStudio` has the following layout:
 
