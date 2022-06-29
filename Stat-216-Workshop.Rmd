@@ -36,7 +36,7 @@ Students will be required to purchase a **Coursepack** which will contain the ac
 
 There is also a **Textbook** for the course. Note: **The course textbook is NOT** the same thing as the coursepack! Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) which is located under *Course Materials and Resources*. Here is a direct link to the [Online Textbook](https://mtstateintrostats.github.io/IntroStatTextbook/) as well.
 
-The **activities** and **labs** in the coursepack with often require students to use an RScript file to complete. This R Bootcamp is meant to help you get a better understand of coding in `R` so you can help students when they run into issues.
+The **activities** and **labs** in the coursepack with often require students to use an `R` script file to complete. This R Bootcamp is meant to help you get a better understand of coding in `R` so you can help students when they run into issues.
 
 ### Other Resources Available
 
@@ -58,8 +58,7 @@ If a student is a Veteran or is using a relative's Military Educational Benefits
 
 **4. Stack Overflow**
 
-If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in 'R' when you do not have your lead instructor available to ask. 
-
+If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in 'R' when you do not have your lead instructor available to ask.
 
 ------------------------------------------------------------------------
 
@@ -113,7 +112,7 @@ When this is done, we can see some information show up in the Console. We see ho
 Each row in this particular dataset holds information for a single roller coaster, and the columns represent (along with some others we will not use):
 
 | Column            | Description                                                                 |
-|-------------------|-----------------------------------------------------------------------------|
+|-----------------|-------------------------------------------------------|
 | Age_Group         | 1:Older (1900-1979), 2:1Recent (1980-1999), 3:Newest (200-Current)          |
 | Coaster           | Name of the roller coaster                                                  |
 | Park              | Name of the park where the roller coaster is located                        |
@@ -134,15 +133,13 @@ Each row in this particular dataset holds information for a single roller coaste
 
 However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before `R` can read it in like above.
 
-
------> write more instructions on how to do this *****
-
+-----\> write more instructions on how to do this \*\*\*\*\*
 
 ### Viewing the Dataset
 
 Once the dataset is imported into the RStudio Server, it can be viewed by clicking on the **Environment tab** in the upper right corner of the server and double clicking the dataset you want to view. The dataset will be opened in the upper left corner of the server, allowing you to see all the variables and how their names are formatted! The formatting of variable names is very important when coding, and often is the source of early mistakes in STAT 216.
 
-If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row,column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset by typing the following into the **Console**: View(RollerCoasters) 
+If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row,column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset by typing the following into the **Console**: View(RollerCoasters)
 
 ```{r}
 RollerCoasters[1:5,]
@@ -235,9 +232,6 @@ Here is an analogy that has been extremely helpful when explaining why students 
 ![Library Packages](RInstallvsLibrary.jpeg)
 
 ### Importing and Exporting Files within the Server
-
-
-
 
 ------------------------------------------------------------------------
 
@@ -386,15 +380,15 @@ As mentioned previously, the level of coding ability expected of students is ver
 
 ### Recurrent phrases and words that students will need to find and *replace*:
 
--   "**datasetname**" : Students should replace this phrase with the name of the dataset _exactly_ how it appears in the Environment window.
+-   "**datasetname**" : Students should replace this phrase with the name of the dataset *exactly* how it appears in the Environment window.
 
--   "**variable**" : This one is pretty straight forward. When only dealing with one variable of interest, this is where the should put the name of the variable, _making sure to replicate how it appears in the dataset_. Pay attention to Capitalization and lowercase, underscores, and other potentially tricky formatting with variable names.
+-   "**variable**" : This one is pretty straight forward. When only dealing with one variable of interest, this is where the should put the name of the variable, *making sure to replicate how it appears in the dataset*. Pay attention to Capitalization and lowercase, underscores, and other potentially tricky formatting with variable names.
 
 -   "**explanatory**" & "**response**" : Students will need to identify and correctly enter the variable names as they appear in the dataset. Sometimes, if they identify them incorrectly or switch them, output may be incorrect or the code my not run altogether.
 
 -   "**xx**" : Further into the semester, this phrase will pop up often. Usually, students are expected to replace this with a numeric value, variable name, or level of a variable. To discern which is expected, a comment with almost always follow on the same line of code and describe exactly what should be entered there.
 
-**Note**: students will often need to _replace_ these phrases, not type the answer next to it! When replacing a word or phrase, often students will accidentally delete quotation marks, commmas, or parentheses that are necessary for the function to run correctly. You will be expected to be able to look at catstats functions and ggplot code, assess what is incorrect or missing, and fix the issue.
+**Note**: students will often need to *replace* these phrases, not type the answer next to it! When replacing a word or phrase, often students will accidentally delete quotation marks, commmas, or parentheses that are necessary for the function to run correctly. You will be expected to be able to look at catstats functions and ggplot code, assess what is incorrect or missing, and fix the issue.
 
 ### Common Mistakes include:
 
@@ -408,7 +402,7 @@ As mentioned previously, the level of coding ability expected of students is ver
 
 **C**. Students may trying to **run functions before reading in the dataset**. The dataset code must be edited correctly and run for 'R' to know what it is referencing and what variable names it is dealing with.
 
-**D**. ___NOT Reading!___ You'd think that by the time someone has been accepted into college, the would probably know how to read. However, knowing how to and actually doing so are two completely separate things. Many exercises will be presented to the students like this:
+**D**. ***NOT Reading!*** You'd think that by the time someone has been accepted into college, the would probably know how to read. However, knowing how to and actually doing so are two completely separate things. Many exercises will be presented to the students like this:
 
 ```{r}
 
@@ -440,7 +434,7 @@ Another good thing to note while working in 'R', and especially when working wit
 
 -   ***Balance Validation and Instruction in your interactions.*** It is inevitable that poorly worded or unclear questions will occasionally arise. I (Harley) have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
 
-Most importantly, don't be afraid to ask questions yourself and learn things alongside the students! Communication and effort go a long way, regardless of the situation. 
+Most importantly, don't be afraid to ask questions yourself and learn things alongside the students! Communication and effort go a long way, regardless of the situation.
 
 Luckily, this information will always be here for you to reference if you have any specific questions or just want a quick refresher.
 
