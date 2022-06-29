@@ -34,9 +34,9 @@ A large part of your position is to maintain communication between the students 
 
 Students will be required to purchase a **Coursepack** which will contain the activities and labs they will work through and complete over the course of the semester. This will be available for them to purchase at the MSU Bookstore.
 
-There is also a **Textbook** for the course. Note: **The course textbook is NOT** the same thing as the coursepack! Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) which is located under *Course Materials and Resources*. Here is a direct link to the [Online Textbook] (<https://mtstateintrostats.github.io/IntroStatTextbook/>) as well.
+There is also a **Textbook** for the course. Note: **The course textbook is NOT** the same thing as the coursepack! Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) which is located under *Course Materials and Resources*. Here is a direct link to the [Online Textbook](https://mtstateintrostats.github.io/IntroStatTextbook/) as well.
 
-The **activities** and **labs** in the coursepack with often require students to use an RScript file to complete. This R Bootcamp is meant to help you get a better understand of coding in 'R' so you can help students when they run into issues.
+The **activities** and **labs** in the coursepack with often require students to use an RScript file to complete. This R Bootcamp is meant to help you get a better understand of coding in `R` so you can help students when they run into issues.
 
 ### Other Resources Available
 
@@ -127,7 +127,7 @@ Each row in this particular dataset holds information for a single roller coaste
 
 ### Importing a Dataset using the Drop-Down Menu
 
-However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before 'R' can read it in like above.
+However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before `R` can read it in like above.
 
 
 -----> write more instructions on how to do this *****
