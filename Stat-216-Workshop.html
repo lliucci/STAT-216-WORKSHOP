@@ -142,10 +142,9 @@ href="https://math.montana.edu/courses/s216/">STAT 216 Course page</a>
 on montana.edu, through a link posted on D2L, or through a link on the
 <a href="https://mtstateintrostats.github.io/SummerSyllabus/">STAT 216
 Syllabus</a> which is located under <em>Course Materials and
-Resources</em>. Here is a direct link to the [Online Textbook] (<a
-href="https://mtstateintrostats.github.io/IntroStatTextbook/"
-class="uri">https://mtstateintrostats.github.io/IntroStatTextbook/</a>)
-as well.</p>
+Resources</em>. Here is a direct link to the <a
+href="https://mtstateintrostats.github.io/IntroStatTextbook/">Online
+Textbook</a> as well.</p>
 <p>The <strong>activities</strong> and <strong>labs</strong> in the
 coursepack with often require students to use an RScript file to
 complete. This R Bootcamp is meant to help you get a better understand
@@ -252,10 +251,108 @@ the <code>tidyverse</code> package. We can do this to read a .csv file
 Console. We see how many rows and columns the dataset has as well as the
 variables and their type. Variables can either be ‘double’ if they are
 numbers of ‘character’ if they are words.</p>
+<p>Each row in this particular dataset holds information for a single
+roller coaster, and the columns represent (along with some others we
+will not use):</p>
+<table>
+<colgroup>
+<col width="19%" />
+<col width="80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Age_Group</td>
+<td>1:Older (1900-1979), 2:1Recent (1980-1999), 3:Newest
+(200-Current)</td>
+</tr>
+<tr class="even">
+<td>Coaster</td>
+<td>Name of the roller coaster</td>
+</tr>
+<tr class="odd">
+<td>Park</td>
+<td>Name of the park where the roller coaster is located</td>
+</tr>
+<tr class="even">
+<td>City</td>
+<td>City where the roller coaster is located</td>
+</tr>
+<tr class="odd">
+<td>State</td>
+<td>State where the roller coaster if located</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Material of track (Steel or Wooden</td>
+</tr>
+<tr class="odd">
+<td>Design</td>
+<td>How a passenger is positioned in the roller coaster</td>
+</tr>
+<tr class="even">
+<td>Year_Opened</td>
+<td>Year when the roller coaster opened</td>
+</tr>
+<tr class="odd">
+<td>Top_Speed</td>
+<td>Maximum speed of the roller coaster (mph)</td>
+</tr>
+<tr class="even">
+<td>Max_Height</td>
+<td>Highest point of the roller coaster (ft)</td>
+</tr>
+<tr class="odd">
+<td>Drop</td>
+<td>Length of largest gap between hgih and low points of roller coaster
+(ft)</td>
+</tr>
+<tr class="even">
+<td>Length</td>
+<td>Length of the roller coaster track (ft)</td>
+</tr>
+<tr class="odd">
+<td>Duration</td>
+<td>Time length of roller coaster ride (sec)</td>
+</tr>
+<tr class="even">
+<td>Inversions</td>
+<td>Whether or not the roller coaster flips passengers at any point (Yes
+or No)</td>
+</tr>
+<tr class="odd">
+<td>Num_of_Inversions</td>
+<td>Number of times the roller coaster flips passengers</td>
+</tr>
+</tbody>
+</table>
+<div id="section-importing-a-dataset-using-the-drop-down-menu"
+class="section level3">
+<h3>Importing a Dataset using the Drop-Down Menu</h3>
+<p>However, students will often have to upload the dataset .csv file to
+the server <strong><em>using the drop down menu</em></strong> before ‘R’
+can read it in like above.</p>
+<p>—–&gt; write more instructions on how to do this *****</p>
+</div>
+<div id="section-viewing-the-dataset" class="section level3">
+<h3>Viewing the Dataset</h3>
+<p>Once the dataset is imported into the RStudio Server, it can be
+viewed by clicking on the <strong>Environment tab</strong> in the upper
+right corner of the server and double clicking the dataset you want to
+view. The dataset will be opened in the upper left corner of the server,
+allowing you to see all the variables and how their names are formatted!
+The formatting of variable names is very important when coding, and
+often is the source of early mistakes in STAT 216.</p>
 <p>If we want to get a summary of only a certain set of rows or columns
 from a dataset, we can write <code>[row,column]</code> after the dataset
 to get a subset of the data frame. The <code>View()</code> function can
-also be helpful to view the entire dataset.</p>
+also be helpful to view the entire dataset by typing the following into
+the <strong>Console</strong>: View(RollerCoasters)</p>
 <pre class="r"><code>RollerCoasters[1:5,]</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -283,6 +380,7 @@ good practice to good documentation of your code through comments so
 others can easily understand it. Comments can exist on a line alone,
 after a line with a section of a function, but cannot exist between code
 on the same line.</p>
+</div>
 <div id="section-now-you-try" class="section level3">
 <h3>Now You Try!</h3>
 <div id="section-exercise-1" class="section level4">
@@ -324,6 +422,10 @@ page in D2L.</p>
 <p>The ‘Rstudio’ Server can also be accessed through the <a
 href="https://mtstateintrostats.github.io/SummerSyllabus/">Syllabus</a>
 under Course Materials and Resources -&gt; RStudio.</p>
+<p>Once students are directed to the RStudio Server, they will then be
+prompted to <strong>Sign in</strong> using their <strong>MSU NetID and
+password</strong> - this will be the same login information they use to
+access D2L.</p>
 </div>
 <div id="section-r-is-case-sensitive" class="section level3">
 <h3>R is Case-Sensitive</h3>
@@ -332,10 +434,9 @@ this really mean?</p>
 <p>Essentially, ‘R’ is not always very smart. It matters whether words
 are capitalized or lowercase when storing or calling a dataset,
 variables, or functions.</p>
-</div>
-<div id="section-how-to-view-the-dataset-and-see-the-variable-names"
-class="section level3">
-<h3>How to View the Dataset and see the Variable Names</h3>
+<p>For example, if you are trying to use a variable named “Year” but
+accidentally type “year” with a lowercase “y”, ‘R’ will not recognize or
+understand what you are trying to reference.</p>
 <div id="section-excercise-3" class="section level4">
 <h4>Excercise 3</h4>
 <p><strong>Referencing the Dataset above, can you find and correct the
@@ -374,6 +475,10 @@ RScript file:</p>
 <img src="RInstallvsLibrary.jpeg" alt="" />
 <p class="caption">Library Packages</p>
 </div>
+</div>
+<div id="section-importing-and-explorting-files-within-the-server"
+class="section level3">
+<h3>Importing and Explorting Files within the Server</h3>
 <hr />
 </div>
 </div>
@@ -384,18 +489,25 @@ RScript file:</p>
 <p><code>ggplot</code> is a layer-based way of creating graphs within
 the <code>tidyverse</code> package. The main benefit of it over typical
 graphing code is that it allows us to build on a graph to make it as
-complex as we would like. Lets take a look at some examples and build
+complex as we would like. Let’s take a look at some examples and build
 them up as we go. For this, we will be working with the
 <code>RollerCoasters</code> data set.</p>
 <pre class="r"><code>ggplot(data = RollerCoasters)</code></pre>
 <p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-9-1.png" width="624" /></p>
+<pre class="r"><code>## Creates a blank ggplot(), referencing the RollerCoasters dataset</code></pre>
 <p>We can see that this code simply creates a blank graph. This is
 because we have not specified what variables we would like to use. Let’s
 take a look at the relationship between the year that the coaster was
 opened and its top speed.</p>
+<p>To accomplish this, we can define a mapping (using the aesthetic
+(<code>aes</code>) function), by selecting the variables to be plotted
+and specifying how to present them in the graph, e.g. as x/y positions
+or characteristics such as size, shape, color, etc.</p>
 <pre class="r"><code>ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed))</code></pre>
 <p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-10-1.png" width="624" /></p>
+<pre class="r"><code># Creates a blank ggplot(), with the variables mapped to the x- and y-axis
+# ggplot() knows where the variables live, since you have defined the data to use</code></pre>
 <p>Now we can see that the variables of interest are on our graph, but
 the data itself is still absent. That is because we have not specified a
 way for the data to be presented. There are several ways to do this, the
@@ -412,6 +524,7 @@ each layer that is added on, we must seperate the lines with a plus
        mapping = aes(x = Year_Opened, y = Top_Speed)) +
   geom_point()</code></pre>
 <p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-11-1.png" width="624" /></p>
+<pre class="r"><code> # Adds a point for each row (observation) in the data </code></pre>
 <p>If we wanted to color all of the points the same color, we can put
 the <code>color =</code> argument in the <code>geom_point()</code>
 layer.</p>
@@ -419,6 +532,7 @@ layer.</p>
        mapping = aes(x = Year_Opened, y = Top_Speed)) +
   geom_point(color = &#39;blue&#39;)</code></pre>
 <p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-12-1.png" width="624" /></p>
+<pre class="r"><code># Colors the all of the points in the plot blue</code></pre>
 <p>If we wanted to add a categorical variable to this graph, we could
 tell <code>R</code> to color the points based on that variable. For the
 next graph, lets color the points based on the roller coaster
@@ -429,6 +543,8 @@ graph.</p>
        mapping = aes(x = Year_Opened, y = Top_Speed, color = Type)) +
   geom_point()</code></pre>
 <p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-13-1.png" width="624" /></p>
+<pre class="r"><code># Colors points in the plot by coaster Type
+# Notice how it automatically adds a legend to the plot! How Nice is that?!</code></pre>
 </div>
 <div id="section-troubleshooting-common-ggplot2-coding-issues"
 class="section level3">
@@ -479,9 +595,10 @@ data-lines="0">
 <div id="section-what-is-catstats" class="section level3">
 <h3>What is catstats?</h3>
 <p><code>catstats</code> is a package containing useful functions and
-data that is designed for Stat 217 and Stat 216. For more information,
-visit the <a href="https://github.com/greenwood-stat/catstats">github
-repository for catstats</a>.</p>
+data that is designed for the STAT 216 and STAT 217 courses at Montana
+State University. For more information, visit the <a
+href="https://github.com/greenwood-stat/catstats">github repository for
+catstats</a>.</p>
 </div>
 <div id="section-installing-catstats" class="section level3">
 <h3>Installing catstats</h3>
@@ -533,6 +650,99 @@ data-lines="0">
 </div>
 <hr />
 </div>
+</div>
+</div>
+<div id="section-coding-expectations-for-students"
+class="section level2">
+<h2>Coding Expectations for Students</h2>
+<p>As mentioned previously, the level of coding ability expected of
+students is very minimal. Therefore, students will only need to alter a
+few key areas in the code files that were created to accompany the
+activities and labs.</p>
+<div
+id="section-recurrent-phrases-and-words-that-students-will-need-to-find-and-replace"
+class="section level3">
+<h3>Recurrent phrases and words that students will need to find and
+<em>replace</em>:</h3>
+<ul>
+<li><p>“<strong>datasetname</strong>” : Students should replace this
+phrase with the name of the dataset <em>exactly</em> how it appears in
+the Environment window.</p></li>
+<li><p>“<strong>variable</strong>” : This one is pretty straight
+forward. When only dealing with one variable of interest, this is where
+the should put the name of the variable, <em>making sure to replicate
+how it appears in the dataset</em>. Pay attention to Capitalization and
+lowercase, underscores, and other potentially tricky formatting with
+variable names.</p></li>
+<li><p>“<strong>explanatory</strong>” &amp; “<strong>response</strong>”
+: Students will need to identify and correctly enter the variable names
+as they appear in the dataset. Sometimes, if they identify them
+incorrectly or switch them, output may be incorrect or the code my not
+run altogether.</p></li>
+<li><p>“<strong>xx</strong>” : Further into the semester, this phrase
+will pop up often. Usually, students are expected to replace this with a
+numeric value, variable name, or level of a variable. To discern which
+is expected, a comment with almost always follow on the same line of
+code and describe exactly what should be entered there.</p></li>
+</ul>
+<p><strong>Note</strong>: students will often need to <em>replace</em>
+these phrases, not type the answer next to it! When replacing a word or
+phrase, often students will accidentally delete quotation marks,
+commmas, or parentheses that are necessary for the function to run
+correctly. You will be expected to be able to look at catstats functions
+and ggplot code, assess what is incorrect or missing, and fix the
+issue.</p>
+</div>
+<div id="section-common-mistakes-include" class="section level3">
+<h3>Common Mistakes include:</h3>
+<p><strong>A</strong>. Replacing the word, or ‘call’, that the functions
+will use to reference the dataset instead of the word ‘datasetname’. The
+actually name of the uploaded dataset, which will usually be read in
+from a text file or .csv file, will appear in the Environment and
+<strong>must be typed exactly how it appears there</strong> or else ‘R’
+will not recognize it.</p>
+<p>—insert example of give code with no edits</p>
+<p>—insert example of the mistake</p>
+<p><strong>B</strong>. Not running the ‘library( )’ codes
+<strong>prior</strong> to attempting to run other code. This is a good
+time to bring up that handy light bulb metaphor from before. Students
+must run these each time a new session in the RStudio Server is
+started.</p>
+<p><strong>C</strong>. Students may trying to <strong>run functions
+before reading in the dataset</strong>. The dataset code must be edited
+correctly and run for ‘R’ to know what it is referencing and what
+variable names it is dealing with.</p>
+<p><strong>D</strong>. <strong><em>NOT Reading!</em></strong> You’d
+think that by the time someone has been accepted into college, the would
+probably know how to read. However, knowing how to and actually doing so
+are two completely separate things. Many exercises will be presented to
+the students like this:</p>
+<p>Notice how there is a comment to the right of each line in the code
+<strong>explicitly telling the student what to replace the corresponding
+key phrase with</strong>. Despite this, students may call you over to
+ask what they should replace the phrase with anyway. Just a word of
+advice, this can get very repetitive so it may be wise to give them some
+slack early on but still point out where they can find the answer on
+their own.</p>
+<p><strong>E</strong>. Accidentally deleting quotation marks or commas
+after an argument within a function. If you are unsure if this has
+occurred, don’t hesitate to ask the student to open another unedited
+version of the same file under a different name (so it doesn’t overide
+all of the edits and progress they have made on their current R file) to
+double check that area of the template code.</p>
+</div>
+<div id="section-errors-vs.-warning-messages" class="section level3">
+<h3>Errors vs. Warning Messages</h3>
+<p>Another good thing to note while working in ‘R’, and especially when
+working with the ‘catstats’ package and its functions, <strong>an Error
+message is <em>NOT</em> the same a a Warning message</strong>. An Error
+prevents the highlighted code from running altogether, while a warning
+will still run the code but bring important notes to the users
+attention. Students may occasionally call you over and ask why they are
+getting a red message, assuming it means an error has occurred, when the
+are actually just seeing a warning message built into a function and it
+is completely possible that they have done nothing wrong.</p>
+<hr />
 </div>
 </div>
 <div
@@ -588,6 +798,12 @@ must also be balanced with instruction. Nobody is happy if one student
 airing their grievances takes time away from you helping another
 student.</p></li>
 </ul>
+<p>Most importantly, don’t be afraid to ask questions yourself and learn
+things alongside the students! Communication and effort go a long way,
+regardless of the situation.</p>
+<p>Luckily, this information will always be here for you to reference if
+you have any specific questions or just want a quick refresher.</p>
+<p>We all wish you good luck and a successful semester! :)</p>
 <hr />
 </div>
 <div id="section-montana-state-university-r-workshops-team"
