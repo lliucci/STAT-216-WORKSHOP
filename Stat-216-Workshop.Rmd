@@ -282,7 +282,7 @@ Now we can see that the variables of interest are on our graph, but the data its
       * `geom_bar()` for bar charts 
       * `geom_line()` for trend lines, time series, etc.  
 
-For this example, lets create a scatter plot. We can do this by adding the `geom_point` argument to our graph. Note that for each layer that is added on, we must seperate the lines with a plus (+).
+For this example, lets create a scatter plot. We can do this by adding the `geom_point` argument to our graph. Note that for each layer that is added on, we must separate the lines with a plus (+).
 
 ```{r warning=F}
 ggplot(data = RollerCoasters,
@@ -338,6 +338,14 @@ However, it is still possible for stray parenthesis to be involved in code. Let'
 ```{r ggplot-troubleshooting-3, exercise = T, warning = F}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Length))) +
+  geom_point()
+```
+
+Now, fill in the template below to create a plot with Duration on the x-axis and Maximum Height on the y-axis. (Hint: _replace_ the underscores with the data set name and variable names.)
+
+```{r ggplot-troubleshooting-4, exercise = T, warning = F}
+ggplot(data = ___,
+       mapping = aes(x = ___, y = ___))) +
   geom_point()
 ```
 
