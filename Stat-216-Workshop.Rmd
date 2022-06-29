@@ -56,6 +56,9 @@ There are multiple private tutors as well! There is a bulletin board in the Wils
 
 If a student is a Veteran or is using a relative's Military Educational Benefits to help pay for school, there are free statistics tutors available to them through the Veterans Center on Campus. The Veterans Support Center is also located in Romney, but on the first floor.
 
+**4. Stack Overflow**
+
+
 ------------------------------------------------------------------------
 
 ## Introduction to R
