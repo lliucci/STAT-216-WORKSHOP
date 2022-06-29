@@ -110,7 +110,7 @@ RollerCoasters <- read_csv('RollerCoasters.csv')
 
 When this is done, we can see some information show up in the Console. We see how many rows and columns the dataset has as well as the variables and their type. Variables can either be 'double' if they are numbers of 'character' if they are words.
 
-Each row in this particular dataset holds information for a single roller coaster, and the columns represent (along with some others we will not use):
+Each row in this particular dataset holds information for a single roller coaster, and the columns represent:
 
 | Column            | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
