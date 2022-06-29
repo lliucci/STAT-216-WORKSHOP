@@ -58,6 +58,8 @@ If a student is a Veteran or is using a relative's Military Educational Benefits
 
 **4. Stack Overflow**
 
+If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in 'R' when you do not have your lead instructor available to ask. 
+
 
 ------------------------------------------------------------------------
 
