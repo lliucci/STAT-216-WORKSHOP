@@ -85,7 +85,7 @@ x <- 7
 
 We can then check the value of our variable by simply typing the name of the variable.
 
-```{r}
+```{r practice1, exercise = T}
 x
 ```
 
@@ -109,7 +109,7 @@ RollerCoasters <- read_csv('RollerCoasters.csv')
 
 When this is done, we can see some information show up in the Console. We see how many rows and columns the dataset has as well as the variables and their type. Variables can either be 'double' if they are numbers of 'character' if they are words.
 
-Each row in this particular dataset holds information for a single roller coaster, and the columns represent (along with some others we will not use):
+Each row in this particular dataset holds information for a single roller coaster, and the columns represent:
 
 | Column            | Description                                                                 |
 |-----------------|-------------------------------------------------------|
@@ -118,7 +118,7 @@ Each row in this particular dataset holds information for a single roller coaste
 | Park              | Name of the park where the roller coaster is located                        |
 | City              | City where the roller coaster is located                                    |
 | State             | State where the roller coaster if located                                   |
-| Type              | Material of track (Steel or Wooden                                          |
+| Type              | Material of track (Steel or Wooden)                                         |
 | Design            | How a passenger is positioned in the roller coaster                         |
 | Year_Opened       | Year when the roller coaster opened                                         |
 | Top_Speed         | Maximum speed of the roller coaster (mph)                                   |
@@ -141,7 +141,7 @@ Once the dataset is imported into the RStudio Server, it can be viewed by clicki
 
 If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row,column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset by typing the following into the **Console**: View(RollerCoasters)
 
-```{r}
+```{r practice2, exercise = T}
 RollerCoasters[1:5,]
 ```
 
