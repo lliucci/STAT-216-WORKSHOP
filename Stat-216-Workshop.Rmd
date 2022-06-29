@@ -78,7 +78,7 @@ In order to get started with `R` and `RStudio`, it will be beneficial to underst
 
 The color scheme of `RStudio` can also be changed by going to **Tools --\> Global Options --\> Appearance**. This can make the long days of coding a lot easier on the eyes. Another way to personalize `RStudio` is to change the pane layout. This can be done in **Tools --\> Global Options --\> Pane Layout**.
 
-Now that `RStudio` is personalized to your specifications, we can start diving into the basics of coding with `R`. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below.
+Now that `RStudio` is personalized to your specifications, we can start diving into the basics of coding with `R`. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below. It is important to note that this only goes one direction.
 
 ```{r}
 x <- 7
@@ -192,13 +192,13 @@ Comments do not need to be ran for the code to work. However, it is good practic
 
 ### Where to Access it
 
-Students will have multiple modes of accessing the 'RStudio' Server.
+Students will have multiple modes of accessing the `RStudio` Server.
 
 One option is to go through [Montana State University Webpage](montana.edu), search "rstudio server", and click the [login link](https://rstudio.math.montana.edu/).
 
 Students will also have a link available to them within the STAT 216 page in D2L.
 
-The 'Rstudio' Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -\> RStudio.
+The `Rstudio` Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -\> RStudio.
 
 Once students are directed to the RStudio Server, they will then be prompted to **Sign in** using their **MSU NetID and password** - this will be the same login information they use to access D2L.
 
@@ -206,13 +206,13 @@ Once students are directed to the RStudio Server, they will then be prompted to 
 
 You may have heard this if you took STAT 216 at MSU, but what does this really mean?
 
-Essentially, 'R' is not always very smart. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions.
+Essentially, `R` is not always very smart. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions.
 
-For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", 'R' will not recognize or understand what you are trying to reference.
+For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", `R` will not recognize or understand what you are trying to reference.
 
 #### Excercise 3
 
-**Referencing the Dataset above, can you find and correct the mistake? Hint: remember that 'R' is case-sensitive!**
+**Referencing the Dataset above, can you find and correct the mistake? (Hint: remember that `R` is case-sensitive!)**
 
 ```{r Server-Exercise-3, exercise=T}
 
@@ -220,21 +220,21 @@ For example, if you are trying to use a variable named "Year" but accidentally t
 
 ### Using Packages
 
-What is a Package in 'R'? According to [TutorialsPoint.com](https://www.tutorialspoint.com/r/r_packages.htm):
+What is a Package in `R`? According to [TutorialsPoint.com](https://www.tutorialspoint.com/r/r_packages.htm):
 
 *"R packages are a collection of R functions, complied code and sample data. They are stored under a directory called* library *in the R environment. By default, R installs a set of packages during installation. More packages are added later, when they are needed for some specific purpose. When we start the R console, only the default packages are available by default. Other packages which are already installed have to be loaded explicitly to be used by the R program that is going to use them."*
 
 When working with packages, there are two different steps.
 
--   First, a package must be installed onto the 'RStudio' server. This step only needs to be done once.
+-   First, a package must be installed onto the `RStudio` server. This step only needs to be done once.
 
 -   Second, you must library the package to use any of the functions in it. This must be done each time a new session in the 'RStudio' server is started.
 
-Here is an analogy that has been extremely helpful when explaining why students must run the 'library( )' codes first whenever they open an RScript file:
+Here is an analogy that has been extremely helpful when explaining why students must run the `library( )` codes first whenever they open an `R` script file:
 
 ![Library Packages](RInstallvsLibrary.jpeg)
 
-### Importing and Explorting Files within the Server
+### Importing and Exporting Files within the Server
 
 
 
@@ -398,13 +398,13 @@ As mentioned previously, the level of coding ability expected of students is ver
 
 ### Common Mistakes include:
 
-**A**. Replacing the word, or 'call', that the functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else 'R' will not recognize it.
+**A**. Replacing the word, or 'call', that the functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else `R` will not recognize it.
 
 ---insert example of give code with no edits
 
 ---insert example of the mistake
 
-**B**. Not running the 'library( )' codes **prior** to attempting to run other code. This is a good time to bring up that handy light bulb metaphor from before. Students must run these each time a new session in the RStudio Server is started.
+**B**. Not running the `library( )` codes **prior** to attempting to run other code. This is a good time to bring up that handy light bulb metaphor from before. Students must run these each time a new session in the RStudio Server is started.
 
 **C**. Students may trying to **run functions before reading in the dataset**. The dataset code must be edited correctly and run for 'R' to know what it is referencing and what variable names it is dealing with.
 
@@ -420,7 +420,7 @@ Notice how there is a comment to the right of each line in the code **explicitly
 
 ### Errors vs. Warning Messages
 
-Another good thing to note while working in 'R', and especially when working with the 'catstats' package and its functions, **an Error message is *NOT* the same a a Warning message**. An Error prevents the highlighted code from running altogether, while a warning will still run the code but bring important notes to the users attention. Students may occasionally call you over and ask why they are getting a red message, assuming it means an error has occurred, when the are actually just seeing a warning message built into a function and it is completely possible that they have done nothing wrong.
+Another good thing to note while working in 'R', and especially when working with the `catstats` package and its functions, **an Error message is *NOT* the same a a Warning message**. An Error prevents the highlighted code from running altogether, while a warning will still run the code but bring important notes to the users attention. Students may occasionally call you over and ask why they are getting a red message, assuming it means an error has occurred, when the are actually just seeing a warning message built into a function and it is completely possible that they have done nothing wrong.
 
 ------------------------------------------------------------------------
 
