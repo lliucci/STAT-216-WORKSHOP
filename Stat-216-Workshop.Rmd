@@ -34,7 +34,7 @@ A large part of your position is to maintain communication between the students 
 
 Students will be required to purchase a **Coursepack** which will contain the activities and labs they will work through and complete over the course of the semester. This will be available for them to purchase at the MSU Bookstore.
 
-There is also a **Textbook** for the course. Note: **The course textbook is NOT** the same thing as the coursepack! Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) which is located under *Course Materials and Resources*. Here is a direct link to the [Online Textbook](https://mtstateintrostats.github.io/IntroStatTextbook/) as well.
+There is also a **Textbook** for the course. Note: **The course textbook is NOT the same thing as the coursepack!** Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) which is located under *Course Materials and Resources*. Here is a direct link to the [Online Textbook](https://mtstateintrostats.github.io/IntroStatTextbook/) as well.
 
 The **activities** and **labs** in the coursepack with often require students to use an `R` script file to complete. This R Bootcamp is meant to help you get a better understand of coding in `R` so you can help students when they run into issues.
 
@@ -58,7 +58,7 @@ If a student is a Veteran or is using a relative's Military Educational Benefits
 
 **4. Stack Overflow**
 
-If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in 'R' when you do not have your lead instructor available to ask.
+If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in `R` when you do not have your lead instructor available to ask.
 
 ------------------------------------------------------------------------
 
@@ -79,31 +79,33 @@ The color scheme of `RStudio` can also be changed by going to **Tools --\> Globa
 
 Now that `RStudio` is personalized to your specifications, we can start diving into the basics of coding with `R`. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below. It is important to note that this only goes one direction.
 
-```{r}
+```{r practice1pt1, exercise = T}
 x <- 7
 ```
 
 We can then check the value of our variable by simply typing the name of the variable.
 
-```{r practice1, exercise = T}
+```{r practice1pt2, exercise = T}
 x
 ```
 
 We can also use `R` to do math. This can be combined with variables to do some fun stuff.
 
-```{r}
+```{r practice1pt3, exercise = T}
 x + x * x
 ```
 
 Similarly to how we store values as a variable, we can do the same with vectors or even whole data sets! To store a vector as a variable, write the vector inside of `c()` to let `R` know you have a list of values. Vectors can be letters, numbers, or a combination of the two.
 
-```{r}
+```{r practice1pt4, exercise = T}
 My_List <- c(1, 2, 'lettuce', 4, 'tomato')
+
+My_List
 ```
 
 To store a dataset in `R`, we can do something similar. However, we must also include the function `read_csv()` from the `tidyverse` package. We can do this to read a .csv file (Comma Separated Values) into the environment window in `R`.
 
-```{r}
+```{r practice1pt5, exercise = T}
 RollerCoasters <- read_csv('RollerCoasters.csv')
 ```
 
@@ -133,23 +135,31 @@ Each row in this particular dataset holds information for a single roller coaste
 
 However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before `R` can read it in like above.
 
------\> write more instructions on how to do this \*\*\*\*\*
+In the Environment tab (top right), click _Import Dataset_ -> choose the _From Text (base)_ option 
+![importdata](ImportingData.jpg)
+-> students will select the dataset from where the file is downloaded on their device.
+
+Once they have selected the dataset, another window will appear. Here, it is critical that they **select YES for Heading** for the dataset to be uploaded correctly and usable.
+![headingYES](ImportHeading.jpg)
+After 'Yes' is selected, click 'Import' and you are done! 
+
+If a student claims they imported the dataset but it still is not reading in correctly for them, walk through this process with them to double check.
 
 ### Viewing the Dataset
 
-Once the dataset is imported into the RStudio Server, it can be viewed by clicking on the **Environment tab** in the upper right corner of the server and double clicking the dataset you want to view. The dataset will be opened in the upper left corner of the server, allowing you to see all the variables and how their names are formatted! The formatting of variable names is very important when coding, and often is the source of early mistakes in STAT 216.
+Once the dataset is imported into the RStudio Server, it can be viewed by clicking on the **Environment tab** in the upper right corner of the server and double clicking the dataset you want to view. The dataset will be opened as a new tab in the upper left corner of the server, allowing you to see all the variables and how their names are formatted! The formatting of variable names is very important when coding, and often is the source of early mistakes in STAT 216.
 
-If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row,column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset by typing the following into the **Console**: View(RollerCoasters)
+If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row,column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset by typing the following into the **Console**:        View(RollerCoasters)
 
 ```{r practice2, exercise = T}
-RollerCoasters[1:5,]
+RollerCoasters[1:5,1:3]
 ```
 
-The code above is providing rows 1 through 5 of the `RollerCoasters` dataset.
+The code above is providing rows 1 through 5  and columns 1 through 3 of the `RollerCoasters` dataset.
 
 We can also run functions on vectors, like `mean()` or `summary()`, that allow us to determine key information.
 
-```{r}
+```{r practice3pt1, exercise = T}
 Counting <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
 mean(Counting)
@@ -159,27 +169,19 @@ summary(Counting)
 
 Another important component to `R` is commenting on code without affecting the code itself. This can be done by typing a pound symbol `#` before the comment.
 
-```{r}
+```{r practice3pt2, exercise = T}
 2 + 2 #Look at how well R can add!
 ```
 
-Comments do not need to be ran for the code to work. However, it is good practice to good documentation of your code through comments so others can easily understand it. Comments can exist on a line alone, after a line with a section of a function, but cannot exist between code on the same line.
+Comments do not need to be ran for the code to work. If comments are run, they do not effect the output. However, it is good practice to good documentation of your code through comments so others can easily understand it. Comments can exist on a line alone, after a line with a section of a function, but cannot exist between code on the same line.
 
 ### Now You Try!
 
 #### Exercise 1
 
-**Write code in the following code chunk that calculates the mean of a list from 1 to 100 (Hint: You can put `:` between numbers to let `R` know you want a list from the first number to the second).**
-
-```{r Intro-To-R-Exercise-1, exercise=T}
-
-```
-
-#### Exercise 2
-
 **Write code to print out the 5th and 18th rows from the `RollerCoasters` dataset.**
 
-```{r Intro-To-R-Exercise-2,exercise=T}
+```{r Intro-To-R-Exercise-1,exercise=T}
 
 ```
 
@@ -195,7 +197,7 @@ One option is to go through [Montana State University Webpage](montana.edu), sea
 
 Students will also have a link available to them within the STAT 216 page in D2L.
 
-The `Rstudio` Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -\> RStudio.
+The `RStudio` Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -\> RStudio.
 
 Once students are directed to the RStudio Server, they will then be prompted to **Sign in** using their **MSU NetID and password** - this will be the same login information they use to access D2L.
 
@@ -207,11 +209,11 @@ Essentially, `R` is not always very smart. It matters whether words are capitali
 
 For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", `R` will not recognize or understand what you are trying to reference.
 
-#### Excercise 3
+#### Excercise 2
 
-**Referencing the Dataset above, can you find and correct the mistake? (Hint: remember that `R` is case-sensitive!)**
+**Referencing the RollerCoasters Dataset, can you find and correct the mistake? (Hint: remember that `R` is case-sensitive!)**
 
-```{r Server-Exercise-3, exercise=T}
+```{r Server-Exercise-2, exercise=T}
 
 ```
 
@@ -225,13 +227,27 @@ When working with packages, there are two different steps.
 
 -   First, a package must be installed onto the `RStudio` server. This step only needs to be done once.
 
--   Second, you must library the package to use any of the functions in it. This must be done each time a new session in the 'RStudio' server is started.
+-   Second, you must library the package to use any of the functions in it. This must be done each time a new session in the `RStudio` server is started.
 
 Here is an analogy that has been extremely helpful when explaining why students must run the `library( )` codes first whenever they open an `R` script file:
 
 ![Library Packages](RInstallvsLibrary.jpeg)
 
 ### Importing and Exporting Files within the Server
+
+#### Importing Files
+
+In the bottom right corner of the server, select _Upload_ in the _Files_ tab -> _Choose File_ -> students should select the file where ever it was saved or download to their device -> _Select File_ -> _Open_. 
+
+This should automatically open the file in the top left panel of the server.
+
+#### Exporting Files
+
+There are two steps when exporting Files from the `RStudio` Server.
+
+First, it must be **saved to the server**. To do this, start in the top left section of the server. Make sure the student is on the tab of the file the want to save. In that top left section, click _File_ -> _Save As_ -> then students will be prompted to name their file -> select _Save_.
+
+Now the file name should appear under the Files tab in the bottom right corner. Direct students to click the check box next to the file name -> then select _More_ -> click _Export_ -> _Download_. This process **saves the file from the server to their actual device**. Now students should have access to the file on their device so they can upload it to Gradescope if asked.
 
 ------------------------------------------------------------------------
 
@@ -266,7 +282,7 @@ Now we can see that the variables of interest are on our graph, but the data its
       * `geom_bar()` for bar charts 
       * `geom_line()` for trend lines, time series, etc.  
 
-For this example, lets create a scatter plot. We can do this by adding the `geom_point` argument to our graph. Note that for each layer that is added on, we must seperate the lines with a plus (+).
+For this example, lets create a scatter plot. We can do this by adding the `geom_point` argument to our graph. Note that for each layer that is added on, we must separate the lines with a plus (+).
 
 ```{r warning=F}
 ggplot(data = RollerCoasters,
@@ -294,7 +310,7 @@ ggplot(data = RollerCoasters,
   geom_point()
 
 # Colors points in the plot by coaster Type
-# Notice how it automatically adds a legend to the plot! How Nice is that?!
+# Notice how it automatically adds a legend to the plot! How nice is that?!
 ```
 
 ### Troubleshooting Common ggplot2 Coding Issues
@@ -322,6 +338,14 @@ However, it is still possible for stray parenthesis to be involved in code. Let'
 ```{r ggplot-troubleshooting-3, exercise = T, warning = F}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Length))) +
+  geom_point()
+```
+
+Now, fill in the template below to create a plot with Duration on the x-axis and Maximum Height on the y-axis. (Hint: _replace_ the underscores with the data set name and variable names.)
+
+```{r ggplot-troubleshooting-4, exercise = T, warning = F}
+ggplot(data = ___,
+       mapping = aes(x = ___, y = ___))) +
   geom_point()
 ```
 
@@ -394,18 +418,39 @@ As mentioned previously, the level of coding ability expected of students is ver
 
 **A**. Replacing the word, or 'call', that the functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else `R` will not recognize it.
 
----insert example of give code with no edits
+Here is an example of a given line of code with no edits:
+```{r}
+Coasters <- datasetname # Read data set in
+```
 
----insert example of the mistake
+Here is an example the code edited incorrectly:
+```{r}
+RollerCoasters <- datasetname # Read data set in
+```
 
-**B**. Not running the `library( )` codes **prior** to attempting to run other code. This is a good time to bring up that handy light bulb metaphor from before. Students must run these each time a new session in the RStudio Server is started.
+This is how they were supposed to have edited the code:
+```{r}
+Coasters <- RollerCoasters # Read data set in
+```
 
-**C**. Students may trying to **run functions before reading in the dataset**. The dataset code must be edited correctly and run for 'R' to know what it is referencing and what variable names it is dealing with.
+It is likely that functions further in the document will use 'Coasters' to reference the dataset. They will not be able to identify it properly if the mistake above is made.
+
+**B**. Not running the `library( )` codes **prior** to attempting to run other code. This is a good time to bring up that handy light bulb metaphor from before. Students must run these each time a new session in the `RStudio` Server is started.
+
+**C**. Students may trying to **run functions before reading in the dataset**. The dataset code must be edited correctly and run for `R` to know what it is referencing and what variable names it is dealing with.
+
+    * In general, it is important that students run the code **in the order that it appears**. Otherwise, they may run into issues.
 
 **D**. ***NOT Reading!*** You'd think that by the time someone has been accepted into college, the would probably know how to read. However, knowing how to and actually doing so are two completely separate things. Many exercises will be presented to the students like this:
 
-```{r}
-
+```{r, eval = F}
+two_proportion_test(formula = response~explanatory, # response ~ explanatory
+                    data= iliad, # Name of data set
+                    first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
+                    number_repetitions = 1000, # Always use a minimum of 1000 repetitions
+                    response_value_numerator = "xx", # Define which outcome is a success 
+                    as_extreme_as = xx, # Calculated observed statistic (difference in sample proportions)
+                    direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
 ```
 
 Notice how there is a comment to the right of each line in the code **explicitly telling the student what to replace the corresponding key phrase with**. Despite this, students may call you over to ask what they should replace the phrase with anyway. Just a word of advice, this can get very repetitive so it may be wise to give them some slack early on but still point out where they can find the answer on their own.
@@ -414,7 +459,7 @@ Notice how there is a comment to the right of each line in the code **explicitly
 
 ### Errors vs. Warning Messages
 
-Another good thing to note while working in 'R', and especially when working with the `catstats` package and its functions, **an Error message is *NOT* the same a a Warning message**. An Error prevents the highlighted code from running altogether, while a warning will still run the code but bring important notes to the users attention. Students may occasionally call you over and ask why they are getting a red message, assuming it means an error has occurred, when the are actually just seeing a warning message built into a function and it is completely possible that they have done nothing wrong.
+Another good thing to note while working in `R`, and especially when working with the `catstats` package and its functions, **an Error message is *NOT* the same as a Warning message**. An Error prevents the highlighted code from running altogether, while a warning will still run the code but bring important notes to the users attention. Students may occasionally call you over and ask why they are getting a red message, assuming it means an error has occurred, when the are actually just seeing a warning message built into a function and it is completely possible that they have done nothing wrong.
 
 ------------------------------------------------------------------------
 
