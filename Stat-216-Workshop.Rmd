@@ -117,7 +117,7 @@ When this is done, we can see some information show up in the Console. We see ho
 Each row in this particular dataset holds information for a single roller coaster, and the columns represent:
 
 | Column            | Description                                                                 |
-|-----------------|-------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | Age_Group         | 1:Older (1900-1979), 2:1Recent (1980-1999), 3:Newest (200-Current)          |
 | Coaster           | Name of the roller coaster                                                  |
 | Park              | Name of the park where the roller coaster is located                        |
