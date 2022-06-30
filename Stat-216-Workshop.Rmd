@@ -419,17 +419,17 @@ As mentioned previously, the level of coding ability expected of students is ver
 **A**. Replacing the word, or 'call', that the functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else `R` will not recognize it.
 
 Here is an example of a given line of code with no edits:
-```{r}
+```{r eval=F}
 Coasters <- datasetname # Read data set in
 ```
 
 Here is an example the code edited incorrectly:
-```{r}
+```{r eval=F}
 RollerCoasters <- datasetname # Read data set in
 ```
 
 This is how they were supposed to have edited the code:
-```{r}
+```{r eval=F}
 Coasters <- RollerCoasters # Read data set in
 ```
 
