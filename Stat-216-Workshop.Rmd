@@ -20,6 +20,7 @@ library(catstats)
 
 # Put any code that needs to be run at beginning of App
 RollerCoasters <- read_csv("RollerCoasters.csv")
+x <- 7
 ```
 
 ## Getting a Feel for the Class and Your Role
@@ -73,9 +74,11 @@ In order to get started with `R` and `RStudio`, it will be beneficial to underst
 -   your **Environment (Objects/Variables)/History** (top-right)\
 -   and your **Files/Plots/Packages/Help/Viewer** (bottom-right).
 
-![RStudio layout](rstudio.png)
+![RStudio layout](images/rstudio.png)
 
 The color scheme of `RStudio` can also be changed by going to **Tools --\> Global Options --\> Appearance**. This can make the long days of coding a lot easier on the eyes. Another way to personalize `RStudio` is to change the pane layout. This can be done in **Tools --\> Global Options --\> Pane Layout**.
+
+---ADD NOTE ON HOW TO CHANGE THE FONT SIZE FOR ACCESIBILITY
 
 Now that `RStudio` is personalized to your specifications, we can start diving into the basics of coding with `R`. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below. It is important to note that this only goes one direction.
 
@@ -95,7 +98,7 @@ We can also use `R` to do math. This can be combined with variables to do some f
 x + x * x
 ```
 
-Similarly to how we store values as a variable, we can do the same with vectors or even whole data sets! To store a vector as a variable, write the vector inside of `c()` to let `R` know you have a list of values. Vectors can be letters, numbers, or a combination of the two.
+Similarly to how we store values as a variable, we can do the same with vectors or even whole data sets! To store a vector as a variable, write the vector inside of the concatenate function `c()`, being sure to add commas between separate values and quotations around words, to let `R` know you have a list of values. Vectors can be letters, numbers, or a combination of the two.
 
 ```{r practice1pt4, exercise = T}
 My_List <- c(1, 2, 'lettuce', 4, 'tomato')
@@ -136,11 +139,11 @@ Each row in this particular dataset holds information for a single roller coaste
 However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before `R` can read it in like above.
 
 In the Environment tab (top right), click _Import Dataset_ -> choose the _From Text (base)_ option 
-![importdata](ImportingData.jpg)
+![importdata](images/ImportingData.jpg)
 -> students will select the dataset from where the file is downloaded on their device.
 
 Once they have selected the dataset, another window will appear. Here, it is critical that they **select YES for Heading** for the dataset to be uploaded correctly and usable.
-![headingYES](ImportHeading.jpg)
+![headingYES](images/ImportHeading.jpg)
 After 'Yes' is selected, click 'Import' and you are done! 
 
 If a student claims they imported the dataset but it still is not reading in correctly for them, walk through this process with them to double check.
@@ -155,7 +158,7 @@ If we want to get a summary of only a certain set of rows or columns from a data
 RollerCoasters[1:5,1:3]
 ```
 
-The code above is providing rows 1 through 5  and columns 1 through 3 of the `RollerCoasters` dataset.
+The code above is providing rows 1 through 5 and columns 1 through 3 of the `RollerCoasters` dataset.
 
 We can also run functions on vectors, like `mean()` or `summary()`, that allow us to determine key information.
 
@@ -205,9 +208,11 @@ Once students are directed to the RStudio Server, they will then be prompted to 
 
 You may have heard this if you took STAT 216 at MSU, but what does this really mean?
 
-Essentially, `R` is not always very smart. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions.
+Essentially, `R` is very literal and not always good at reading our minds. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions.
 
 For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", `R` will not recognize or understand what you are trying to reference.
+
+---- MENTION TAB COMPLETE TO REDUCE ISSUES WITH CASE SENSITIVITY
 
 #### Excercise 2
 
@@ -221,7 +226,9 @@ For example, if you are trying to use a variable named "Year" but accidentally t
 
 What is a Package in `R`? According to [TutorialsPoint.com](https://www.tutorialspoint.com/r/r_packages.htm):
 
-*"R packages are a collection of R functions, complied code and sample data. They are stored under a directory called* library *in the R environment. By default, R installs a set of packages during installation. More packages are added later, when they are needed for some specific purpose. When we start the R console, only the default packages are available by default. Other packages which are already installed have to be loaded explicitly to be used by the R program that is going to use them."*
+>
+> "R packages are a collection of R functions, complied code and sample data. They are stored under a directory called _library_ in the R environment. By default, R installs a set of packages during installation. More packages are added later, when they are needed for some specific purpose. When we start the R console, only the default packages are available by default. Other packages which are already installed have to be loaded explicitly to be used by the R program that is going to use them."
+>
 
 When working with packages, there are two different steps.
 
@@ -231,7 +238,7 @@ When working with packages, there are two different steps.
 
 Here is an analogy that has been extremely helpful when explaining why students must run the `library( )` codes first whenever they open an `R` script file:
 
-![Library Packages](RInstallvsLibrary.jpeg)
+![Library Packages](images/RInstallvsLibrary.jpeg)
 
 ### Importing and Exporting Files within the Server
 
@@ -261,6 +268,7 @@ Now the file name should appear under the Files tab in the bottom right corner. 
 ggplot(data = RollerCoasters)
 
 ## Creates a blank ggplot(), referencing the RollerCoasters dataset
+## Don't worry! It is supposed to look like that!
 ```
 
 We can see that this code simply creates a blank graph. This is because we have not specified what variables we would like to use. Let's take a look at the relationship between the year that the coaster was opened and its top speed.
@@ -276,11 +284,14 @@ ggplot(data = RollerCoasters,
 ```
 
 Now we can see that the variables of interest are on our graph, but the data itself is still absent. That is because we have not specified a way for the data to be presented. There are several ways to do this, the most common of which are as follows:
-
+    
       * `geom_point()` for scatter plots, dot plots, etc.
+      * `geom_hist()` for histograms
       * `geom_boxplot()` for boxplots   
       * `geom_bar()` for bar charts 
       * `geom_line()` for trend lines, time series, etc.  
+      
+---- DOUBLE CHECK R RFILES TO SEE WHICH ARE MOST RELEVANT
 
 For this example, lets create a scatter plot. We can do this by adding the `geom_point` argument to our graph. Note that for each layer that is added on, we must separate the lines with a plus (+).
 
@@ -379,6 +390,8 @@ Another common error may be **Error: Failed to install 'unknown package' from Gi
 
 `catstats` was designed with errors in mind. That is to say that if an error is caused, there will likely be a message that appears in the Console window that lets the student know what might be the problem. Make sure students are always checking spelling and error codes if they are having issues.
 
+--- IF A STUDENT DOES NOT TRY TO DOWNLOAD IT USING REMOTES AND TRYS TO DOWNLOAD IT USING PACKAGES, HERE IS THE ERROR THEY WILL SEE
+
 ### Now You Try!
 
 #### Exercise \_\_
@@ -441,7 +454,7 @@ It is likely that functions further in the document will use 'Coasters' to refer
 
     * In general, it is important that students run the code **in the order that it appears**. Otherwise, they may run into issues.
 
-**D**. ***NOT Reading!*** You'd think that by the time someone has been accepted into college, the would probably know how to read. However, knowing how to and actually doing so are two completely separate things. Many exercises will be presented to the students like this:
+**D**. ***NOT Reading!*** Students are often in a hurry to complete to activity or lab for the day, and do not read the instructions as closely as they should. Thus, they may to skip over explicit instructions commented within the code and ask you instead. Many exercises will be presented to the students like this:
 
 ```{r, eval = F}
 two_proportion_test(formula = response~explanatory, # response ~ explanatory
@@ -475,9 +488,11 @@ Another good thing to note while working in `R`, and especially when working wit
 
 -   ***Be prepared for students to ask you lots of questions!*** As mentioned before, freshmen often feel more comfortable asking a fellow student or TA their questions. Nobody enjoys being belittled for asking questions, so try to encourage them when they do. Additionally, don't be afraid to admit if you are unsure about something and call your lead instructor over to help.
 
+--- CAREFULLY CHOOSE YOUR WORDS TO NOT DISCOURAGE THEM AND STILL ENCOURAGE THEM TO WORK TOWARDS AN ANSWER. although we may understand coding now, this was also difficult for us at one time too. avoid using words such as 'easy' 'simple' and 'just do this...'
+
 -   ***Attend the Weekly Meetings with your lead instructor as often as possible.*** This is a great time to touch base with your team, communicate any subjects that are particularly challenging, and prepare for upcoming activities and labs.
 
--   ***Balance Validation and Instruction in your interactions.*** It is inevitable that poorly worded or unclear questions will occasionally arise. I (Harley) have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
+-   ***Balance Validation and Instruction in your interactions.*** It is inevitable that poorly worded or unclear questions will occasionally arise. We have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
 
 Most importantly, don't be afraid to ask questions yourself and learn things alongside the students! Communication and effort go a long way, regardless of the situation.
 
