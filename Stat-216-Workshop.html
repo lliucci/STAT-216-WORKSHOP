@@ -421,7 +421,9 @@ coding, and often is the source of early mistakes in STAT 216.</p>
 from a dataset, we can write <code>[row,column]</code> after the dataset
 to get a subset of the data frame. The <code>View()</code> function can
 also be helpful to view the entire dataset by typing the following into
-the <strong>Console</strong>: View(RollerCoasters)</p>
+the <strong>Console</strong>:</p>
+<pre class="r"><code>View(RollerCoasters)</code></pre>
+<p><span class="math inline">\(~\)</span></p>
 <div class="tutorial-exercise" data-label="practice2"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
@@ -609,7 +611,7 @@ complex as we would like. Let’s take a look at some examples and build
 them up as we go. For this, we will be working with the
 <code>RollerCoasters</code> data set.</p>
 <pre class="r"><code>ggplot(data = RollerCoasters)</code></pre>
-<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-1-1.png" width="624" /></p>
+<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-2-1.png" width="624" /></p>
 <pre class="r"><code>## Creates a blank ggplot(), referencing the RollerCoasters dataset
 ## Don&#39;t worry! It is supposed to look like that!</code></pre>
 <p>We can see that this code simply creates a blank graph. This is
@@ -622,7 +624,7 @@ and specifying how to present them in the graph, e.g. as x/y positions
 or characteristics such as size, shape, color, etc.</p>
 <pre class="r"><code>ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed))</code></pre>
-<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-2-1.png" width="624" /></p>
+<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-3-1.png" width="624" /></p>
 <pre class="r"><code># Creates a blank ggplot(), with the variables mapped to the x- and y-axis
 # ggplot() knows where the variables live, since you have defined the data to use</code></pre>
 <p>Now we can see that the variables of interest are on our graph, but
@@ -641,7 +643,7 @@ each layer that is added on, we must separate the lines with a plus
 <pre class="r"><code>ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed)) +
   geom_point()</code></pre>
-<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-3-1.png" width="624" /></p>
+<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-4-1.png" width="624" /></p>
 <pre class="r"><code> # Adds a point for each row (observation) in the data </code></pre>
 <p>If we wanted to color all of the points the same color, we can put
 the <code>color =</code> argument in the <code>geom_point()</code>
@@ -649,7 +651,7 @@ layer.</p>
 <pre class="r"><code>ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed)) +
   geom_point(color = &#39;blue&#39;)</code></pre>
-<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-4-1.png" width="624" /></p>
+<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-5-1.png" width="624" /></p>
 <pre class="r"><code># Colors the all of the points in the plot blue</code></pre>
 <p>If we wanted to add a categorical variable to this graph, we could
 tell <code>R</code> to color the points based on that variable. For the
@@ -660,7 +662,7 @@ graph.</p>
 <pre class="r"><code>ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed, color = Type)) +
   geom_point()</code></pre>
-<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-5-1.png" width="624" /></p>
+<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-6-1.png" width="624" /></p>
 <pre class="r"><code># Colors points in the plot by coaster Type
 # Notice how it automatically adds a legend to the plot! How nice is that?!</code></pre>
 <p><span class="math inline">\(~\)</span> <span
