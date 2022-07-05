@@ -31,6 +31,9 @@ Some students, especially college freshman, may feel intimidated with contacting
 
 A large part of your position is to maintain communication between the students and lead instructors. If you see a common issues arising, be sure to communicate this to your lead instructor so they can get everyone on the same page and clear up any misconceptions.
 
+$~$
+$~$
+
 ### STAT 216 Course Materials
 
 Students will be required to purchase a **Coursepack** which will contain the activities and labs they will work through and complete over the course of the semester. This will be available for them to purchase at the MSU Bookstore.
@@ -38,6 +41,9 @@ Students will be required to purchase a **Coursepack** which will contain the ac
 There is also a **Textbook** for the course. Note: **The course textbook is NOT the same thing as the coursepack!** Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) which is located under *Course Materials and Resources*. Here is a direct link to the [Online Textbook](https://mtstateintrostats.github.io/IntroStatTextbook/) as well.
 
 The **activities** and **labs** in the coursepack with often require students to use an `R` script file to complete. This R Bootcamp is meant to help you get a better understand of coding in `R` so you can help students when they run into issues.
+
+$~$
+$~$
 
 ### Other Resources Available
 
@@ -47,9 +53,13 @@ There are a variety of other resources available for STAT 216 Students:
 
 The MSC is located on the same floor in Romney that the STAT 216 classes are held, so you can't miss it. There are always in-house tutors available that can help students with statistics. Students automatically have access to the MSC through enrolling in STAT 216, and can enter for free by swiping their CatCard. The MSC has the activity solutions so students can check their work and get more in-depth feedback by looking through them.
 
+$~$
+
 **2. SmartyCats Tutoring**
 
 If you aren't already aware, there are SmartyCats Tutors available for a wide variety of MSU classes. The majority of tutors have taken the courses before and have a good idea of the instructors expectations. Tutoring Session only cost \$2 a piece, which mean they are very affordable for most students.
+
+$~$
 
 **3. Other Tutoring Opportunities**
 
@@ -61,7 +71,11 @@ If a student is a Veteran or is using a relative's Military Educational Benefits
 
 ## Introduction to R
 
-Coding can be very intimidating, especially for students with no prior coding experience. Thus, the `R` script files accompanying activities and labs require pretty minimal amount of alterations by the students. Students will be expected to gradually contribute more in `R`, but are not expected to be expert coders at any point during the course.
+>
+> Coding can be very intimidating, especially for students with no prior coding experience. Thus, the `R` script files accompanying activities and labs require pretty minimal amount of alterations by the students. Students will be expected to gradually contribute more in `R`, but are not expected to be expert coders at any point during the course.
+>
+
+$~$
 
 ### `RStudio` Layout
 
@@ -74,6 +88,9 @@ In order to get started with `R` and `RStudio`, it will be beneficial to underst
 
 ![RStudio layout](images/rstudio.png)
 
+
+$~$
+
 ### Personalize `RStudio` Appearance
 
 The color scheme of `RStudio` can also be changed by going to **Tools --\> Global Options --\> Appearance --\> Editor Theme**. This can make the long days of coding a lot easier on the eyes. 
@@ -81,6 +98,8 @@ The color scheme of `RStudio` can also be changed by going to **Tools --\> Globa
 Another way to personalize `RStudio` is to change the pane layout. This can be done in **Tools --\> Global Options --\> Pane Layout**.
 
 Font size is another feature that can be altered for aesthetics and accessibility reasons. To change the font size in `RStudio`, click **Tools** in the upper left panel --\> select **Global Options** --\> choose the fourth option from the top titled **Appearance** --\> change the **editor font size** --\>  click **Apply** to see what the font size will look like --\> once satisfied, select **OK**.
+
+$~$
 
 ### Basics of Coding in `R`
 
@@ -118,6 +137,8 @@ RollerCoasters <- read_csv('RollerCoasters.csv')
 
 When this is done, we can see some information show up in the Console. We see how many rows and columns the dataset has as well as the variables and their type. Variables can either be 'double' if they are numbers of 'character' if they are words.
 
+$~$
+
 Each row in this particular dataset holds information for a single roller coaster, and the columns represent:
 
 | Column            | Description                                                                 |
@@ -138,23 +159,27 @@ Each row in this particular dataset holds information for a single roller coaste
 | Inversions        | Whether or not the roller coaster flips passengers at any point (Yes or No) |
 | Num_of_Inversions | Number of times the roller coaster flips passengers                         |
 
+$~$
+
 ### Importing a Dataset using the Drop-Down Menu
 
 However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before `R` can read it in like above.
 
 In the Environment tab (top right), click _Import Dataset_ -> choose the _From Text (base)_ option 
 
-![importdata](images/ImportingData.jpg)
+![Importing Data](images/ImportingData.jpg)
 
 -> students will select the dataset from where the file is downloaded on their device.
 
 Once they have selected the dataset, another window will appear. Here, it is critical that they **select YES for Heading** for the dataset to be uploaded correctly and usable.
 
-![headingYES](images/ImportHeading.jpg)
+![Select heading: YES](images/ImportHeading.jpg)
 
 After 'Yes' is selected, click 'Import' and you are done! 
 
 If a student claims they imported the dataset but it still is not reading in correctly for them, walk through this process with them to double check.
+
+$~$
 
 ### Viewing the Dataset
 
@@ -186,6 +211,8 @@ Another important component to `R` is commenting on code without affecting the c
 
 Comments do not need to be ran for the code to work. If comments are run, they do not effect the output. However, it is good practice to good documentation of your code through comments so others can easily understand it. Comments can exist on a line alone, after a line with a section of a function, but cannot exist between code on the same line.
 
+$~$
+
 ### Now You Try!
 
 #### Exercise 1
@@ -200,6 +227,8 @@ Comments do not need to be ran for the code to work. If comments are run, they d
 
 ## Navigating the RStudio Server
 
+$~$
+
 ### Where to Access it
 
 Students will have multiple modes of accessing the `RStudio` Server.
@@ -210,7 +239,10 @@ Students will also have a link available to them within the STAT 216 page in D2L
 
 The `RStudio` Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -\> RStudio.
 
-Once students are directed to the RStudio Server, they will then be prompted to **Sign in** using their **MSU NetID and password** - this will be the same login information they use to access D2L.
+- Once students are directed to the RStudio Server, they will then be prompted to **Sign in** using their **MSU NetID and password** - this will be the same login information they use to access D2L.
+
+$~$
+$~$
 
 ### R is Case-Sensitive
 
@@ -220,9 +252,10 @@ Essentially, `R` is very literal and not always good at reading our minds. It ma
 
 For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", `R` will not recognize or understand what you are trying to reference.
 
-* You can also use **Tab-Completion** to reduce issues with case sensitivity. This is where `R` will suggest auto-complete options when you start typing in a variable name. By selecting one of these options, you are sure to reference something that `R` will recognize. Here is an example of what this looks like:
+- You can also use **Tab-Completion** to reduce issues with case sensitivity. This is where `R` will suggest auto-complete options when you start typing in a variable name. By selecting one of these options, you are sure to reference something that `R` will recognize. Here is an example of what this looks like:
 
 ![TabComplete](images/tabcomplete.png)
+$~$
 
 #### Excercise 2
 
@@ -231,6 +264,9 @@ For example, if you are trying to use a variable named "Year" but accidentally t
 ```{r Server-Exercise-2, exercise=T}
 summary(rollercoasters)
 ```
+
+$~$
+$~$
 
 ### Using Packages
 
@@ -248,15 +284,22 @@ When working with packages, there are two different steps.
 
 Here is an analogy that has been extremely helpful when explaining why students must run the `library( )` codes first whenever they open an `R` script file:
 
-![LibraryPackages](images/RInstallvsLibrary.jpeg)
+![Library Packages](images/RInstallvsLibrary.jpeg)
+
+$~$
+$~$
 
 ### Importing and Exporting Files within the Server
+
+$~$
 
 #### Importing Files
 
 In the bottom right corner of the server, select _Upload_ in the _Files_ tab -> _Choose File_ -> students should select the file where ever it was saved or download to their device -> _Select File_ -> _Open_. 
 
 This should automatically open the file in the top left panel of the server.
+
+$~$
 
 #### Exporting Files
 
@@ -332,6 +375,9 @@ ggplot(data = RollerCoasters,
 # Notice how it automatically adds a legend to the plot! How nice is that?!
 ```
 
+$~$
+$~$
+
 ### Troubleshooting Common ggplot2 Coding Issues
 
 One of the most common issues that can come up when working with `ggplot` is data sets being mispelled. Let's take a look at what this looks like. Additionally, try to correct the error.
@@ -342,6 +388,8 @@ ggplot(data = Rollercoasters,
   geom_boxplot()
 ```
 
+$~$
+
 The next most common is the + being in the incorrect spot in the code. The + must be placed at the end of a line rather than at the beginning of a new one. Let's take a look at an example of this. Additionally, try to correct the error.
 
 ```{r ggplot-troubleshooting-2, exercise = T, warning = F}
@@ -349,6 +397,8 @@ ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened))
   + geom_histogram()
 ```
+
+$~$
 
 Another very common error is when a set of parenthesis is opened, but never closed. One way to avoid this is to turn on "Rainbow Parenthesis" by going to **Tools --\> Global Options --\> Code --\> Display --\> Rainbow Parenthesis**.
 
@@ -359,6 +409,8 @@ ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Length))) +
   geom_point()
 ```
+
+$~$
 
 Now, fill in the template below to create a plot with Duration on the x-axis and Maximum Height on the y-axis. (Hint: _replace_ the underscores with the data set name and variable names.)
 
@@ -377,6 +429,8 @@ ggplot(data = ___,
 
 `catstats` is a package containing useful functions and data that is designed for the STAT 216 and STAT 217 courses at Montana State University. For more information, visit the [github repository for catstats](https://github.com/greenwood-stat/catstats).
 
+$~$
+
 ### Installing catstats
 
 If you are running `RStudio` locally rather than from the server, you must install `catstats`. This can be done by first installing the `remotes` package, which allows us to install packages from github repositories. See the code chunk below for installing `remotes`.
@@ -391,6 +445,8 @@ Once `remotes` is installed, we can install `catstats` using the code below.
 remotes::install_github("greenwood-stat/catstats")
 ```
 
+$~$
+
 ### Troubleshooting Common Catstats Coding Issues
 
 One of the first issues that you may run into is if a student tries to install `catstats` without `remotes` being installed. You may get an error code that says something along the lines of **Error in \_\_\_\_\_ : could not find function "remotes"**.
@@ -401,7 +457,8 @@ Another common error may be **Error: Failed to install 'unknown package' from Gi
 
 If a student does not follow directions to download `catstats` using `remotes`, and instead attempts to download it using the "Packages" tab in the lower right panel, they will encounter the following error:
 
-![IncorrectlyDownloadingcatstats](images/downloaderror.png)
+![Incorrectly Downloading catstats](images/downloaderror.png)
+$~$
 
 ### Now You Try!
 
@@ -426,6 +483,8 @@ one_proportion_test(
 
 As mentioned previously, the level of coding ability expected of students is very minimal. Therefore, students will only need to alter a few key areas in the code files that were created to accompany the activities and labs.
 
+$~$
+
 ### Recurrent phrases and words that students will need to find and *replace*:
 
 -   "**datasetname**" : Students should replace this phrase with the name of the dataset *exactly* how it appears in the Environment window.
@@ -436,7 +495,12 @@ As mentioned previously, the level of coding ability expected of students is ver
 
 -   "**xx**" : Further into the semester, this phrase will pop up often. Usually, students are expected to replace this with a numeric value, variable name, or level of a variable. To discern which is expected, a comment with almost always follow on the same line of code and describe exactly what should be entered there.
 
+$~$
+
 **Note**: students will often need to *replace* these phrases, not type the answer next to it! When replacing a word or phrase, often students will accidentally delete quotation marks, commmas, or parentheses that are necessary for the function to run correctly. You will be expected to be able to look at catstats functions and ggplot code, assess what is incorrect or missing, and fix the issue.
+
+$~$
+$~$
 
 ### Common Mistakes include:
 
@@ -459,11 +523,17 @@ Coasters <- RollerCoasters # Read data set in
 
 It is likely that functions further in the document will use 'Coasters' to reference the dataset. They will not be able to identify it properly if the mistake above is made.
 
+$~$
+
 **B**. Not running the `library( )` codes **prior** to attempting to run other code. This is a good time to bring up that handy light bulb metaphor from before. Students must run these each time a new session in the `RStudio` Server is started.
+
+$~$
 
 **C**. Students may trying to **run functions before reading in the dataset**. The dataset code must be edited correctly and run for `R` to know what it is referencing and what variable names it is dealing with.
 
-    * In general, it is important that students run the code **in the order that it appears**. Otherwise, they may run into issues.
+- In general, it is important that students run the code **in the order that it appears**. Otherwise, they may run into issues.
+
+$~$
 
 **D**. ***NOT Reading!*** Students are often in a hurry to complete to activity or lab for the day, and do not read the instructions as closely as they should. Thus, they may to skip over explicit instructions commented within the code and ask you instead. Many exercises will be presented to the students like this:
 
@@ -479,7 +549,12 @@ two_proportion_test(formula = response~explanatory, # response ~ explanatory
 
 Notice how there is a comment to the right of each line in the code **explicitly telling the student what to replace the corresponding key phrase with**. Despite this, students may call you over to ask what they should replace the phrase with anyway. Just a word of advice, this can get very repetitive so it may be wise to give them some slack early on but still point out where they can find the answer on their own.
 
+$~$
+
 **E**. Accidentally deleting quotation marks or commas after an argument within a function. If you are unsure if this has occurred, don't hesitate to ask the student to open another unedited version of the same file under a different name (so it doesn't overide all of the edits and progress they have made on their current R file) to double check that area of the template code.
+
+$~$
+$~$
 
 ### Errors vs. Warning Messages
 
@@ -505,6 +580,8 @@ Another good thing to note while working in `R`, and especially when working wit
 
 -   ***Balance Validation and Instruction in your interactions.*** It is inevitable that poorly worded or unclear questions will occasionally arise. We have found it helpful to validate student's frustrations and then guide them in the right direction. As TA's, we are not here to do their work for them or give them answers. We are here to help them learn the material. When a difficult question arises, validating their feelings is encouraging but must also be balanced with instruction. Nobody is happy if one student airing their grievances takes time away from you helping another student.
 
+$~$
+
 Most importantly, don't be afraid to ask questions yourself and learn things alongside the students! Communication and effort go a long way, regardless of the situation.
 
 Luckily, this information will always be here for you to reference if you have any specific questions or just want a quick refresher.
@@ -524,10 +601,13 @@ We have already stressed the importance of communicating with your lead instruct
  * Over Email or text 
 It is a good idea to make sure to exchange contact information and discuss which methods of communication are preferred by your team.
 
+$~$
 
 **2. The Mathematics and Statistics Center (MSC)**
 
 The MSC can be another good resource for TA's if they have coding questions. Again, it is located on the same floor in Romney that the STAT 216 classes are held, so you can't miss it.
+
+$~$
 
 **3. Help Files within `R`**
 
@@ -550,11 +630,15 @@ If you would like help on a particular package, say one that you just downloaded
 * See Also: Any related functions that may be useful.    
 * Examples: Some examples for how to use the function.
 
+$~$
+
 **4. Stack Overflow**
 
 If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in `R` when you do not have your lead instructor available to ask.
 
 * Regardless of how you solve an issues outside of class, it is good practice to communicate your issues and how you resolved it with your team prior to class. As we mentioned before, **if you run into an issue, it is more than likely that students will run into the same problem**. Being prepared to encounter these issues and know how to help students fix them is a big part of your role as a Teaching Assistant.
+
+$~$
 
 **5. Further R Workshops**
 
@@ -570,11 +654,15 @@ This series of R Workshops are **free to all MSU Students and Employees**. They 
 
 These materials were adapted from materials generated by the Data Carpentries (<https://datacarpentry.org/>) and were originally developed at MSU by Dr. Allison Theobold. The workshop series is co-organized by the Montana State University Library, Department of Mathematical Sciences, and Statistical Consulting and Research Services (SCRS, <https://www.montana.edu/statisticalconsulting/>). SCRS is supported by Montana INBRE (National Institutes of Health, Institute of General Medical Sciences Grant Number P20GM103474). The workshops for 2021-2022 are supported by Faculty Excellence Grants from MSU's Center for Faculty Excellence.
 
+$~$
+
 Research related to the development of these workshops is to appear in:
 
 -   Theobold, A., Hancock, S., & Mannheimer, S.. Data Science Workshops for Data-Intensive Environmental Science Research, *Journal of Statistics Education*.
 
-The workshops for 2021-2022 involve modifications of materials and are licensed CC-BY. ![Creative Commons License](88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+The workshops for 2022-2023 involve modifications of materials and are licensed CC-BY. ![Creative Commons License](88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+$~$
 
 The workshops for 2021-2022 involve modifications of materials and are being taught by:
 
