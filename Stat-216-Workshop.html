@@ -389,19 +389,13 @@ the server <strong><em>using the drop down menu</em></strong> before
 <code>R</code> can read it in like above.</p>
 <p>In the Environment tab (top right), click <em>Import Dataset</em>
 -&gt; choose the <em>From Text (base)</em> option</p>
-<div class="figure">
-<img src="images/ImportingData.jpg" alt="" />
-<p class="caption">Importing Data</p>
-</div>
+<p><img src="images/ImportingData.jpg" /></p>
 <p>-&gt; students will select the dataset from where the file is
 downloaded on their device.</p>
 <p>Once they have selected the dataset, another window will appear.
 Here, it is critical that they <strong>select YES for Heading</strong>
 for the dataset to be uploaded correctly and usable.</p>
-<div class="figure">
-<img src="images/ImportHeading.jpg" alt="" />
-<p class="caption">Select heading: YES</p>
-</div>
+<p><img src="images/ImportHeading.jpg" /></p>
 <p>After ‘Yes’ is selected, click ‘Import’ and you are done!</p>
 <p>If a student claims they imported the dataset but it still is not
 reading in correctly for them, walk through this process with them to
@@ -469,7 +463,7 @@ line.</p>
 <code>RollerCoasters</code> dataset.</strong></p>
 <div class="tutorial-exercise" data-label="Intro-To-R-Exercise-1"
 data-completion="1" data-diagnostics="1" data-startover="1"
-data-lines="0">
+data-lines="7">
 <script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
 </div>
 <div data-pagedtable="false">
@@ -508,8 +502,8 @@ data-lines="0">
 ##         .user_code = user_code)
 ##     legacy_graded(correct = FALSE, message = message)
 ## }
-## &lt;bytecode: 0x000001d428853b30&gt;
-## &lt;environment: 0x000001d428854cd0&gt;</code></pre>
+## &lt;bytecode: 0x000001e29f8478b8&gt;
+## &lt;environment: 0x000001e29f83ca68&gt;</code></pre>
 <hr />
 </div>
 </div>
@@ -556,7 +550,8 @@ selecting one of these options, you are sure to reference something that
 <code>R</code> will recognize. Here is an example of what this looks
 like:</li>
 </ul>
-<p><img src="images/tabcomplete.png" alt="TabComplete" /> <span
+<p><img src="images/tabcomplete.png" /></p>
+<p><span class="math inline">\(~\)</span> <span
 class="math inline">\(~\)</span></p>
 <div id="section-excercise-2" class="section level4">
 <h4>Excercise 2</h4>
@@ -565,7 +560,7 @@ correct the mistake? (Hint: remember that <code>R</code> is
 case-sensitive!)</strong></p>
 <div class="tutorial-exercise" data-label="Server-Exercise-2"
 data-completion="1" data-diagnostics="1" data-startover="1"
-data-lines="0">
+data-lines="7">
 <pre class="text"><code>summary(rollercoasters)</code></pre>
 <script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
 </div>
@@ -632,8 +627,8 @@ data-lines="0">
 ##         .user_code = user_code)
 ##     legacy_graded(correct = FALSE, message = message)
 ## }
-## &lt;bytecode: 0x000001d428853b30&gt;
-## &lt;environment: 0x000001d42a42c958&gt;</code></pre>
+## &lt;bytecode: 0x000001e29f8478b8&gt;
+## &lt;environment: 0x000001e2a0b636e0&gt;</code></pre>
 <p><span class="math inline">\(~\)</span> <span
 class="math inline">\(~\)</span></p>
 </div>
@@ -663,10 +658,7 @@ in it. This must be done each time a new session in the
 <p>Here is an analogy that has been extremely helpful when explaining
 why students must run the <code>library( )</code> codes first whenever
 they open an <code>R</code> script file:</p>
-<div class="figure">
-<img src="images/RInstallvsLibrary.jpeg" alt="" />
-<p class="caption">Library Packages</p>
-</div>
+<p><img src="images/RInstallvsLibrary.jpeg" /></p>
 <p><span class="math inline">\(~\)</span> <span
 class="math inline">\(~\)</span></p>
 </div>
@@ -760,7 +752,7 @@ Let’s take a look at what this looks like. Additionally, try to correct
 the error.</p>
 <div class="tutorial-exercise" data-label="ggplot-troubleshooting-1"
 data-completion="1" data-diagnostics="1" data-startover="1"
-data-lines="0">
+data-lines="7">
 <pre class="text"><code>ggplot(data = Rollercoasters,
        mapping = aes(x = Design, y = Top_Speed)) + 
   geom_boxplot()</code></pre>
@@ -798,8 +790,8 @@ data-lines="0">
 ##         .user_code = user_code)
 ##     legacy_graded(correct = FALSE, message = message)
 ## }
-## &lt;bytecode: 0x000001d428853b30&gt;
-## &lt;environment: 0x000001d424463bb8&gt;</code></pre>
+## &lt;bytecode: 0x000001e29f8478b8&gt;
+## &lt;environment: 0x000001e29b01dfc0&gt;</code></pre>
 <p><span class="math inline">\(~\)</span></p>
 <p>The next most common is the + being in the incorrect spot in the
 code. The + must be placed at the end of a line rather than at the
@@ -807,7 +799,7 @@ beginning of a new one. Let’s take a look at an example of this.
 Additionally, try to correct the error.</p>
 <div class="tutorial-exercise" data-label="ggplot-troubleshooting-2"
 data-completion="1" data-diagnostics="1" data-startover="1"
-data-lines="0">
+data-lines="7">
 <pre class="text"><code>ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened))
   + geom_histogram()</code></pre>
@@ -846,8 +838,8 @@ data-lines="0">
 ##         .user_code = user_code)
 ##     legacy_graded(correct = FALSE, message = message)
 ## }
-## &lt;bytecode: 0x000001d428853b30&gt;
-## &lt;environment: 0x000001d429f4b4c8&gt;</code></pre>
+## &lt;bytecode: 0x000001e29f8478b8&gt;
+## &lt;environment: 0x000001e2a17c5248&gt;</code></pre>
 <p><span class="math inline">\(~\)</span></p>
 <p>Another very common error is when a set of parenthesis is opened, but
 never closed. One way to avoid this is to turn on “Rainbow Parenthesis”
@@ -858,7 +850,7 @@ code. Let’s take a look at an example of this. Fix the code by adding or
 removing parenthesis.</p>
 <div class="tutorial-exercise" data-label="ggplot-troubleshooting-3"
 data-completion="1" data-diagnostics="1" data-startover="1"
-data-lines="0">
+data-lines="7">
 <pre class="text"><code>ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Length))) +
   geom_point()</code></pre>
@@ -896,15 +888,15 @@ data-lines="0">
 ##         .user_code = user_code)
 ##     legacy_graded(correct = FALSE, message = message)
 ## }
-## &lt;bytecode: 0x000001d428853b30&gt;
-## &lt;environment: 0x000001d429540d50&gt;</code></pre>
+## &lt;bytecode: 0x000001e29f8478b8&gt;
+## &lt;environment: 0x000001e2a0a294c0&gt;</code></pre>
 <p><span class="math inline">\(~\)</span></p>
 <p>Now, fill in the template below to create a plot with Duration on the
 x-axis and Maximum Height on the y-axis. (Hint: <em>replace</em> the
 underscores with the data set name and variable names.)</p>
 <div class="tutorial-exercise" data-label="ggplot-troubleshooting-4"
 data-completion="1" data-diagnostics="1" data-startover="1"
-data-lines="0">
+data-lines="7">
 <pre class="text"><code>ggplot(data = ___,
        mapping = aes(x = ___, y = ___)) +
   geom_point() +
@@ -944,8 +936,8 @@ data-lines="0">
 ##         .user_code = user_code)
 ##     legacy_graded(correct = FALSE, message = message)
 ## }
-## &lt;bytecode: 0x000001d428853b30&gt;
-## &lt;environment: 0x000001d4300da800&gt;</code></pre>
+## &lt;bytecode: 0x000001e29f8478b8&gt;
+## &lt;environment: 0x000001e2a6a13a90&gt;</code></pre>
 <hr />
 </div>
 </div>
@@ -997,7 +989,7 @@ codes if they are having issues.</p>
 <p><strong>Fix the following code.</strong></p>
 <div class="tutorial-exercise" data-label="catstats-exercise-1"
 data-completion="1" data-diagnostics="1" data-startover="1"
-data-lines="0">
+data-lines="7">
 <pre class="text"><code>one_proportion_test(
   probability_success = 50,
   sample_size = 10,
@@ -1040,8 +1032,8 @@ data-lines="0">
 ##         .user_code = user_code)
 ##     legacy_graded(correct = FALSE, message = message)
 ## }
-## &lt;bytecode: 0x000001d428853b30&gt;
-## &lt;environment: 0x000001d429fcdfb8&gt;</code></pre>
+## &lt;bytecode: 0x000001e29f8478b8&gt;
+## &lt;environment: 0x000001e29f952218&gt;</code></pre>
 <p><span class="math inline">\(~\)</span></p>
 <p>If a student does not follow directions to download
 <code>catstats</code> using <code>remotes</code>, and instead attempts
@@ -1849,10 +1841,10 @@ learnr:::store_exercise_cache(structure(list(label = "Intro-To-R-Exercise-1", gl
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "Intro-To-R-Exercise-1", code = "", 
-        opts = list(label = "\"Intro-To-R-Exercise-1\"", exercise = "T"), 
-        engine = "r")), code_check = NULL, error_check = NULL, 
-    check = structure("grade_code()", chunk_opts = list(label = "Intro-To-R-Exercise-1-check")), 
-    solution = structure("RollerCoasters[5:8, ]", chunk_opts = list(
+        opts = list(label = "\"Intro-To-R-Exercise-1\"", exercise = "T", 
+            exercise.lines = "7"), engine = "r")), code_check = NULL, 
+    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+        label = "Intro-To-R-Exercise-1-check")), solution = structure("RollerCoasters[5:8, ]", chunk_opts = list(
         label = "Intro-To-R-Exercise-1-solution")), tests = NULL, 
     options = list(eval = FALSE, echo = TRUE, results = "markup", 
         tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
@@ -1872,8 +1864,8 @@ learnr:::store_exercise_cache(structure(list(label = "Intro-To-R-Exercise-1", gl
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
         max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
         exercise.error.check.code = "gradethis_error_checker()", 
-        label = "Intro-To-R-Exercise-1", exercise = TRUE, code = "", 
-        out.width.px = 624, out.height.px = 384, params.src = "Intro-To-R-Exercise-1, exercise=T", 
+        label = "Intro-To-R-Exercise-1", exercise = TRUE, exercise.lines = 7, 
+        code = "", out.width.px = 624, out.height.px = 384, params.src = "Intro-To-R-Exercise-1, exercise=T, exercise.lines = 7", 
         fig.num = 0L, exercise.df_print = "paged"), engine = "r", 
     version = "3"), class = "tutorial_exercise"))
 </script>
@@ -1895,10 +1887,10 @@ learnr:::store_exercise_cache(structure(list(label = "Server-Exercise-2", global
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "Server-Exercise-2", code = "summary(rollercoasters)", 
-        opts = list(label = "\"Server-Exercise-2\"", exercise = "T"), 
-        engine = "r")), code_check = NULL, error_check = NULL, 
-    check = structure("grade_code()", chunk_opts = list(label = "Server-Exercise-2-check")), 
-    solution = structure("summary(RollerCoasters)", chunk_opts = list(
+        opts = list(label = "\"Server-Exercise-2\"", exercise = "T", 
+            exercise.lines = "7"), engine = "r")), code_check = NULL, 
+    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+        label = "Server-Exercise-2-check")), solution = structure("summary(RollerCoasters)", chunk_opts = list(
         label = "Server-Exercise-2-solution")), tests = NULL, 
     options = list(eval = FALSE, echo = TRUE, results = "markup", 
         tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
@@ -1918,8 +1910,9 @@ learnr:::store_exercise_cache(structure(list(label = "Server-Exercise-2", global
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
         max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
         exercise.error.check.code = "gradethis_error_checker()", 
-        label = "Server-Exercise-2", exercise = TRUE, code = "summary(rollercoasters)", 
-        out.width.px = 624, out.height.px = 384, params.src = "Server-Exercise-2, exercise=T", 
+        label = "Server-Exercise-2", exercise = TRUE, exercise.lines = 7, 
+        code = "summary(rollercoasters)", out.width.px = 624, 
+        out.height.px = 384, params.src = "Server-Exercise-2, exercise=T, exercise.lines = 7", 
         fig.num = 0, exercise.df_print = "paged"), engine = "r", 
     version = "3"), class = "tutorial_exercise"))
 </script>
@@ -1942,8 +1935,8 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-1",
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "ggplot-troubleshooting-1", code = "ggplot(data = Rollercoasters,\n       mapping = aes(x = Design, y = Top_Speed)) + \n  geom_boxplot()", 
         opts = list(label = "\"ggplot-troubleshooting-1\"", exercise = "T", 
-            warning = "F"), engine = "r")), code_check = NULL, 
-    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+            warning = "F", exercise.lines = "7"), engine = "r")), 
+    code_check = NULL, error_check = NULL, check = structure("grade_code()", chunk_opts = list(
         label = "ggplot-troubleshooting-1-check")), solution = structure(c("ggplot(data = RollerCoasters,", 
     "       mapping = aes(x = Design, y = Top_Speed)) + ", "  geom_boxplot()"
     ), chunk_opts = list(label = "ggplot-troubleshooting-1-solution", 
@@ -1966,9 +1959,10 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-1",
         max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
         exercise.error.check.code = "gradethis_error_checker()", 
         label = "ggplot-troubleshooting-1", exercise = TRUE, 
-        code = c("ggplot(data = Rollercoasters,", "       mapping = aes(x = Design, y = Top_Speed)) + ", 
+        exercise.lines = 7, code = c("ggplot(data = Rollercoasters,", 
+        "       mapping = aes(x = Design, y = Top_Speed)) + ", 
         "  geom_boxplot()"), out.width.px = 624, out.height.px = 384, 
-        params.src = "ggplot-troubleshooting-1, exercise = T, warning = F", 
+        params.src = "ggplot-troubleshooting-1, exercise = T, warning = F, exercise.lines = 7", 
         fig.num = 0, exercise.df_print = "paged"), engine = "r", 
     version = "3"), class = "tutorial_exercise"))
 </script>
@@ -1991,8 +1985,8 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-2",
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "ggplot-troubleshooting-2", code = "ggplot(data = RollerCoasters,\n       mapping = aes(x = Year_Opened))\n  + geom_histogram()", 
         opts = list(label = "\"ggplot-troubleshooting-2\"", exercise = "T", 
-            warning = "F"), engine = "r")), code_check = NULL, 
-    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+            warning = "F", exercise.lines = "7"), engine = "r")), 
+    code_check = NULL, error_check = NULL, check = structure("grade_code()", chunk_opts = list(
         label = "ggplot-troubleshooting-2-check")), solution = structure(c("ggplot(data = RollerCoasters,", 
     "       mapping = aes(x = Year_Opened)) +", "  geom_histogram()"
     ), chunk_opts = list(label = "ggplot-troubleshooting-2-solution", 
@@ -2015,9 +2009,9 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-2",
         max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
         exercise.error.check.code = "gradethis_error_checker()", 
         label = "ggplot-troubleshooting-2", exercise = TRUE, 
-        code = c("ggplot(data = RollerCoasters,", "       mapping = aes(x = Year_Opened))", 
-        "  + geom_histogram()"), out.width.px = 624, out.height.px = 384, 
-        params.src = "ggplot-troubleshooting-2, exercise = T, warning = F", 
+        exercise.lines = 7, code = c("ggplot(data = RollerCoasters,", 
+        "       mapping = aes(x = Year_Opened))", "  + geom_histogram()"
+        ), out.width.px = 624, out.height.px = 384, params.src = "ggplot-troubleshooting-2, exercise = T, warning = F, exercise.lines = 7", 
         fig.num = 0, exercise.df_print = "paged"), engine = "r", 
     version = "3"), class = "tutorial_exercise"))
 </script>
@@ -2040,8 +2034,8 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-3",
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "ggplot-troubleshooting-3", code = "ggplot(data = RollerCoasters,\n       mapping = aes(x = Duration, y = Length))) +\n  geom_point()", 
         opts = list(label = "\"ggplot-troubleshooting-3\"", exercise = "T", 
-            warning = "F"), engine = "r")), code_check = NULL, 
-    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+            warning = "F", exercise.lines = "7"), engine = "r")), 
+    code_check = NULL, error_check = NULL, check = structure("grade_code()", chunk_opts = list(
         label = "ggplot-troubleshooting-3-check")), solution = structure(c("ggplot(data = RollerCoasters,", 
     "       mapping = aes(x = Duration, y = Length)) +", "  geom_point()"
     ), chunk_opts = list(label = "ggplot-troubleshooting-3-solution", 
@@ -2064,9 +2058,10 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-3",
         max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
         exercise.error.check.code = "gradethis_error_checker()", 
         label = "ggplot-troubleshooting-3", exercise = TRUE, 
-        code = c("ggplot(data = RollerCoasters,", "       mapping = aes(x = Duration, y = Length))) +", 
+        exercise.lines = 7, code = c("ggplot(data = RollerCoasters,", 
+        "       mapping = aes(x = Duration, y = Length))) +", 
         "  geom_point()"), out.width.px = 624, out.height.px = 384, 
-        params.src = "ggplot-troubleshooting-3, exercise = T, warning = F", 
+        params.src = "ggplot-troubleshooting-3, exercise = T, warning = F, exercise.lines = 7", 
         fig.num = 0, exercise.df_print = "paged"), engine = "r", 
     version = "3"), class = "tutorial_exercise"))
 </script>
@@ -2089,8 +2084,8 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-4",
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "ggplot-troubleshooting-4", code = "ggplot(data = ___,\n       mapping = aes(x = ___, y = ___)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = FALSE)", 
         opts = list(label = "\"ggplot-troubleshooting-4\"", exercise = "T", 
-            warning = "F"), engine = "r")), code_check = NULL, 
-    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+            warning = "F", exercise.lines = "7"), engine = "r")), 
+    code_check = NULL, error_check = NULL, check = structure("grade_code()", chunk_opts = list(
         label = "ggplot-troubleshooting-4-check")), solution = structure(c("ggplot(data = RollerCoasters,", 
     "       mapping = aes(x = Duration, y = Max_Height)) +", 
     "  geom_point() +", "  geom_smooth(method = \"lm\", se = FALSE)"
@@ -2114,9 +2109,9 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-4",
         max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
         exercise.error.check.code = "gradethis_error_checker()", 
         label = "ggplot-troubleshooting-4", exercise = TRUE, 
-        code = c("ggplot(data = ___,", "       mapping = aes(x = ___, y = ___)) +", 
+        exercise.lines = 7, code = c("ggplot(data = ___,", "       mapping = aes(x = ___, y = ___)) +", 
         "  geom_point() +", "  geom_smooth(method = \"lm\", se = FALSE)"
-        ), out.width.px = 624, out.height.px = 384, params.src = "ggplot-troubleshooting-4, exercise = T, warning = F", 
+        ), out.width.px = 624, out.height.px = 384, params.src = "ggplot-troubleshooting-4, exercise = T, warning = F, exercise.lines = 7", 
         fig.num = 0, exercise.df_print = "paged"), engine = "r", 
     version = "3"), class = "tutorial_exercise"))
 </script>
@@ -2138,11 +2133,11 @@ learnr:::store_exercise_cache(structure(list(label = "catstats-exercise-1", glob
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "catstats-exercise-1", code = "one_proportion_test(\n  probability_success = 50,\n  sample_size = 10,\n  summary_measure = \"proportion\",\n  direction = \"greater\",\n  as_extreme_as = 0.6,\n  number_repetitions = 20\n)", 
-        opts = list(label = "\"catstats-exercise-1\"", exercise = "T"), 
-        engine = "r")), code_check = NULL, error_check = NULL, 
-    check = structure("grade_code()", chunk_opts = list(label = "catstats-exercise-1-check")), 
-    solution = structure(c("one_proportion_test(", "  probability_success = .50,", 
-    "  sample_size = 10,", "  summary_measure = \"proportion\",", 
+        opts = list(label = "\"catstats-exercise-1\"", exercise = "T", 
+            exercise.lines = "7"), engine = "r")), code_check = NULL, 
+    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+        label = "catstats-exercise-1-check")), solution = structure(c("one_proportion_test(", 
+    "  probability_success = .50,", "  sample_size = 10,", "  summary_measure = \"proportion\",", 
     "  direction = \"greater\",", "  as_extreme_as = 0.6,", "  number_repetitions = 20", 
     ")"), chunk_opts = list(label = "catstats-exercise-1-solution")), 
     tests = NULL, options = list(eval = FALSE, echo = TRUE, results = "markup", 
@@ -2163,11 +2158,12 @@ learnr:::store_exercise_cache(structure(list(label = "catstats-exercise-1", glob
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
         max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
         exercise.error.check.code = "gradethis_error_checker()", 
-        label = "catstats-exercise-1", exercise = TRUE, code = c("one_proportion_test(", 
-        "  probability_success = 50,", "  sample_size = 10,", 
-        "  summary_measure = \"proportion\",", "  direction = \"greater\",", 
-        "  as_extreme_as = 0.6,", "  number_repetitions = 20", 
-        ")"), out.width.px = 624, out.height.px = 384, params.src = "catstats-exercise-1, exercise=T", 
+        label = "catstats-exercise-1", exercise = TRUE, exercise.lines = 7, 
+        code = c("one_proportion_test(", "  probability_success = 50,", 
+        "  sample_size = 10,", "  summary_measure = \"proportion\",", 
+        "  direction = \"greater\",", "  as_extreme_as = 0.6,", 
+        "  number_repetitions = 20", ")"), out.width.px = 624, 
+        out.height.px = 384, params.src = "catstats-exercise-1, exercise=T, exercise.lines = 7", 
         fig.num = 0, exercise.df_print = "paged"), engine = "r", 
     version = "3"), class = "tutorial_exercise"))
 </script>
