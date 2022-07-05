@@ -167,13 +167,13 @@ However, students will often have to upload the dataset .csv file to the server 
 
 In the Environment tab (top right), click _Import Dataset_ -> choose the _From Text (base)_ option 
 
-![Importing Data](images/ImportingData.jpg)
+![](images/ImportingData.jpg)
 
 -> students will select the dataset from where the file is downloaded on their device.
 
 Once they have selected the dataset, another window will appear. Here, it is critical that they **select YES for Heading** for the dataset to be uploaded correctly and usable.
 
-![Select heading: YES](images/ImportHeading.jpg)
+![](images/ImportHeading.jpg)
 
 After 'Yes' is selected, click 'Import' and you are done! 
 
@@ -268,7 +268,9 @@ For example, if you are trying to use a variable named "Year" but accidentally t
 
 - You can also use **Tab-Completion** to reduce issues with case sensitivity. This is where `R` will suggest auto-complete options when you start typing in a variable name. By selecting one of these options, you are sure to reference something that `R` will recognize. Here is an example of what this looks like:
 
-![TabComplete](images/tabcomplete.png)
+![](images/tabcomplete.png)
+
+$~$
 $~$
 
 #### Excercise 2
@@ -306,7 +308,7 @@ When working with packages, there are two different steps.
 
 Here is an analogy that has been extremely helpful when explaining why students must run the `library( )` codes first whenever they open an `R` script file:
 
-![Library Packages](images/RInstallvsLibrary.jpeg)
+![](images/RInstallvsLibrary.jpeg)
 
 $~$
 $~$
