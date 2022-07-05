@@ -105,25 +105,25 @@ $~$
 
 Now that `RStudio` is personalized to your specifications, we can start diving into the basics of coding with `R`. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below. It is important to note that this only goes one direction.
 
-```{r practice1pt1, exercise = T}
+```{r practice1pt1, exercise = TRUE}
 x <- 7
 ```
 
 We can then check the value of our variable by simply typing the name of the variable.
 
-```{r practice1pt2, exercise = T}
+```{r practice1pt2, exercise = TRUE}
 x
 ```
 
 We can also use `R` to do math. This can be combined with variables to do some fun stuff.
 
-```{r practice1pt3, exercise = T}
+```{r practice1pt3, exercise = TRUE}
 x + x * x
 ```
 
 Similarly to how we store values as a variable, we can do the same with vectors or even whole data sets! To store a vector as a variable, write the vector inside of the concatenate function `c()`, being sure to add commas between separate values and quotations around words, to let `R` know you have a list of values. Vectors can be letters, numbers, or a combination of the two.
 
-```{r practice1pt4, exercise = T}
+```{r practice1pt4, exercise = TRUE}
 My_List <- c(1, 2, 'lettuce', 4, 'tomato')
 
 My_List
@@ -131,7 +131,7 @@ My_List
 
 To store a dataset in `R`, we can do something similar. However, we must also include the function `read_csv()` from the `tidyverse` package. We can do this to read a .csv file (Comma Separated Values) into the environment window in `R`.
 
-```{r practice1pt5, exercise = T}
+```{r practice1pt5, exercise = TRUE}
 RollerCoasters <- read_csv('RollerCoasters.csv')
 ```
 
@@ -187,13 +187,13 @@ Once the dataset is imported into the RStudio Server, it can be viewed by clicki
 
 If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row,column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset by typing the following into the **Console**:    
 
-```{r eval=FALSE, echo=TRUE}
+```{r eval = FALSE, echo = TRUE}
 View(RollerCoasters)
 ```
 
 $~$
 
-```{r practice2, exercise = T}
+```{r practice2, exercise = TRUE}
 RollerCoasters[1:5,1:3]
 ```
 
@@ -201,7 +201,7 @@ The code above is providing rows 1 through 5 and columns 1 through 3 of the `Rol
 
 We can also run functions on vectors, like `mean()` or `summary()`, that allow us to determine key information.
 
-```{r practice3pt1, exercise = T}
+```{r practice3pt1, exercise = TRUE}
 Counting <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
 mean(Counting)
@@ -211,7 +211,7 @@ summary(Counting)
 
 Another important component to `R` is commenting on code without affecting the code itself. This can be done by typing a pound symbol `#` before the comment.
 
-```{r practice3pt2, exercise = T}
+```{r practice3pt2, exercise = TRUE}
 2 + 2 #Look at how well R can add!
 ```
 
@@ -225,7 +225,7 @@ $~$
 
 **Write code to print out the 5th and 18th rows from the `RollerCoasters` dataset.**
 
-```{r IntroToRExercise1, exercise=T}
+```{r IntroToRExercise1, exercise = TRUE}
 
 ```
 
@@ -277,7 +277,7 @@ $~$
 
 **Referencing the RollerCoasters Dataset, can you find and correct the mistake? (Hint: remember that `R` is case-sensitive!)**
 
-```{r ServerExercise2, exercise=T}
+```{r ServerExercise2, exercise = TRUE}
 summary(rollercoasters)
 ```
 
@@ -341,7 +341,7 @@ Now the file name should appear under the Files tab in the bottom right corner. 
 
 `ggplot` is a layer-based way of creating graphs within the `tidyverse` package. The main benefit of it over typical graphing code is that it allows us to build on a graph to make it as complex as we would like. Let's take a look at some examples and build them up as we go. For this, we will be working with the `RollerCoasters` data set.
 
-```{r warning=F}
+```{r warning = FALSE}
 ggplot(data = RollerCoasters)
 
 ## Creates a blank ggplot(), referencing the RollerCoasters dataset
@@ -352,7 +352,7 @@ We can see that this code simply creates a blank graph. This is because we have 
 
 To accomplish this, we can define a mapping (using the aesthetic (`aes`) function), by selecting the variables to be plotted and specifying how to present them in the graph, e.g. as x/y positions or characteristics such as size, shape, color, etc.
 
-```{r warning=F}
+```{r warning = FALSE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed))
 
@@ -370,7 +370,7 @@ Now we can see that the variables of interest are on our graph, but the data its
 
 For this example, lets create a scatter plot. We can do this by adding the `geom_point` argument to our graph. Note that for each layer that is added on, we must separate the lines with a plus (+).
 
-```{r warning=F}
+```{r warning = FALSE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed)) +
   geom_point()
@@ -380,7 +380,7 @@ ggplot(data = RollerCoasters,
 
 If we wanted to color all of the points the same color, we can put the `color =` argument in the `geom_point()` layer.
 
-```{r warning=F}
+```{r warning = FALSE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed)) +
   geom_point(color = 'blue')
@@ -390,7 +390,7 @@ ggplot(data = RollerCoasters,
 
 If we wanted to add a categorical variable to this graph, we could tell `R` to color the points based on that variable. For the next graph, lets color the points based on the roller coaster `Type`. This will be added into the `aes()` section as it is a variable associated with an aesthetic of our graph.
 
-```{r warning=F}
+```{r warning = FALSE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed, color = Type)) +
   geom_point()
@@ -406,13 +406,13 @@ $~$
 
 One of the most common issues that can come up when working with `ggplot` is data sets being misspelled or incorrectly typed. Let's take a look at what this looks like. Additionally, try to correct the error.
 
-```{r ggplotTroubleshooting1, exercise = T, warning = F}
+```{r ggplotTroubleshooting1, exercise = TRUE, warning = FALSE}
 ggplot(data = Rollercoasters,
        mapping = aes(x = Design, y = Top_Speed)) + 
   geom_boxplot()
 ```
 
-```{r ggplotTroubleshooting1-solution, warning = F}
+```{r ggplotTroubleshooting1-solution, warning = FALSE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Design, y = Top_Speed)) + 
   geom_boxplot()
@@ -426,13 +426,13 @@ $~$
 
 The next most common is the + being in the incorrect spot in the code. The + must be placed at the end of a line rather than at the beginning of a new one. Let's take a look at an example of this. Additionally, try to correct the error.
 
-```{r ggplotTroubleshooting2, exercise = T, warning = F}
+```{r ggplotTroubleshooting2, exercise = TRUE, warning = FALSE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened))
   + geom_histogram()
 ```
 
-```{r ggplotTroubleshooting2-solution, warning = F}
+```{r ggplotTroubleshooting2-solution, warning = FALSE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened)) +
   geom_histogram()
@@ -448,13 +448,13 @@ Another very common error is when a set of parenthesis is opened, but never clos
 
 However, it is still possible for stray parenthesis to be involved in code. Let's take a look at an example of this. Fix the code by adding or removing parenthesis.
 
-```{r ggplotTroubleshooting3, exercise = T, warning = F}
+```{r ggplotTroubleshooting3, exercise = TRUE, warning = FALSE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Length))) +
   geom_point()
 ```
 
-```{r ggplotTroubleshooting3-solution, warning = F}
+```{r ggplotTroubleshooting3-solution, warning = FALSE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Length)) +
   geom_point()
@@ -468,14 +468,14 @@ $~$
 
 Now, fill in the template below to create a plot with Duration on the x-axis and Maximum Height on the y-axis. (Hint: _replace_ the underscores with the data set name and variable names.)
 
-```{r ggplotTroubleshooting4, exercise = T, warning = F}
+```{r ggplotTroubleshooting4, exercise = TRUE, warning = FALSE}
 ggplot(data = ___,
        mapping = aes(x = ___, y = ___)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
 ```
 
-```{r ggplotTroubleshooting4-solution, warning = F}
+```{r ggplotTroubleshooting4-solution, warning = FALSE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Max_Height)) +
   geom_point() +
@@ -500,13 +500,13 @@ $~$
 
 If you are running `RStudio` locally rather than from the server, you must install `catstats`. This can be done by first installing the `remotes` package, which allows us to install packages from github repositories. See the code chunk below for installing `remotes`.
 
-```{r remotes-installation, eval=F}
+```{r remotes-installation, eval = FALSE}
 install.packages("remotes")
 ```
 
 Once `remotes` is installed, we can install `catstats` using the code below.
 
-```{r catstats-installation, eval=F}
+```{r catstats-installation, eval = FALSE}
 remotes::install_github("greenwood-stat/catstats")
 ```
 
@@ -528,7 +528,7 @@ $~$
 
 **Fix the following code.**
 
-```{r catstatsExercise1, exercise=T}
+```{r catstatsExercise1, exercise = TRUE}
 one_proportion_test(
   probability_success = 50,
   sample_size = 10,
@@ -592,17 +592,17 @@ $~$
 **A**. Replacing the word, or 'call', that functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else `R` will not recognize it.
 
 Here is an example of a given line of code with no edits:
-```{r eval=F}
+```{r eval = FALSE}
 Coasters <- datasetname # Read data set in
 ```
 
 Here is an example the code edited incorrectly:
-```{r eval=F}
+```{r eval = FALSE}
 RollerCoasters <- datasetname # Read data set in
 ```
 
 This is how they were supposed to have edited the code:
-```{r eval=F}
+```{r eval = FALSE}
 Coasters <- RollerCoasters # Read data set in
 ```
 
@@ -622,7 +622,7 @@ $~$
 
 **D**. ***NOT Reading!*** Students are often in a hurry to complete to activity or lab for the day, and do not read the instructions as closely as they should. Thus, they may to skip over explicit instructions commented within the code and ask you instead. Many exercises will be presented to the students like this:
 
-```{r, eval = F}
+```{r, eval = FALSE}
 two_proportion_test(formula = response~explanatory, # response ~ explanatory
                     data= iliad, # Name of data set
                     first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
