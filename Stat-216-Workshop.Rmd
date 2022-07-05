@@ -225,15 +225,15 @@ $~$
 
 **Write code to print out the 5th and 18th rows from the `RollerCoasters` dataset.**
 
-```{r Intro-To-R-Exercise-1, exercise=T}
+```{r IntroToRExercise1, exercise=T}
 
 ```
 
-```{r Intro-To-R-Exercise-1-solution}
+```{r IntroToRExercise1-solution}
 RollerCoasters[5:8, ]
 ```
 
-```{r Intro-To-R-Exercise-1-check}
+```{r IntroToRExercise1-check}
 grade_code()
 ```
 
@@ -277,15 +277,15 @@ $~$
 
 **Referencing the RollerCoasters Dataset, can you find and correct the mistake? (Hint: remember that `R` is case-sensitive!)**
 
-```{r Server-Exercise-2, exercise=T}
+```{r ServerExercise2, exercise=T}
 summary(rollercoasters)
 ```
 
-```{r Server-Exercise-2-solution}
+```{r ServerExercise2-solution}
 summary(RollerCoasters)
 ```
 
-```{r Server-Exercise-2-check}
+```{r ServerExercise2-check}
 grade_code()
 ```
 
@@ -406,19 +406,19 @@ $~$
 
 One of the most common issues that can come up when working with `ggplot` is data sets being misspelled or incorrectly typed. Let's take a look at what this looks like. Additionally, try to correct the error.
 
-```{r ggplot-troubleshooting-1, exercise = T, warning = F}
+```{r ggplotTroubleshooting1, exercise = T, warning = F}
 ggplot(data = Rollercoasters,
        mapping = aes(x = Design, y = Top_Speed)) + 
   geom_boxplot()
 ```
 
-```{r ggplot-troubleshooting-1-solution, warning = F}
+```{r ggplotTroubleshooting1-solution, warning = F}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Design, y = Top_Speed)) + 
   geom_boxplot()
 ```
 
-```{r ggplot-troubleshooting-1-check}
+```{r ggplotTroubleshooting1-check}
 grade_code()
 ```
 
@@ -426,19 +426,19 @@ $~$
 
 The next most common is the + being in the incorrect spot in the code. The + must be placed at the end of a line rather than at the beginning of a new one. Let's take a look at an example of this. Additionally, try to correct the error.
 
-```{r ggplot-troubleshooting-2, exercise = T, warning = F}
+```{r ggplotTroubleshooting2, exercise = T, warning = F}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened))
   + geom_histogram()
 ```
 
-```{r ggplot-troubleshooting-2-solution, warning = F}
+```{r ggplotTroubleshooting2-solution, warning = F}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened)) +
   geom_histogram()
 ```
 
-```{r ggplot-troubleshooting-2-check}
+```{r ggplotTroubleshooting2-check}
 grade_code()
 ```
 
@@ -448,19 +448,19 @@ Another very common error is when a set of parenthesis is opened, but never clos
 
 However, it is still possible for stray parenthesis to be involved in code. Let's take a look at an example of this. Fix the code by adding or removing parenthesis.
 
-```{r ggplot-troubleshooting-3, exercise = T, warning = F}
+```{r ggplotTroubleshooting3, exercise = T, warning = F}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Length))) +
   geom_point()
 ```
 
-```{r ggplot-troubleshooting-3-solution, warning = F}
+```{r ggplotTroubleshooting3-solution, warning = F}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Length)) +
   geom_point()
 ```
 
-```{r ggplot-troubleshooting-3-check}
+```{r ggplotTroubleshooting3-check}
 grade_code()
 ```
 
@@ -468,21 +468,21 @@ $~$
 
 Now, fill in the template below to create a plot with Duration on the x-axis and Maximum Height on the y-axis. (Hint: _replace_ the underscores with the data set name and variable names.)
 
-```{r ggplot-troubleshooting-4, exercise = T, warning = F}
+```{r ggplotTroubleshooting4, exercise = T, warning = F}
 ggplot(data = ___,
        mapping = aes(x = ___, y = ___)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
 ```
 
-```{r ggplot-troubleshooting-4-solution, warning = F}
+```{r ggplotTroubleshooting4-solution, warning = F}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Max_Height)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
 ```
 
-```{r ggplot-troubleshooting-4-check}
+```{r ggplotTroubleshooting4-check}
 grade_code()
 ```
 
@@ -528,7 +528,7 @@ $~$
 
 **Fix the following code.**
 
-```{r catstats-exercise-1, exercise=T}
+```{r catstatsExercise1, exercise=T}
 one_proportion_test(
   probability_success = 50,
   sample_size = 10,
@@ -539,7 +539,7 @@ one_proportion_test(
 )
 ```
 
-```{r catstats-exercise-1-solution}
+```{r catstatsExercise1-solution}
 one_proportion_test(
   probability_success = .50,
   sample_size = 10,
@@ -550,7 +550,7 @@ one_proportion_test(
 )
 ```
 
-```{r catstats-exercise-1-check}
+```{r catstatsExercise1-check}
 grade_code()
 ```
 
