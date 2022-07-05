@@ -57,15 +57,13 @@ There are multiple private tutors as well! There is a bulletin board in the Wils
 
 If a student is a Veteran or is using a relative's Military Educational Benefits to help pay for school, there are free statistics tutors available to them through the Veterans Center on Campus. The Veterans Support Center is also located in Romney, but on the first floor.
 
-**4. Stack Overflow**
-
-If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in `R` when you do not have your lead instructor available to ask.
-
 ------------------------------------------------------------------------
 
 ## Introduction to R
 
 Coding can be very intimidating, especially for students with no prior coding experience. Thus, the `R` script files accompanying activities and labs require pretty minimal amount of alterations by the students. Students will be expected to gradually contribute more in `R`, but are not expected to be expert coders at any point during the course.
+
+### `RStudio` Layout
 
 In order to get started with `R` and `RStudio`, it will be beneficial to understand the User Interface. `RStudio` has the following layout:
 
@@ -76,9 +74,15 @@ In order to get started with `R` and `RStudio`, it will be beneficial to underst
 
 ![RStudio layout](images/rstudio.png)
 
-The color scheme of `RStudio` can also be changed by going to **Tools --\> Global Options --\> Appearance**. This can make the long days of coding a lot easier on the eyes. Another way to personalize `RStudio` is to change the pane layout. This can be done in **Tools --\> Global Options --\> Pane Layout**.
+### Personalize `RStudio` Appearance
 
----ADD NOTE ON HOW TO CHANGE THE FONT SIZE FOR ACCESIBILITY
+The color scheme of `RStudio` can also be changed by going to **Tools --\> Global Options --\> Appearance --\> Editor Theme**. This can make the long days of coding a lot easier on the eyes. 
+
+Another way to personalize `RStudio` is to change the pane layout. This can be done in **Tools --\> Global Options --\> Pane Layout**.
+
+Font size is another feature that can be altered for aesthetics and accessibility reasons. To change the font size in `RStudio`, click **Tools** in the upper left panel --\> select **Global Options** --\> choose the fourth option from the top titled **Appearance** --\> change the **editor font size** --\>  click **Apply** to see what the font size will look like --\> once satisfied, select **OK**.
+
+### Basics of Coding in `R`
 
 Now that `RStudio` is personalized to your specifications, we can start diving into the basics of coding with `R`. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below. It is important to note that this only goes one direction.
 
@@ -212,14 +216,16 @@ Essentially, `R` is very literal and not always good at reading our minds. It ma
 
 For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", `R` will not recognize or understand what you are trying to reference.
 
----- MENTION TAB COMPLETE TO REDUCE ISSUES WITH CASE SENSITIVITY
+* You can also use **Tab-Completion** to reduce issues with case sensitivity. This is where `R` will suggest auto-complete options when you start typing in a variable name. By selecting one of these options, you are sure to reference something that `R` will recognize. Here is an example of what this looks like:
+
+![Tab Complete](images/tabcomplete.png)
 
 #### Excercise 2
 
 **Referencing the RollerCoasters Dataset, can you find and correct the mistake? (Hint: remember that `R` is case-sensitive!)**
 
 ```{r Server-Exercise-2, exercise=T}
-
+summary(rollercoasters)
 ```
 
 ### Using Packages
@@ -285,13 +291,11 @@ ggplot(data = RollerCoasters,
 
 Now we can see that the variables of interest are on our graph, but the data itself is still absent. That is because we have not specified a way for the data to be presented. There are several ways to do this, the most common of which are as follows:
     
-      * `geom_point()` for scatter plots, dot plots, etc.
-      * `geom_hist()` for histograms
-      * `geom_boxplot()` for boxplots   
+      * `geom_point()` adds points to the plot
       * `geom_bar()` for bar charts 
-      * `geom_line()` for trend lines, time series, etc.  
-      
----- DOUBLE CHECK R RFILES TO SEE WHICH ARE MOST RELEVANT
+      * `geom_histogram()` for histograms
+      * `geom_boxplot()` for boxplots   
+      * `geom_smooth()` for regression lines 
 
 For this example, lets create a scatter plot. We can do this by adding the `geom_point` argument to our graph. Note that for each layer that is added on, we must separate the lines with a plus (+).
 
@@ -342,7 +346,7 @@ ggplot(data = RollerCoasters,
   + geom_histogram()
 ```
 
-Another very common error is when a set of parenthesis is opened, but never closed. One way to avoid this is to turn on "Rainbow Parenthesis" by going to Tools --\> Global Options --\> Code --\> Display --\> Rainbow Parenthesis.
+Another very common error is when a set of parenthesis is opened, but never closed. One way to avoid this is to turn on "Rainbow Parenthesis" by going to **Tools --\> Global Options --\> Code --\> Display --\> Rainbow Parenthesis**.
 
 However, it is still possible for stray parenthesis to be involved in code. Let's take a look at an example of this. Fix the code by adding or removing parenthesis.
 
@@ -357,7 +361,8 @@ Now, fill in the template below to create a plot with Duration on the x-axis and
 ```{r ggplot-troubleshooting-4, exercise = T, warning = F}
 ggplot(data = ___,
        mapping = aes(x = ___, y = ___))) +
-  geom_point()
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
 ```
 
 ------------------------------------------------------------------------
@@ -390,11 +395,13 @@ Another common error may be **Error: Failed to install 'unknown package' from Gi
 
 `catstats` was designed with errors in mind. That is to say that if an error is caused, there will likely be a message that appears in the Console window that lets the student know what might be the problem. Make sure students are always checking spelling and error codes if they are having issues.
 
---- IF A STUDENT DOES NOT TRY TO DOWNLOAD IT USING REMOTES AND TRYS TO DOWNLOAD IT USING PACKAGES, HERE IS THE ERROR THEY WILL SEE
+If a student does not follow directions to download `catstats` using `remotes`, and instead attempts to download it using the "Packages" tab in the lower right panel, they will encounter the following error:
+
+![Incorrectly Downloading catstats](images/downloaderror.png)
 
 ### Now You Try!
 
-#### Exercise \_\_
+#### Exercise 3
 
 **Fix the following code.**
 
@@ -488,7 +495,7 @@ Another good thing to note while working in `R`, and especially when working wit
 
 -   ***Be prepared for students to ask you lots of questions!*** As mentioned before, freshmen often feel more comfortable asking a fellow student or TA their questions. Nobody enjoys being belittled for asking questions, so try to encourage them when they do. Additionally, don't be afraid to admit if you are unsure about something and call your lead instructor over to help.
 
---- CAREFULLY CHOOSE YOUR WORDS TO NOT DISCOURAGE THEM AND STILL ENCOURAGE THEM TO WORK TOWARDS AN ANSWER. although we may understand coding now, this was also difficult for us at one time too. avoid using words such as 'easy' 'simple' and 'just do this...'
+-   ***Choose your words carefully.*** When answering questions, we want to avoid discouraging them while correcting any mistakes. Thus, it is important to choose your words carefully. Although we may have a better understand of coding now, we must remember that this was also difficult for us at one time too. Avoid using words such as 'easy' 'simple' and 'just do this...'
 
 -   ***Attend the Weekly Meetings with your lead instructor as often as possible.*** This is a great time to touch base with your team, communicate any subjects that are particularly challenging, and prepare for upcoming activities and labs.
 
@@ -499,6 +506,59 @@ Most importantly, don't be afraid to ask questions yourself and learn things alo
 Luckily, this information will always be here for you to reference if you have any specific questions or just want a quick refresher.
 
 We all wish you good luck and a successful semester! :)
+
+
+------------------------------------------------------------------------
+
+## Resources for STAT 216/217 TA's
+
+**1. Your Instruction Team**
+
+We have already stressed the importance of communicating with your lead instructor and instruction team. This is because your lead instructor and team can be incredibly helpful if you are struggling with running through the code before class, trying to fix an error in real time, or even just explaining a concept to a student. Don't hesitate to admit if you are unsure and ask your lead instructor or another TA to help. They may be able to better assist a student or answer a question with more clarity, which you can learn from and use that information when helping others afterwards! You can connect with your team:
+ * In Person before/during/after Class
+ * In your section's Microsoft Teams Channel
+ * Over Email or text 
+It is a good idea to make sure to exchange contact information and discuss which methods of communication are preferred by your team.
+
+
+**2. The Mathematics and Statistics Center (MSC)**
+
+The MSC can be another good resource for TA's if they have coding questions. Again, it is located on the same floor in Romney that the STAT 216 classes are held, so you can't miss it.
+
+**3. Help Files within `R`**
+
+The `?` and `help()` commands are very powerful. For functions, placing the `?` before the name, will tell `R` to search for that name in all of the functions, in all of the packages you have installed.  
+
+* If it finds _one_ __identical match__, it will display the help file for that function in the Help tab in the bottom-right corner.  
+* If it finds _more than one_ __identical match__, it will display the functions, in their respective packages, that you have to choose from.  
+* If it finds _no_ __identical match__, it will tell you that "`No documentation for ____ in specified packages and libraries:,`" and suggests you use a `??` instead.  
+    
+    + A `??` in front of the function name will search __all of `R`__ for named functions similar to what you typed.  
+    + The output will tell you what package the function is in, as well as the function's name (`package::function`).  
+
+If you would like help on a particular package, say one that you just downloaded, then you can use the same command(s) to get help.  These commands will load up a help page (in RStudio) in the Help pane. Each help page is broken down into sections:  
+
+* Description: An extended description of what the function does.   
+* Usage: The arguments of the function and their default values.     
+* Arguments: An explanation of the object each argument is expecting.  
+* Details: Any important details to be aware of.    
+* Value: The object the function returns.      
+* See Also: Any related functions that may be useful.    
+* Examples: Some examples for how to use the function.
+
+**4. Stack Overflow**
+
+If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in `R` when you do not have your lead instructor available to ask.
+
+* Regardless of how you solve an issues outside of class, it is good practice to communicate your issues and how you resolved it with your team prior to class. As we mentioned before, **if you run into an issue, it is more than likely that students will run into the same problem**. Being prepared to encounter these issues and know how to help students fix them is a big part of your role as a Teaching Assistant.
+
+**5. Further R Workshops**
+
+Both Eliot and Harley (your instructors today) have been a part of editing and updating a variety of other R Workshops which are co-organized by the Montana State University Library, Department of Mathematical Sciences, and Statistical Consulting and Research Services (SCRS, <https://www.montana.edu/statisticalconsulting/>).
+
+This series of R Workshops are **free to all MSU Students and Employees**. They are created to help participants gain a better understanding of how to use `R` and apply their skills to other projects. This workshop was very directed in terms of what you will encounter while TA'ing for STAT 216, but the other workshops are meant to help you learn `R` for personal and professional use in addition to/outside of STAT 216. More Information on the Fall 2022 R Workshops can be found in the following flyer:
+
+![Fall 2022 R Workshops Flyer](images/Fall2022Flyer.jpg)
 
 ------------------------------------------------------------------------
 
@@ -514,14 +574,6 @@ The workshops for 2021-2022 involve modifications of materials and are licensed 
 
 The workshops for 2021-2022 involve modifications of materials and are being taught by:
 
-### Sara Mannheimer
-
--   Sara Mannheimer is an Associate Professor and Data Librarian at Montana State University, where she helps shape practices and theories for curation, publication, and preservation of data. Her research examines the social, ethical, and technical issues of a data-driven world. She is the project lead for the MSU Dataset Search, and she is working on a book about data curation to support responsible qualitative data reuse and big social research.
-
-### Greta Linse
-
--   Greta Linse is the Interim Director of Statistical Consulting and Research Services (<https://www.montana.edu/statisticalconsulting/>) and the Project Manager for the Human Ecology Learning and Problem Solving (HELPS) Lab (<https://helpslab.montana.edu>). Greta has been teaching, documenting and working with statistical software including R and RStudio for over 10 years.
-
 ### Harley Clifton
 
 -   Harley Clifton is an undergraduate senior pursuing a degree in Mathematics (Statistics Option) with a minor in Psychology. She enjoys teaching nuanced coding skills and Data Visualization strategies through her experience as a Teaching Assistant for STAT 216 and STAT 408. Harley recently attended the Summer Institute in Biostatistics and Undergraduate Data Science at the University of California Irvine, funded by the National Institute Of Allergy And Infectious Diseases of the National Institutes of Health (under Award Number R25AI170491). Her areas of interest include quantifying behaviors and societal attitudes, behavior modification to reduce discrimination, Deaf culture and history, and women's health.
@@ -529,6 +581,14 @@ The workshops for 2021-2022 involve modifications of materials and are being tau
 ### Eliot Liucci
 
 -   Eliot Liucci is a senior in the Mathematics (Statistics Option) Program here at Montana State University. He is currently working on a research project with the Mathematics and Statistics Center to analyze the impact of different time based variables on overall MSC foot traffic and usage. Throughout his experience as a Teaching Assistant for STAT 216 and STAT 217, Eliot has gained a deeper understanding of statistical methods and educational approaches. Eliot will graduate at the end of Fall 2022 with his Bachelors and will start the M.S. in Statistics program in Spring 2023. His interests include environmental statistics, video games, and he restores vintage automobiles and motorcycles in his free time.
+
+### Sara Mannheimer
+
+-   Sara Mannheimer is an Associate Professor and Data Librarian at Montana State University, where she helps shape practices and theories for curation, publication, and preservation of data. Her research examines the social, ethical, and technical issues of a data-driven world. She is the project lead for the MSU Dataset Search, and she is working on a book about data curation to support responsible qualitative data reuse and big social research.
+
+### Greta Linse
+
+-   Greta Linse is the Interim Director of Statistical Consulting and Research Services (<https://www.montana.edu/statisticalconsulting/>) and the Project Manager for the Human Ecology Learning and Problem Solving (HELPS) Lab (<https://helpslab.montana.edu>). Greta has been teaching, documenting and working with statistical software including R and RStudio for over 10 years.
 
 ### Mark Greenwood
 
