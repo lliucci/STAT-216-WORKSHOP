@@ -143,11 +143,15 @@ Each row in this particular dataset holds information for a single roller coaste
 However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before `R` can read it in like above.
 
 In the Environment tab (top right), click _Import Dataset_ -> choose the _From Text (base)_ option 
+
 ![importdata](images/ImportingData.jpg)
+
 -> students will select the dataset from where the file is downloaded on their device.
 
 Once they have selected the dataset, another window will appear. Here, it is critical that they **select YES for Heading** for the dataset to be uploaded correctly and usable.
+
 ![headingYES](images/ImportHeading.jpg)
+
 After 'Yes' is selected, click 'Import' and you are done! 
 
 If a student claims they imported the dataset but it still is not reading in correctly for them, walk through this process with them to double check.
@@ -218,7 +222,7 @@ For example, if you are trying to use a variable named "Year" but accidentally t
 
 * You can also use **Tab-Completion** to reduce issues with case sensitivity. This is where `R` will suggest auto-complete options when you start typing in a variable name. By selecting one of these options, you are sure to reference something that `R` will recognize. Here is an example of what this looks like:
 
-![Tab Complete](images/tabcomplete.png)
+![TabComplete](images/tabcomplete.png)
 
 #### Excercise 2
 
@@ -244,7 +248,7 @@ When working with packages, there are two different steps.
 
 Here is an analogy that has been extremely helpful when explaining why students must run the `library( )` codes first whenever they open an `R` script file:
 
-![Library Packages](images/RInstallvsLibrary.jpeg)
+![LibraryPackages](images/RInstallvsLibrary.jpeg)
 
 ### Importing and Exporting Files within the Server
 
@@ -397,7 +401,7 @@ Another common error may be **Error: Failed to install 'unknown package' from Gi
 
 If a student does not follow directions to download `catstats` using `remotes`, and instead attempts to download it using the "Packages" tab in the lower right panel, they will encounter the following error:
 
-![Incorrectly Downloading catstats](images/downloaderror.png)
+![IncorrectlyDownloadingcatstats](images/downloaderror.png)
 
 ### Now You Try!
 
