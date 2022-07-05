@@ -15,8 +15,8 @@ library(datasauRus)
 library(gridExtra)
 library(plotly)
 library(catstats)
-#library(gradethis)
-#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
+library(gradethis)
+knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
 
 # Put any code that needs to be run at beginning of App
 RollerCoasters <- read_csv("RollerCoasters.csv")
@@ -225,8 +225,16 @@ $~$
 
 **Write code to print out the 5th and 18th rows from the `RollerCoasters` dataset.**
 
-```{r Intro-To-R-Exercise-1,exercise=T}
+```{r Intro-To-R-Exercise-1, exercise=T}
 
+```
+
+```{r Intro-To-R-Exercise-1-solution}
+RollerCoasters[5:8, ]
+```
+
+```{r Intro-To-R-Exercise-1-check}
+grade_code()
 ```
 
 ------------------------------------------------------------------------
@@ -269,6 +277,14 @@ $~$
 
 ```{r Server-Exercise-2, exercise=T}
 summary(rollercoasters)
+```
+
+```{r Server-Exercise-2-solution}
+summary(RollerCoasters)
+```
+
+```{r Server-Exercise-2-check}
+grade_code()
 ```
 
 $~$
@@ -386,12 +402,22 @@ $~$
 
 ### Troubleshooting Common ggplot2 Coding Issues
 
-One of the most common issues that can come up when working with `ggplot` is data sets being misspelled. Let's take a look at what this looks like. Additionally, try to correct the error.
+One of the most common issues that can come up when working with `ggplot` is data sets being misspelled or incorrectly typed. Let's take a look at what this looks like. Additionally, try to correct the error.
 
 ```{r ggplot-troubleshooting-1, exercise = T, warning = F}
 ggplot(data = Rollercoasters,
        mapping = aes(x = Design, y = Top_Speed)) + 
   geom_boxplot()
+```
+
+```{r ggplot-troubleshooting-1-solution, warning = F}
+ggplot(data = RollerCoasters,
+       mapping = aes(x = Design, y = Top_Speed)) + 
+  geom_boxplot()
+```
+
+```{r ggplot-troubleshooting-1-check}
+grade_code()
 ```
 
 $~$
@@ -402,6 +428,16 @@ The next most common is the + being in the incorrect spot in the code. The + mus
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened))
   + geom_histogram()
+```
+
+```{r ggplot-troubleshooting-2-solution, warning = F}
+ggplot(data = RollerCoasters,
+       mapping = aes(x = Year_Opened)) +
+  geom_histogram()
+```
+
+```{r ggplot-troubleshooting-2-check}
+grade_code()
 ```
 
 $~$
@@ -416,15 +452,36 @@ ggplot(data = RollerCoasters,
   geom_point()
 ```
 
+```{r ggplot-troubleshooting-3-solution, warning = F}
+ggplot(data = RollerCoasters,
+       mapping = aes(x = Duration, y = Length)) +
+  geom_point()
+```
+
+```{r ggplot-troubleshooting-3-check}
+grade_code()
+```
+
 $~$
 
 Now, fill in the template below to create a plot with Duration on the x-axis and Maximum Height on the y-axis. (Hint: _replace_ the underscores with the data set name and variable names.)
 
 ```{r ggplot-troubleshooting-4, exercise = T, warning = F}
 ggplot(data = ___,
-       mapping = aes(x = ___, y = ___))) +
+       mapping = aes(x = ___, y = ___)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
+```
+
+```{r ggplot-troubleshooting-4-solution, warning = F}
+ggplot(data = RollerCoasters,
+       mapping = aes(x = Duration, y = Max_Height)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+```{r ggplot-troubleshooting-4-check}
+grade_code()
 ```
 
 ------------------------------------------------------------------------
@@ -461,9 +518,6 @@ Another common error may be **Error: Failed to install 'unknown package' from Gi
 
 `catstats` was designed with errors in mind. That is to say that if an error is caused, there will likely be a message that appears in the Console window that lets the student know what might be the problem. Make sure students are always checking spelling and error codes if they are having issues.
 
-If a student does not follow directions to download `catstats` using `remotes`, and instead attempts to download it using the "Packages" tab in the lower right panel, they will encounter the following error:
-
-![Incorrectly Downloading catstats](images/downloaderror.png)
 $~$
 
 ### Now You Try!
@@ -482,6 +536,27 @@ one_proportion_test(
   number_repetitions = 20
 )
 ```
+
+```{r catstats-exercise-1-solution}
+one_proportion_test(
+  probability_success = .50,
+  sample_size = 10,
+  summary_measure = "proportion",
+  direction = "greater",
+  as_extreme_as = 0.6,
+  number_repetitions = 20
+)
+```
+
+```{r catstats-exercise-1-check}
+grade_code()
+```
+
+$~$
+
+If a student does not follow directions to download `catstats` using `remotes`, and instead attempts to download it using the "Packages" tab in the lower right panel, they will encounter the following error:
+
+![Incorrectly Downloading catstats](images/downloaderror.png)
 
 ------------------------------------------------------------------------
 
@@ -512,7 +587,7 @@ $~$
 
 ### Common Mistakes include:
 
-**A**. Replacing the word, or 'call', that the functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else `R` will not recognize it.
+**A**. Replacing the word, or 'call', that functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else `R` will not recognize it.
 
 Here is an example of a given line of code with no edits:
 ```{r eval=F}
