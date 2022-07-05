@@ -333,7 +333,7 @@ Now the file name should appear under the Files tab in the bottom right corner. 
 
 ------------------------------------------------------------------------
 
-## Plotting with ggplot
+## Plotting with `ggplot2`
 
 ### What is ggplot?
 
