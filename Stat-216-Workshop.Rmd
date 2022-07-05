@@ -153,7 +153,7 @@ Each row in this particular dataset holds information for a single roller coaste
 | Year_Opened       | Year when the roller coaster opened                                         |
 | Top_Speed         | Maximum speed of the roller coaster (mph)                                   |
 | Max_Height        | Highest point of the roller coaster (ft)                                    |
-| Drop              | Length of largest gap between hgih and low points of roller coaster (ft)    |
+| Drop              | Length of largest gap between high and low points of roller coaster (ft)    |
 | Length            | Length of the roller coaster track (ft)                                     |
 | Duration          | Time length of roller coaster ride (sec)                                    |
 | Inversions        | Whether or not the roller coaster flips passengers at any point (Yes or No) |
@@ -380,7 +380,7 @@ $~$
 
 ### Troubleshooting Common ggplot2 Coding Issues
 
-One of the most common issues that can come up when working with `ggplot` is data sets being mispelled. Let's take a look at what this looks like. Additionally, try to correct the error.
+One of the most common issues that can come up when working with `ggplot` is data sets being misspelled. Let's take a look at what this looks like. Additionally, try to correct the error.
 
 ```{r ggplot-troubleshooting-1, exercise = T, warning = F}
 ggplot(data = Rollercoasters,
@@ -481,7 +481,9 @@ one_proportion_test(
 
 ## Coding Expectations for Students
 
-As mentioned previously, the level of coding ability expected of students is very minimal. Therefore, students will only need to alter a few key areas in the code files that were created to accompany the activities and labs.
+>
+> As mentioned previously, the level of coding ability expected of students is very minimal. Therefore, students will only need to alter a few key areas in the code files that were created to accompany the activities and labs.
+>
 
 $~$
 
@@ -497,7 +499,7 @@ $~$
 
 $~$
 
-**Note**: students will often need to *replace* these phrases, not type the answer next to it! When replacing a word or phrase, often students will accidentally delete quotation marks, commmas, or parentheses that are necessary for the function to run correctly. You will be expected to be able to look at catstats functions and ggplot code, assess what is incorrect or missing, and fix the issue.
+**Note**: students will often need to *replace* these phrases, not type the answer next to it! When replacing a word or phrase, often students will accidentally delete quotation marks, commas, or parentheses that are necessary for the function to run correctly. You will be expected to be able to look at catstats functions and ggplot code, assess what is incorrect or missing, and fix the issue.
 
 $~$
 $~$
@@ -551,7 +553,7 @@ Notice how there is a comment to the right of each line in the code **explicitly
 
 $~$
 
-**E**. Accidentally deleting quotation marks or commas after an argument within a function. If you are unsure if this has occurred, don't hesitate to ask the student to open another unedited version of the same file under a different name (so it doesn't overide all of the edits and progress they have made on their current R file) to double check that area of the template code.
+**E**. Accidentally deleting quotation marks or commas after an argument within a function. If you are unsure if this has occurred, don't hesitate to ask the student to open another unedited version of the same file under a different name (so it doesn't override all of the edits and progress they have made on their current R file) to double check that area of the template code.
 
 $~$
 $~$
