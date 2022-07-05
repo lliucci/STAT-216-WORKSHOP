@@ -648,7 +648,7 @@ Both Eliot and Harley (your instructors today) have been a part of editing and u
 
 This series of R Workshops are **free to all MSU Students and Employees**. They are created to help participants gain a better understanding of how to use `R` and apply their skills to other projects. This workshop was very directed in terms of what you will encounter while TA'ing for STAT 216, but the other workshops are meant to help you learn `R` for personal and professional use in addition to/outside of STAT 216. More Information on the Fall 2022 R Workshops can be found in the following flyer:
 
-![Fall 2022 R Workshops Flyer](images/Fall2022Flyer.jpg)
+![Fall 2022 R Workshops Flyer](images/Fall2022Flyer.png)
 
 ------------------------------------------------------------------------
 
