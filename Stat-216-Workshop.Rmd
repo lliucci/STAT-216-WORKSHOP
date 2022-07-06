@@ -526,7 +526,7 @@ $~$
 
 #### Exercise 3
 
-**Fix the following code.**
+**Fix the following code.** 
 
 ```{r catstatsExercise1, exercise = TRUE}
 one_proportion_test(
