@@ -212,7 +212,7 @@ it will be beneficial to understand the User Interface.
 (bottom-right).</li>
 </ul>
 <div class="figure">
-<img src="rstudio.png" alt="" />
+<img src="images/rstudio.png" alt="" />
 <p class="caption">RStudio layout</p>
 </div>
 <p>The color scheme of <code>RStudio</code> can also be changed by going
@@ -221,6 +221,7 @@ can make the long days of coding a lot easier on the eyes. Another way
 to personalize <code>RStudio</code> is to change the pane layout. This
 can be done in <strong>Tools –&gt; Global Options –&gt; Pane
 Layout</strong>.</p>
+<p>—ADD NOTE ON HOW TO CHANGE THE FONT SIZE FOR ACCESIBILITY</p>
 <p>Now that <code>RStudio</code> is personalized to your specifications,
 we can start diving into the basics of coding with <code>R</code>. One
 of the most useful concepts is to store values as a variable. This can
@@ -250,9 +251,10 @@ data-lines="0">
 </div>
 <p>Similarly to how we store values as a variable, we can do the same
 with vectors or even whole data sets! To store a vector as a variable,
-write the vector inside of <code>c()</code> to let <code>R</code> know
-you have a list of values. Vectors can be letters, numbers, or a
-combination of the two.</p>
+write the vector inside of the concatenate function <code>c()</code>,
+being sure to add commas between separate values and quotations around
+words, to let <code>R</code> know you have a list of values. Vectors can
+be letters, numbers, or a combination of the two.</p>
 <div class="tutorial-exercise" data-label="practice1pt4"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
@@ -363,13 +365,14 @@ the server <strong><em>using the drop down menu</em></strong> before
 <code>R</code> can read it in like above.</p>
 <p>In the Environment tab (top right), click <em>Import Dataset</em>
 -&gt; choose the <em>From Text (base)</em> option <img
-src="ImportingData.jpg" alt="importdata" /> -&gt; students will select
-the dataset from where the file is downloaded on their device.</p>
+src="images/ImportingData.jpg" alt="importdata" /> -&gt; students will
+select the dataset from where the file is downloaded on their
+device.</p>
 <p>Once they have selected the dataset, another window will appear.
 Here, it is critical that they <strong>select YES for Heading</strong>
 for the dataset to be uploaded correctly and usable. <img
-src="ImportHeading.jpg" alt="headingYES" /> After ‘Yes’ is selected,
-click ‘Import’ and you are done!</p>
+src="images/ImportHeading.jpg" alt="headingYES" /> After ‘Yes’ is
+selected, click ‘Import’ and you are done!</p>
 <p>If a student claims they imported the dataset but it still is not
 reading in correctly for them, walk through this process with them to
 double check.</p>
@@ -462,12 +465,13 @@ access D2L.</p>
 <h3>R is Case-Sensitive</h3>
 <p>You may have heard this if you took STAT 216 at MSU, but what does
 this really mean?</p>
-<p>Essentially, <code>R</code> is not always very smart. It matters
-whether words are capitalized or lowercase when storing or calling a
-dataset, variables, or functions.</p>
+<p>Essentially, <code>R</code> is very literal and not always good at
+reading our minds. It matters whether words are capitalized or lowercase
+when storing or calling a dataset, variables, or functions.</p>
 <p>For example, if you are trying to use a variable named “Year” but
 accidentally type “year” with a lowercase “y”, <code>R</code> will not
 recognize or understand what you are trying to reference.</p>
+<p>—- MENTION TAB COMPLETE TO REDUCE ISSUES WITH CASE SENSITIVITY</p>
 <div id="section-excercise-2" class="section level4">
 <h4>Excercise 2</h4>
 <p><strong>Referencing the RollerCoasters Dataset, can you find and
@@ -484,14 +488,16 @@ data-lines="0">
 <h3>Using Packages</h3>
 <p>What is a Package in <code>R</code>? According to <a
 href="https://www.tutorialspoint.com/r/r_packages.htm">TutorialsPoint.com</a>:</p>
-<p><em>“R packages are a collection of R functions, complied code and
-sample data. They are stored under a directory called</em> library
-<em>in the R environment. By default, R installs a set of packages
-during installation. More packages are added later, when they are needed
-for some specific purpose. When we start the R console, only the default
+<blockquote>
+<p>“R packages are a collection of R functions, complied code and sample
+data. They are stored under a directory called <em>library</em> in the R
+environment. By default, R installs a set of packages during
+installation. More packages are added later, when they are needed for
+some specific purpose. When we start the R console, only the default
 packages are available by default. Other packages which are already
 installed have to be loaded explicitly to be used by the R program that
-is going to use them.”</em></p>
+is going to use them.”</p>
+</blockquote>
 <p>When working with packages, there are two different steps.</p>
 <ul>
 <li><p>First, a package must be installed onto the <code>RStudio</code>
@@ -504,7 +510,7 @@ in it. This must be done each time a new session in the
 why students must run the <code>library( )</code> codes first whenever
 they open an <code>R</code> script file:</p>
 <div class="figure">
-<img src="RInstallvsLibrary.jpeg" alt="" />
+<img src="images/RInstallvsLibrary.jpeg" alt="" />
 <p class="caption">Library Packages</p>
 </div>
 </div>
@@ -551,7 +557,8 @@ them up as we go. For this, we will be working with the
 <code>RollerCoasters</code> data set.</p>
 <pre class="r"><code>ggplot(data = RollerCoasters)</code></pre>
 <p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-1-1.png" width="624" /></p>
-<pre class="r"><code>## Creates a blank ggplot(), referencing the RollerCoasters dataset</code></pre>
+<pre class="r"><code>## Creates a blank ggplot(), referencing the RollerCoasters dataset
+## Don&#39;t worry! It is supposed to look like that!</code></pre>
 <p>We can see that this code simply creates a blank graph. This is
 because we have not specified what variables we would like to use. Let’s
 take a look at the relationship between the year that the coaster was
@@ -570,9 +577,12 @@ the data itself is still absent. That is because we have not specified a
 way for the data to be presented. There are several ways to do this, the
 most common of which are as follows:</p>
 <pre><code>  * `geom_point()` for scatter plots, dot plots, etc.
+  * `geom_hist()` for histograms
   * `geom_boxplot()` for boxplots   
   * `geom_bar()` for bar charts 
-  * `geom_line()` for trend lines, time series, etc.  </code></pre>
+  * `geom_line()` for trend lines, time series, etc.  
+  </code></pre>
+<p>—- DOUBLE CHECK R RFILES TO SEE WHICH ARE MOST RELEVANT</p>
 <p>For this example, lets create a scatter plot. We can do this by
 adding the <code>geom_point</code> argument to our graph. Note that for
 each layer that is added on, we must separate the lines with a plus
@@ -697,6 +707,8 @@ say that if an error is caused, there will likely be a message that
 appears in the Console window that lets the student know what might be
 the problem. Make sure students are always checking spelling and error
 codes if they are having issues.</p>
+<p>— IF A STUDENT DOES NOT TRY TO DOWNLOAD IT USING REMOTES AND TRYS TO
+DOWNLOAD IT USING PACKAGES, HERE IS THE ERROR THEY WILL SEE</p>
 </div>
 <div id="section-now-you-try-1" class="section level3">
 <h3>Now You Try!</h3>
@@ -788,11 +800,11 @@ before reading in the dataset</strong>. The dataset code must be edited
 correctly and run for <code>R</code> to know what it is referencing and
 what variable names it is dealing with.</p>
 <pre><code>* In general, it is important that students run the code **in the order that it appears**. Otherwise, they may run into issues.</code></pre>
-<p><strong>D</strong>. <strong><em>NOT Reading!</em></strong> You’d
-think that by the time someone has been accepted into college, the would
-probably know how to read. However, knowing how to and actually doing so
-are two completely separate things. Many exercises will be presented to
-the students like this:</p>
+<p><strong>D</strong>. <strong><em>NOT Reading!</em></strong> Students
+are often in a hurry to complete to activity or lab for the day, and do
+not read the instructions as closely as they should. Thus, they may to
+skip over explicit instructions commented within the code and ask you
+instead. Many exercises will be presented to the students like this:</p>
 <pre class="r"><code>two_proportion_test(formula = response~explanatory, # response ~ explanatory
                     data= iliad, # Name of data set
                     first_in_subtraction = &quot;xx&quot;, # Order of subtraction: enter the name of Group 1
@@ -867,16 +879,22 @@ comfortable asking a fellow student or TA their questions. Nobody enjoys
 being belittled for asking questions, so try to encourage them when they
 do. Additionally, don’t be afraid to admit if you are unsure about
 something and call your lead instructor over to help.</p></li>
+</ul>
+<p>— CAREFULLY CHOOSE YOUR WORDS TO NOT DISCOURAGE THEM AND STILL
+ENCOURAGE THEM TO WORK TOWARDS AN ANSWER. although we may understand
+coding now, this was also difficult for us at one time too. avoid using
+words such as ‘easy’ ‘simple’ and ‘just do this…’</p>
+<ul>
 <li><p><strong><em>Attend the Weekly Meetings with your lead instructor
 as often as possible.</em></strong> This is a great time to touch base
 with your team, communicate any subjects that are particularly
 challenging, and prepare for upcoming activities and labs.</p></li>
 <li><p><strong><em>Balance Validation and Instruction in your
 interactions.</em></strong> It is inevitable that poorly worded or
-unclear questions will occasionally arise. I (Harley) have found it
-helpful to validate student’s frustrations and then guide them in the
-right direction. As TA’s, we are not here to do their work for them or
-give them answers. We are here to help them learn the material. When a
+unclear questions will occasionally arise. We have found it helpful to
+validate student’s frustrations and then guide them in the right
+direction. As TA’s, we are not here to do their work for them or give
+them answers. We are here to help them learn the material. When a
 difficult question arises, validating their feelings is encouraging but
 must also be balanced with instruction. Nobody is happy if one student
 airing their grievances takes time away from you helping another
@@ -1008,6 +1026,7 @@ library(catstats)
 
 # Put any code that needs to be run at beginning of App
 RollerCoasters <- read_csv("RollerCoasters.csv")
+x <- 7
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -1044,19 +1063,19 @@ learnr:::store_exercise_cache(structure(list(label = "practice1pt1", global_setu
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "practice1pt1", code = "x <- 7", opts = list(
-        label = "\"practice1pt1\"", exercise = "T"), engine = "r")), 
-    code_check = NULL, error_check = NULL, check = NULL, solution = NULL, 
-    tests = NULL, options = list(eval = FALSE, echo = TRUE, results = "markup", 
-        tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
-        comment = NA, highlight = FALSE, size = "normalsize", 
-        background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "Stat-216-Workshop_cache/html/", cache.vars = NULL, 
-        cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
-        cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "practice1pt1", code = "x <- 7", 
+        opts = list(label = "\"practice1pt1\"", exercise = "T"), 
+        engine = "r")), code_check = NULL, error_check = NULL, 
+    check = NULL, solution = NULL, tests = NULL, options = list(
+        eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
+        tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
+        highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
+        strip.white = TRUE, cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
+        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
+        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
+        fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -1086,18 +1105,19 @@ learnr:::store_exercise_cache(structure(list(label = "practice1pt2", global_setu
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "practice1pt2", code = "x", opts = list(label = "\"practice1pt2\"", 
-        exercise = "T"), engine = "r")), code_check = NULL, error_check = NULL, 
-    check = NULL, solution = NULL, tests = NULL, options = list(
-        eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
-        tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
-        highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
-        strip.white = TRUE, cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
-        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
-        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
-        fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "practice1pt2", code = "x", opts = list(
+        label = "\"practice1pt2\"", exercise = "T"), engine = "r")), 
+    code_check = NULL, error_check = NULL, check = NULL, solution = NULL, 
+    tests = NULL, options = list(eval = FALSE, echo = TRUE, results = "markup", 
+        tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
+        comment = NA, highlight = FALSE, size = "normalsize", 
+        background = "#F7F7F7", strip.white = TRUE, cache = 0, 
+        cache.path = "Stat-216-Workshop_cache/html/", cache.vars = NULL, 
+        cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
+        cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
+        fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -1127,19 +1147,19 @@ learnr:::store_exercise_cache(structure(list(label = "practice1pt3", global_setu
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "practice1pt3", code = "x + x * x", opts = list(
-        label = "\"practice1pt3\"", exercise = "T"), engine = "r")), 
-    code_check = NULL, error_check = NULL, check = NULL, solution = NULL, 
-    tests = NULL, options = list(eval = FALSE, echo = TRUE, results = "markup", 
-        tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
-        comment = NA, highlight = FALSE, size = "normalsize", 
-        background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "Stat-216-Workshop_cache/html/", cache.vars = NULL, 
-        cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
-        cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "practice1pt3", code = "x + x * x", 
+        opts = list(label = "\"practice1pt3\"", exercise = "T"), 
+        engine = "r")), code_check = NULL, error_check = NULL, 
+    check = NULL, solution = NULL, tests = NULL, options = list(
+        eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
+        tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
+        highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
+        strip.white = TRUE, cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
+        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
+        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
+        fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -1169,9 +1189,9 @@ learnr:::store_exercise_cache(structure(list(label = "practice1pt4", global_setu
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "practice1pt4", code = "My_List <- c(1, 2, 'lettuce', 4, 'tomato')\n\nMy_List", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "practice1pt4", code = "My_List <- c(1, 2, 'lettuce', 4, 'tomato')\n\nMy_List", 
         opts = list(label = "\"practice1pt4\"", exercise = "T"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
@@ -1212,9 +1232,9 @@ learnr:::store_exercise_cache(structure(list(label = "practice1pt5", global_setu
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "practice1pt5", code = "RollerCoasters <- read_csv('RollerCoasters.csv')", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "practice1pt5", code = "RollerCoasters <- read_csv('RollerCoasters.csv')", 
         opts = list(label = "\"practice1pt5\"", exercise = "T"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
@@ -1254,9 +1274,9 @@ learnr:::store_exercise_cache(structure(list(label = "practice2", global_setup =
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "practice2", code = "RollerCoasters[1:5,1:3]", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "practice2", code = "RollerCoasters[1:5,1:3]", 
         opts = list(label = "\"practice2\"", exercise = "T"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
@@ -1296,9 +1316,9 @@ learnr:::store_exercise_cache(structure(list(label = "practice3pt1", global_setu
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "practice3pt1", code = "Counting <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n\nmean(Counting)\n\nsummary(Counting)", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "practice3pt1", code = "Counting <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n\nmean(Counting)\n\nsummary(Counting)", 
         opts = list(label = "\"practice3pt1\"", exercise = "T"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
@@ -1339,9 +1359,9 @@ learnr:::store_exercise_cache(structure(list(label = "practice3pt2", global_setu
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "practice3pt2", code = "2 + 2 #Look at how well R can add!", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "practice3pt2", code = "2 + 2 #Look at how well R can add!", 
         opts = list(label = "\"practice3pt2\"", exercise = "T"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
@@ -1381,10 +1401,10 @@ learnr:::store_exercise_cache(structure(list(label = "Intro-To-R-Exercise-1", gl
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "Intro-To-R-Exercise-1", code = "", opts = list(
-        label = "\"Intro-To-R-Exercise-1\"", exercise = "T"), 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "Intro-To-R-Exercise-1", code = "", 
+        opts = list(label = "\"Intro-To-R-Exercise-1\"", exercise = "T"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
@@ -1422,19 +1442,19 @@ learnr:::store_exercise_cache(structure(list(label = "Server-Exercise-2", global
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "Server-Exercise-2", code = "", opts = list(
-        label = "\"Server-Exercise-2\"", exercise = "T"), engine = "r")), 
-    code_check = NULL, error_check = NULL, check = NULL, solution = NULL, 
-    tests = NULL, options = list(eval = FALSE, echo = TRUE, results = "markup", 
-        tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
-        comment = NA, highlight = FALSE, size = "normalsize", 
-        background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "Stat-216-Workshop_cache/html/", cache.vars = NULL, 
-        cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
-        cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "Server-Exercise-2", code = "", 
+        opts = list(label = "\"Server-Exercise-2\"", exercise = "T"), 
+        engine = "r")), code_check = NULL, error_check = NULL, 
+    check = NULL, solution = NULL, tests = NULL, options = list(
+        eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
+        tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
+        highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
+        strip.white = TRUE, cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
+        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
+        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
+        fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -1463,9 +1483,9 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-1",
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "ggplot-troubleshooting-1", code = "ggplot(data = Rollercoasters,\n       mapping = aes(x = Design, y = Top_Speed)) + \n  geom_boxplot()", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "ggplot-troubleshooting-1", code = "ggplot(data = Rollercoasters,\n       mapping = aes(x = Design, y = Top_Speed)) + \n  geom_boxplot()", 
         opts = list(label = "\"ggplot-troubleshooting-1\"", exercise = "T", 
             warning = "F"), engine = "r")), code_check = NULL, 
     error_check = NULL, check = NULL, solution = NULL, tests = NULL, 
@@ -1508,9 +1528,9 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-2",
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "ggplot-troubleshooting-2", code = "ggplot(data = RollerCoasters,\n       mapping = aes(x = Year_Opened))\n  + geom_histogram()", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "ggplot-troubleshooting-2", code = "ggplot(data = RollerCoasters,\n       mapping = aes(x = Year_Opened))\n  + geom_histogram()", 
         opts = list(label = "\"ggplot-troubleshooting-2\"", exercise = "T", 
             warning = "F"), engine = "r")), code_check = NULL, 
     error_check = NULL, check = NULL, solution = NULL, tests = NULL, 
@@ -1552,9 +1572,9 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-3",
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "ggplot-troubleshooting-3", code = "ggplot(data = RollerCoasters,\n       mapping = aes(x = Duration, y = Length))) +\n  geom_point()", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "ggplot-troubleshooting-3", code = "ggplot(data = RollerCoasters,\n       mapping = aes(x = Duration, y = Length))) +\n  geom_point()", 
         opts = list(label = "\"ggplot-troubleshooting-3\"", exercise = "T", 
             warning = "F"), engine = "r")), code_check = NULL, 
     error_check = NULL, check = NULL, solution = NULL, tests = NULL, 
@@ -1597,9 +1617,9 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-4",
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "ggplot-troubleshooting-4", code = "ggplot(data = ___,\n       mapping = aes(x = ___, y = ___))) +\n  geom_point()", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "ggplot-troubleshooting-4", code = "ggplot(data = ___,\n       mapping = aes(x = ___, y = ___))) +\n  geom_point()", 
         opts = list(label = "\"ggplot-troubleshooting-4\"", exercise = "T", 
             warning = "F"), engine = "r")), code_check = NULL, 
     error_check = NULL, check = NULL, solution = NULL, tests = NULL, 
@@ -1641,9 +1661,9 @@ learnr:::store_exercise_cache(structure(list(label = "catstats-exercise-1", glob
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
 "library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")"), chunk_opts = list(
-    label = "setup", include = FALSE)), setup = NULL, chunks = list(
-    list(label = "catstats-exercise-1", code = "one_proportion_test(\n  probability_success = 50,\n  sample_size = 10,\n  summary_measure = \"proportion\",\n  direction = \"greater\",\n  as_extreme_as = 0.6,\n  number_repetitions = 20\n)", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "catstats-exercise-1", code = "one_proportion_test(\n  probability_success = 50,\n  sample_size = 10,\n  summary_measure = \"proportion\",\n  direction = \"greater\",\n  as_extreme_as = 0.6,\n  number_repetitions = 20\n)", 
         opts = list(label = "\"catstats-exercise-1\"", exercise = "T"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
