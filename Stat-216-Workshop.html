@@ -127,6 +127,8 @@ arise.</p>
 the students and lead instructors. If you see a common issues arising,
 be sure to communicate this to your lead instructor so they can get
 everyone on the same page and clear up any misconceptions.</p>
+<p><span class="math inline">\(~\)</span> <span
+class="math inline">\(~\)</span></p>
 <div id="section-stat-216-course-materials" class="section level3">
 <h3>STAT 216 Course Materials</h3>
 <p>Students will be required to purchase a <strong>Coursepack</strong>
@@ -150,6 +152,8 @@ coursepack with often require students to use an <code>R</code> script
 file to complete. This R Bootcamp is meant to help you get a better
 understand of coding in <code>R</code> so you can help students when
 they run into issues.</p>
+<p><span class="math inline">\(~\)</span> <span
+class="math inline">\(~\)</span></p>
 </div>
 <div id="section-other-resources-available" class="section level3">
 <h3>Other Resources Available</h3>
@@ -163,12 +167,14 @@ have access to the MSC through enrolling in STAT 216, and can enter for
 free by swiping their CatCard. The MSC has the activity solutions so
 students can check their work and get more in-depth feedback by looking
 through them.</p>
+<p><span class="math inline">\(~\)</span></p>
 <p><strong>2. SmartyCats Tutoring</strong></p>
 <p>If you aren’t already aware, there are SmartyCats Tutors available
 for a wide variety of MSU classes. The majority of tutors have taken the
 courses before and have a good idea of the instructors expectations.
 Tutoring Session only cost $2 a piece, which mean they are very
 affordable for most students.</p>
+<p><span class="math inline">\(~\)</span></p>
 <p><strong>3. Other Tutoring Opportunities</strong></p>
 <p>There are multiple private tutors as well! There is a bulletin board
 in the Wilson building where student tutors post their contact
@@ -180,22 +186,22 @@ Educational Benefits to help pay for school, there are free statistics
 tutors available to them through the Veterans Center on Campus. The
 Veterans Support Center is also located in Romney, but on the first
 floor.</p>
-<p><strong>4. Stack Overflow</strong></p>
-<p>If you run in to issues when running through the code files prior to
-class, <a href="https://stackoverflow.com/">Stack Overflow</a> is a good
-resource to help you troubleshoot in <code>R</code> when you do not have
-your lead instructor available to ask.</p>
 <hr />
 </div>
 </div>
 <div id="section-introduction-to-r" class="section level2">
 <h2>Introduction to R</h2>
+<blockquote>
 <p>Coding can be very intimidating, especially for students with no
 prior coding experience. Thus, the <code>R</code> script files
 accompanying activities and labs require pretty minimal amount of
 alterations by the students. Students will be expected to gradually
 contribute more in <code>R</code>, but are not expected to be expert
 coders at any point during the course.</p>
+</blockquote>
+<p><span class="math inline">\(~\)</span></p>
+<div id="section-rstudio-layout" class="section level3">
+<h3><code>RStudio</code> Layout</h3>
 <p>In order to get started with <code>R</code> and <code>RStudio</code>,
 it will be beneficial to understand the User Interface.
 <code>RStudio</code> has the following layout:</p>
@@ -215,13 +221,29 @@ it will be beneficial to understand the User Interface.
 <img src="images/rstudio.png" alt="" />
 <p class="caption">RStudio layout</p>
 </div>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+<div id="section-personalize-rstudio-appearance" class="section level3">
+<h3>Personalize <code>RStudio</code> Appearance</h3>
 <p>The color scheme of <code>RStudio</code> can also be changed by going
-to <strong>Tools –&gt; Global Options –&gt; Appearance</strong>. This
-can make the long days of coding a lot easier on the eyes. Another way
-to personalize <code>RStudio</code> is to change the pane layout. This
-can be done in <strong>Tools –&gt; Global Options –&gt; Pane
-Layout</strong>.</p>
-<p>—ADD NOTE ON HOW TO CHANGE THE FONT SIZE FOR ACCESIBILITY</p>
+to <strong>Tools –&gt; Global Options –&gt; Appearance –&gt; Editor
+Theme</strong>. This can make the long days of coding a lot easier on
+the eyes.</p>
+<p>Another way to personalize <code>RStudio</code> is to change the pane
+layout. This can be done in <strong>Tools –&gt; Global Options –&gt;
+Pane Layout</strong>.</p>
+<p>Font size is another feature that can be altered for aesthetics and
+accessibility reasons. To change the font size in <code>RStudio</code>,
+click <strong>Tools</strong> in the upper left panel –&gt; select
+<strong>Global Options</strong> –&gt; choose the fourth option from the
+top titled <strong>Appearance</strong> –&gt; change the <strong>editor
+font size</strong> –&gt; click <strong>Apply</strong> to see what the
+font size will look like –&gt; once satisfied, select
+<strong>OK</strong>.</p>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+<div id="section-basics-of-coding-in-r" class="section level3">
+<h3>Basics of Coding in <code>R</code></h3>
 <p>Now that <code>RStudio</code> is personalized to your specifications,
 we can start diving into the basics of coding with <code>R</code>. One
 of the most useful concepts is to store values as a variable. This can
@@ -278,6 +300,7 @@ data-lines="0">
 Console. We see how many rows and columns the dataset has as well as the
 variables and their type. Variables can either be ‘double’ if they are
 numbers of ‘character’ if they are words.</p>
+<p><span class="math inline">\(~\)</span></p>
 <p>Each row in this particular dataset holds information for a single
 roller coaster, and the columns represent:</p>
 <table>
@@ -335,7 +358,7 @@ roller coaster, and the columns represent:</p>
 </tr>
 <tr class="odd">
 <td>Drop</td>
-<td>Length of largest gap between hgih and low points of roller coaster
+<td>Length of largest gap between high and low points of roller coaster
 (ft)</td>
 </tr>
 <tr class="even">
@@ -357,6 +380,8 @@ or No)</td>
 </tr>
 </tbody>
 </table>
+<p><span class="math inline">\(~\)</span></p>
+</div>
 <div id="section-importing-a-dataset-using-the-drop-down-menu"
 class="section level3">
 <h3>Importing a Dataset using the Drop-Down Menu</h3>
@@ -364,18 +389,19 @@ class="section level3">
 the server <strong><em>using the drop down menu</em></strong> before
 <code>R</code> can read it in like above.</p>
 <p>In the Environment tab (top right), click <em>Import Dataset</em>
--&gt; choose the <em>From Text (base)</em> option <img
-src="images/ImportingData.jpg" alt="importdata" /> -&gt; students will
-select the dataset from where the file is downloaded on their
-device.</p>
+-&gt; choose the <em>From Text (base)</em> option</p>
+<p><img src="images/ImportingData.jpg" /></p>
+<p>-&gt; students will select the dataset from where the file is
+downloaded on their device.</p>
 <p>Once they have selected the dataset, another window will appear.
 Here, it is critical that they <strong>select YES for Heading</strong>
-for the dataset to be uploaded correctly and usable. <img
-src="images/ImportHeading.jpg" alt="headingYES" /> After ‘Yes’ is
-selected, click ‘Import’ and you are done!</p>
+for the dataset to be uploaded correctly and usable.</p>
+<p><img src="images/ImportHeading.jpg" /></p>
+<p>After ‘Yes’ is selected, click ‘Import’ and you are done!</p>
 <p>If a student claims they imported the dataset but it still is not
 reading in correctly for them, walk through this process with them to
 double check.</p>
+<p><span class="math inline">\(~\)</span></p>
 </div>
 <div id="section-viewing-the-dataset" class="section level3">
 <h3>Viewing the Dataset</h3>
@@ -390,7 +416,9 @@ coding, and often is the source of early mistakes in STAT 216.</p>
 from a dataset, we can write <code>[row,column]</code> after the dataset
 to get a subset of the data frame. The <code>View()</code> function can
 also be helpful to view the entire dataset by typing the following into
-the <strong>Console</strong>: View(RollerCoasters)</p>
+the <strong>Console</strong>:</p>
+<pre class="r"><code>View(RollerCoasters)</code></pre>
+<p><span class="math inline">\(~\)</span></p>
 <div class="tutorial-exercise" data-label="practice2"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
@@ -426,6 +454,7 @@ documentation of your code through comments so others can easily
 understand it. Comments can exist on a line alone, after a line with a
 section of a function, but cannot exist between code on the same
 line.</p>
+<p><span class="math inline">\(~\)</span></p>
 </div>
 <div id="section-now-you-try" class="section level3">
 <h3>Now You Try!</h3>
@@ -433,10 +462,15 @@ line.</p>
 <h4>Exercise 1</h4>
 <p><strong>Write code to print out the 5th and 18th rows from the
 <code>RollerCoasters</code> dataset.</strong></p>
-<div class="tutorial-exercise" data-label="Intro-To-R-Exercise-1"
+<div class="tutorial-exercise" data-label="IntroToRExercise1"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
-<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+</div>
+<div class="tutorial-exercise-support"
+data-label="IntroToRExercise1-solution" data-completion="1"
+data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>RollerCoasters[5:8, ]</code></pre>
 </div>
 <hr />
 </div>
@@ -444,6 +478,7 @@ data-lines="0">
 </div>
 <div id="section-navigating-the-rstudio-server" class="section level2">
 <h2>Navigating the RStudio Server</h2>
+<p><span class="math inline">\(~\)</span></p>
 <div id="section-where-to-access-it" class="section level3">
 <h3>Where to Access it</h3>
 <p>Students will have multiple modes of accessing the
@@ -456,10 +491,14 @@ page in D2L.</p>
 <p>The <code>RStudio</code> Server can also be accessed through the <a
 href="https://mtstateintrostats.github.io/SummerSyllabus/">Syllabus</a>
 under Course Materials and Resources -&gt; RStudio.</p>
-<p>Once students are directed to the RStudio Server, they will then be
+<ul>
+<li>Once students are directed to the RStudio Server, they will then be
 prompted to <strong>Sign in</strong> using their <strong>MSU NetID and
 password</strong> - this will be the same login information they use to
-access D2L.</p>
+access D2L.</li>
+</ul>
+<p><span class="math inline">\(~\)</span> <span
+class="math inline">\(~\)</span></p>
 </div>
 <div id="section-r-is-case-sensitive" class="section level3">
 <h3>R is Case-Sensitive</h3>
@@ -471,17 +510,35 @@ when storing or calling a dataset, variables, or functions.</p>
 <p>For example, if you are trying to use a variable named “Year” but
 accidentally type “year” with a lowercase “y”, <code>R</code> will not
 recognize or understand what you are trying to reference.</p>
-<p>—- MENTION TAB COMPLETE TO REDUCE ISSUES WITH CASE SENSITIVITY</p>
+<ul>
+<li>You can also use <strong>Tab-Completion</strong> to reduce issues
+with case sensitivity. This is where <code>R</code> will suggest
+auto-complete options when you start typing in a variable name. By
+selecting one of these options, you are sure to reference something that
+<code>R</code> will recognize. Here is an example of what this looks
+like:</li>
+</ul>
+<p><img src="images/tabcomplete.png" /></p>
+<p><span class="math inline">\(~\)</span> <span
+class="math inline">\(~\)</span></p>
 <div id="section-excercise-2" class="section level4">
 <h4>Excercise 2</h4>
 <p><strong>Referencing the RollerCoasters Dataset, can you find and
 correct the mistake? (Hint: remember that <code>R</code> is
 case-sensitive!)</strong></p>
-<div class="tutorial-exercise" data-label="Server-Exercise-2"
+<div class="tutorial-exercise" data-label="ServerExercise2"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
-<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+<pre class="text"><code>summary(rollercoasters)</code></pre>
+<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
 </div>
+<div class="tutorial-exercise-support"
+data-label="ServerExercise2-solution" data-completion="1"
+data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>summary(RollerCoasters)</code></pre>
+</div>
+<p><span class="math inline">\(~\)</span> <span
+class="math inline">\(~\)</span></p>
 </div>
 </div>
 <div id="section-using-packages" class="section level3">
@@ -509,14 +566,14 @@ in it. This must be done each time a new session in the
 <p>Here is an analogy that has been extremely helpful when explaining
 why students must run the <code>library( )</code> codes first whenever
 they open an <code>R</code> script file:</p>
-<div class="figure">
-<img src="images/RInstallvsLibrary.jpeg" alt="" />
-<p class="caption">Library Packages</p>
-</div>
+<p><img src="images/RInstallvsLibrary.jpeg" /></p>
+<p><span class="math inline">\(~\)</span> <span
+class="math inline">\(~\)</span></p>
 </div>
 <div id="section-importing-and-exporting-files-within-the-server"
 class="section level3">
 <h3>Importing and Exporting Files within the Server</h3>
+<p><span class="math inline">\(~\)</span></p>
 <div id="section-importing-files" class="section level4">
 <h4>Importing Files</h4>
 <p>In the bottom right corner of the server, select <em>Upload</em> in
@@ -525,6 +582,7 @@ select the file where ever it was saved or download to their device
 -&gt; <em>Select File</em> -&gt; <em>Open</em>.</p>
 <p>This should automatically open the file in the top left panel of the
 server.</p>
+<p><span class="math inline">\(~\)</span></p>
 </div>
 <div id="section-exporting-files" class="section level4">
 <h4>Exporting Files</h4>
@@ -545,8 +603,8 @@ file on their device so they can upload it to Gradescope if asked.</p>
 </div>
 </div>
 </div>
-<div id="section-plotting-with-ggplot" class="section level2">
-<h2>Plotting with ggplot</h2>
+<div id="section-plotting-with-ggplot2" class="section level2">
+<h2>Plotting with <code>ggplot2</code></h2>
 <div id="section-what-is-ggplot" class="section level3">
 <h3>What is ggplot?</h3>
 <p><code>ggplot</code> is a layer-based way of creating graphs within
@@ -555,10 +613,7 @@ graphing code is that it allows us to build on a graph to make it as
 complex as we would like. Let’s take a look at some examples and build
 them up as we go. For this, we will be working with the
 <code>RollerCoasters</code> data set.</p>
-<pre class="r"><code>ggplot(data = RollerCoasters)</code></pre>
-<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-1-1.png" width="624" /></p>
-<pre class="r"><code>## Creates a blank ggplot(), referencing the RollerCoasters dataset
-## Don&#39;t worry! It is supposed to look like that!</code></pre>
+<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-2-1.png" width="624" /></p>
 <p>We can see that this code simply creates a blank graph. This is
 because we have not specified what variables we would like to use. Let’s
 take a look at the relationship between the year that the coaster was
@@ -567,103 +622,120 @@ opened and its top speed.</p>
 (<code>aes</code>) function), by selecting the variables to be plotted
 and specifying how to present them in the graph, e.g. as x/y positions
 or characteristics such as size, shape, color, etc.</p>
-<pre class="r"><code>ggplot(data = RollerCoasters,
-       mapping = aes(x = Year_Opened, y = Top_Speed))</code></pre>
-<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-2-1.png" width="624" /></p>
-<pre class="r"><code># Creates a blank ggplot(), with the variables mapped to the x- and y-axis
-# ggplot() knows where the variables live, since you have defined the data to use</code></pre>
+<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-3-1.png" width="624" /></p>
 <p>Now we can see that the variables of interest are on our graph, but
 the data itself is still absent. That is because we have not specified a
 way for the data to be presented. There are several ways to do this, the
 most common of which are as follows:</p>
-<pre><code>  * `geom_point()` for scatter plots, dot plots, etc.
-  * `geom_hist()` for histograms
-  * `geom_boxplot()` for boxplots   
+<pre><code>  * `geom_point()` adds points to the plot
   * `geom_bar()` for bar charts 
-  * `geom_line()` for trend lines, time series, etc.  
-  </code></pre>
-<p>—- DOUBLE CHECK R RFILES TO SEE WHICH ARE MOST RELEVANT</p>
+  * `geom_histogram()` for histograms
+  * `geom_boxplot()` for boxplots   
+  * `geom_smooth()` for regression lines </code></pre>
 <p>For this example, lets create a scatter plot. We can do this by
 adding the <code>geom_point</code> argument to our graph. Note that for
 each layer that is added on, we must separate the lines with a plus
 (+).</p>
-<pre class="r"><code>ggplot(data = RollerCoasters,
-       mapping = aes(x = Year_Opened, y = Top_Speed)) +
-  geom_point()</code></pre>
-<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-3-1.png" width="624" /></p>
-<pre class="r"><code> # Adds a point for each row (observation) in the data </code></pre>
+<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-4-1.png" width="624" /></p>
 <p>If we wanted to color all of the points the same color, we can put
 the <code>color =</code> argument in the <code>geom_point()</code>
 layer.</p>
-<pre class="r"><code>ggplot(data = RollerCoasters,
-       mapping = aes(x = Year_Opened, y = Top_Speed)) +
-  geom_point(color = &#39;blue&#39;)</code></pre>
-<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-4-1.png" width="624" /></p>
-<pre class="r"><code># Colors the all of the points in the plot blue</code></pre>
+<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-5-1.png" width="624" /></p>
 <p>If we wanted to add a categorical variable to this graph, we could
 tell <code>R</code> to color the points based on that variable. For the
 next graph, lets color the points based on the roller coaster
 <code>Type</code>. This will be added into the <code>aes()</code>
 section as it is a variable associated with an aesthetic of our
 graph.</p>
-<pre class="r"><code>ggplot(data = RollerCoasters,
-       mapping = aes(x = Year_Opened, y = Top_Speed, color = Type)) +
-  geom_point()</code></pre>
-<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-5-1.png" width="624" /></p>
-<pre class="r"><code># Colors points in the plot by coaster Type
-# Notice how it automatically adds a legend to the plot! How nice is that?!</code></pre>
+<p><img src="Stat-216-Workshop_files/figure-html/unnamed-chunk-6-1.png" width="624" /></p>
+<p><span class="math inline">\(~\)</span> <span
+class="math inline">\(~\)</span></p>
 </div>
 <div id="section-troubleshooting-common-ggplot2-coding-issues"
 class="section level3">
 <h3>Troubleshooting Common ggplot2 Coding Issues</h3>
 <p>One of the most common issues that can come up when working with
-<code>ggplot</code> is data sets being mispelled. Let’s take a look at
-what this looks like. Additionally, try to correct the error.</p>
-<div class="tutorial-exercise" data-label="ggplot-troubleshooting-1"
+<code>ggplot</code> is data sets being misspelled or incorrectly typed.
+Let’s take a look at what this looks like. Additionally, try to correct
+the error.</p>
+<div class="tutorial-exercise" data-label="ggplotTroubleshooting1"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
 <pre class="text"><code>ggplot(data = Rollercoasters,
        mapping = aes(x = Design, y = Top_Speed)) + 
   geom_boxplot()</code></pre>
-<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
 </div>
+<div class="tutorial-exercise-support"
+data-label="ggplotTroubleshooting1-solution" data-completion="1"
+data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(data = RollerCoasters,
+       mapping = aes(x = Design, y = Top_Speed)) + 
+  geom_boxplot()</code></pre>
+</div>
+<p><span class="math inline">\(~\)</span></p>
 <p>The next most common is the + being in the incorrect spot in the
 code. The + must be placed at the end of a line rather than at the
 beginning of a new one. Let’s take a look at an example of this.
 Additionally, try to correct the error.</p>
-<div class="tutorial-exercise" data-label="ggplot-troubleshooting-2"
+<div class="tutorial-exercise" data-label="ggplotTroubleshooting2"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
 <pre class="text"><code>ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened))
   + geom_histogram()</code></pre>
-<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
 </div>
+<div class="tutorial-exercise-support"
+data-label="ggplotTroubleshooting2-solution" data-completion="1"
+data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(data = RollerCoasters,
+       mapping = aes(x = Year_Opened)) +
+  geom_histogram()</code></pre>
+</div>
+<p><span class="math inline">\(~\)</span></p>
 <p>Another very common error is when a set of parenthesis is opened, but
 never closed. One way to avoid this is to turn on “Rainbow Parenthesis”
-by going to Tools –&gt; Global Options –&gt; Code –&gt; Display –&gt;
-Rainbow Parenthesis.</p>
+by going to <strong>Tools –&gt; Global Options –&gt; Code –&gt; Display
+–&gt; Rainbow Parenthesis</strong>.</p>
 <p>However, it is still possible for stray parenthesis to be involved in
 code. Let’s take a look at an example of this. Fix the code by adding or
 removing parenthesis.</p>
-<div class="tutorial-exercise" data-label="ggplot-troubleshooting-3"
+<div class="tutorial-exercise" data-label="ggplotTroubleshooting3"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
 <pre class="text"><code>ggplot(data = RollerCoasters,
        mapping = aes(x = Duration, y = Length))) +
   geom_point()</code></pre>
-<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
 </div>
+<div class="tutorial-exercise-support"
+data-label="ggplotTroubleshooting3-solution" data-completion="1"
+data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(data = RollerCoasters,
+       mapping = aes(x = Duration, y = Length)) +
+  geom_point()</code></pre>
+</div>
+<p><span class="math inline">\(~\)</span></p>
 <p>Now, fill in the template below to create a plot with Duration on the
 x-axis and Maximum Height on the y-axis. (Hint: <em>replace</em> the
 underscores with the data set name and variable names.)</p>
-<div class="tutorial-exercise" data-label="ggplot-troubleshooting-4"
+<div class="tutorial-exercise" data-label="ggplotTroubleshooting4"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
 <pre class="text"><code>ggplot(data = ___,
-       mapping = aes(x = ___, y = ___))) +
-  geom_point()</code></pre>
-<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+       mapping = aes(x = ___, y = ___)) +
+  geom_point() +
+  geom_smooth(method = &quot;lm&quot;, se = FALSE)</code></pre>
+<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+</div>
+<div class="tutorial-exercise-support"
+data-label="ggplotTroubleshooting4-solution" data-completion="1"
+data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(data = RollerCoasters,
+       mapping = aes(x = Duration, y = Max_Height)) +
+  geom_point() +
+  geom_smooth(method = &quot;lm&quot;, se = FALSE)</code></pre>
 </div>
 <hr />
 </div>
@@ -677,6 +749,7 @@ data that is designed for the STAT 216 and STAT 217 courses at Montana
 State University. For more information, visit the <a
 href="https://github.com/greenwood-stat/catstats">github repository for
 catstats</a>.</p>
+<p><span class="math inline">\(~\)</span></p>
 </div>
 <div id="section-installing-catstats" class="section level3">
 <h3>Installing catstats</h3>
@@ -685,10 +758,9 @@ server, you must install <code>catstats</code>. This can be done by
 first installing the <code>remotes</code> package, which allows us to
 install packages from github repositories. See the code chunk below for
 installing <code>remotes</code>.</p>
-<pre class="r"><code>install.packages(&quot;remotes&quot;)</code></pre>
 <p>Once <code>remotes</code> is installed, we can install
 <code>catstats</code> using the code below.</p>
-<pre class="r"><code>remotes::install_github(&quot;greenwood-stat/catstats&quot;)</code></pre>
+<p><span class="math inline">\(~\)</span></p>
 </div>
 <div id="section-troubleshooting-common-catstats-coding-issues"
 class="section level3">
@@ -707,26 +779,47 @@ say that if an error is caused, there will likely be a message that
 appears in the Console window that lets the student know what might be
 the problem. Make sure students are always checking spelling and error
 codes if they are having issues.</p>
-<p>— IF A STUDENT DOES NOT TRY TO DOWNLOAD IT USING REMOTES AND TRYS TO
-DOWNLOAD IT USING PACKAGES, HERE IS THE ERROR THEY WILL SEE</p>
+<p><span class="math inline">\(~\)</span></p>
 </div>
 <div id="section-now-you-try-1" class="section level3">
 <h3>Now You Try!</h3>
-<div id="section-exercise-__" class="section level4">
-<h4>Exercise __</h4>
+<div id="section-exercise-3" class="section level4">
+<h4>Exercise 3</h4>
 <p><strong>Fix the following code.</strong></p>
-<div class="tutorial-exercise" data-label="catstats-exercise-1"
+<div class="tutorial-exercise" data-label="catstatsExercise1"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
 <pre class="text"><code>one_proportion_test(
   probability_success = 50,
   sample_size = 10,
   summary_measure = &quot;proportion&quot;,
+  
   direction = &quot;greater&quot;,
   as_extreme_as = 0.6,
   number_repetitions = 20
 )</code></pre>
-<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+<script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":true,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
+</div>
+<div class="tutorial-exercise-support"
+data-label="catstatsExercise1-solution" data-completion="1"
+data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>one_proportion_test(
+  probability_success = .50,
+  sample_size = 10,
+  summary_measure = &quot;proportion&quot;,
+  direction = &quot;greater&quot;,
+  as_extreme_as = 0.6,
+  number_repetitions = 20
+)</code></pre>
+</div>
+<p><span class="math inline">\(~\)</span></p>
+<p>If a student does not follow directions to download
+<code>catstats</code> using <code>remotes</code>, and instead attempts
+to download it using the “Packages” tab in the lower right panel, they
+will encounter the following error:</p>
+<div class="figure">
+<img src="images/downloaderror.PNG" alt="" />
+<p class="caption">Incorrectly Downloading catstats</p>
 </div>
 <hr />
 </div>
@@ -735,10 +828,13 @@ data-lines="0">
 <div id="section-coding-expectations-for-students"
 class="section level2">
 <h2>Coding Expectations for Students</h2>
+<blockquote>
 <p>As mentioned previously, the level of coding ability expected of
 students is very minimal. Therefore, students will only need to alter a
 few key areas in the code files that were created to accompany the
 activities and labs.</p>
+</blockquote>
+<p><span class="math inline">\(~\)</span></p>
 <div
 id="section-recurrent-phrases-and-words-that-students-will-need-to-find-and-replace"
 class="section level3">
@@ -765,53 +861,52 @@ numeric value, variable name, or level of a variable. To discern which
 is expected, a comment with almost always follow on the same line of
 code and describe exactly what should be entered there.</p></li>
 </ul>
+<p><span class="math inline">\(~\)</span></p>
 <p><strong>Note</strong>: students will often need to <em>replace</em>
 these phrases, not type the answer next to it! When replacing a word or
-phrase, often students will accidentally delete quotation marks,
-commmas, or parentheses that are necessary for the function to run
-correctly. You will be expected to be able to look at catstats functions
-and ggplot code, assess what is incorrect or missing, and fix the
-issue.</p>
+phrase, often students will accidentally delete quotation marks, commas,
+or parentheses that are necessary for the function to run correctly. You
+will be expected to be able to look at catstats functions and ggplot
+code, assess what is incorrect or missing, and fix the issue.</p>
+<p><span class="math inline">\(~\)</span> <span
+class="math inline">\(~\)</span></p>
 </div>
 <div id="section-common-mistakes-include" class="section level3">
 <h3>Common Mistakes include:</h3>
-<p><strong>A</strong>. Replacing the word, or ‘call’, that the functions
+<p><strong>A</strong>. Replacing the word, or ‘call’, that functions
 will use to reference the dataset instead of the word ‘datasetname’. The
 actually name of the uploaded dataset, which will usually be read in
 from a text file or .csv file, will appear in the Environment and
 <strong>must be typed exactly how it appears there</strong> or else
 <code>R</code> will not recognize it.</p>
 <p>Here is an example of a given line of code with no edits:</p>
-<pre class="r"><code>Coasters &lt;- datasetname # Read data set in</code></pre>
 <p>Here is an example the code edited incorrectly:</p>
-<pre class="r"><code>RollerCoasters &lt;- datasetname # Read data set in</code></pre>
 <p>This is how they were supposed to have edited the code:</p>
-<pre class="r"><code>Coasters &lt;- RollerCoasters # Read data set in</code></pre>
 <p>It is likely that functions further in the document will use
 ‘Coasters’ to reference the dataset. They will not be able to identify
 it properly if the mistake above is made.</p>
+<p><span class="math inline">\(~\)</span></p>
 <p><strong>B</strong>. Not running the <code>library( )</code> codes
 <strong>prior</strong> to attempting to run other code. This is a good
 time to bring up that handy light bulb metaphor from before. Students
 must run these each time a new session in the <code>RStudio</code>
 Server is started.</p>
+<p><span class="math inline">\(~\)</span></p>
 <p><strong>C</strong>. Students may trying to <strong>run functions
 before reading in the dataset</strong>. The dataset code must be edited
 correctly and run for <code>R</code> to know what it is referencing and
 what variable names it is dealing with.</p>
-<pre><code>* In general, it is important that students run the code **in the order that it appears**. Otherwise, they may run into issues.</code></pre>
+<ul>
+<li>In general, it is important that students run the code <strong>in
+the order that it appears</strong>. Otherwise, they may run into
+issues.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
 <p><strong>D</strong>. <strong><em>NOT Reading!</em></strong> Students
 are often in a hurry to complete to activity or lab for the day, and do
 not read the instructions as closely as they should. Thus, they may to
 skip over explicit instructions commented within the code and ask you
 instead. Many exercises will be presented to the students like this:</p>
-<pre class="r"><code>two_proportion_test(formula = response~explanatory, # response ~ explanatory
-                    data= iliad, # Name of data set
-                    first_in_subtraction = &quot;xx&quot;, # Order of subtraction: enter the name of Group 1
-                    number_repetitions = 1000, # Always use a minimum of 1000 repetitions
-                    response_value_numerator = &quot;xx&quot;, # Define which outcome is a success 
-                    as_extreme_as = xx, # Calculated observed statistic (difference in sample proportions)
-                    direction=&quot;xx&quot;) # Alternative hypothesis direction (&quot;greater&quot;,&quot;less&quot;,&quot;two-sided&quot;)</code></pre>
 <p>Notice how there is a comment to the right of each line in the code
 <strong>explicitly telling the student what to replace the corresponding
 key phrase with</strong>. Despite this, students may call you over to
@@ -819,12 +914,15 @@ ask what they should replace the phrase with anyway. Just a word of
 advice, this can get very repetitive so it may be wise to give them some
 slack early on but still point out where they can find the answer on
 their own.</p>
+<p><span class="math inline">\(~\)</span></p>
 <p><strong>E</strong>. Accidentally deleting quotation marks or commas
 after an argument within a function. If you are unsure if this has
 occurred, don’t hesitate to ask the student to open another unedited
-version of the same file under a different name (so it doesn’t overide
+version of the same file under a different name (so it doesn’t override
 all of the edits and progress they have made on their current R file) to
 double check that area of the template code.</p>
+<p><span class="math inline">\(~\)</span> <span
+class="math inline">\(~\)</span></p>
 </div>
 <div id="section-errors-vs.-warning-messages" class="section level3">
 <h3>Errors vs. Warning Messages</h3>
@@ -879,12 +977,12 @@ comfortable asking a fellow student or TA their questions. Nobody enjoys
 being belittled for asking questions, so try to encourage them when they
 do. Additionally, don’t be afraid to admit if you are unsure about
 something and call your lead instructor over to help.</p></li>
-</ul>
-<p>— CAREFULLY CHOOSE YOUR WORDS TO NOT DISCOURAGE THEM AND STILL
-ENCOURAGE THEM TO WORK TOWARDS AN ANSWER. although we may understand
-coding now, this was also difficult for us at one time too. avoid using
-words such as ‘easy’ ‘simple’ and ‘just do this…’</p>
-<ul>
+<li><p><strong><em>Choose your words carefully.</em></strong> When
+answering questions, we want to avoid discouraging them while correcting
+any mistakes. Thus, it is important to choose your words carefully.
+Although we may have a better understand of coding now, we must remember
+that this was also difficult for us at one time too. Avoid using words
+such as ‘easy’ ‘simple’ and ‘just do this…’</p></li>
 <li><p><strong><em>Attend the Weekly Meetings with your lead instructor
 as often as possible.</em></strong> This is a great time to touch base
 with your team, communicate any subjects that are particularly
@@ -900,12 +998,120 @@ must also be balanced with instruction. Nobody is happy if one student
 airing their grievances takes time away from you helping another
 student.</p></li>
 </ul>
+<p><span class="math inline">\(~\)</span></p>
 <p>Most importantly, don’t be afraid to ask questions yourself and learn
 things alongside the students! Communication and effort go a long way,
 regardless of the situation.</p>
 <p>Luckily, this information will always be here for you to reference if
 you have any specific questions or just want a quick refresher.</p>
 <p>We all wish you good luck and a successful semester! :)</p>
+<hr />
+</div>
+<div id="section-resources-for-stat-216217-tas" class="section level2">
+<h2>Resources for STAT 216/217 TA’s</h2>
+<p><strong>1. Your Instruction Team</strong></p>
+<p>We have already stressed the importance of communicating with your
+lead instructor and instruction team. This is because your lead
+instructor and team can be incredibly helpful if you are struggling with
+running through the code before class, trying to fix an error in real
+time, or even just explaining a concept to a student. Don’t hesitate to
+admit if you are unsure and ask your lead instructor or another TA to
+help. They may be able to better assist a student or answer a question
+with more clarity, which you can learn from and use that information
+when helping others afterwards! You can connect with your team: * In
+Person before/during/after Class * In your section’s Microsoft Teams
+Channel * Over Email or text It is a good idea to make sure to exchange
+contact information and discuss which methods of communication are
+preferred by your team.</p>
+<p><span class="math inline">\(~\)</span></p>
+<p><strong>2. The Mathematics and Statistics Center (MSC)</strong></p>
+<p>The MSC can be another good resource for TA’s if they have coding
+questions. Again, it is located on the same floor in Romney that the
+STAT 216 classes are held, so you can’t miss it.</p>
+<p><span class="math inline">\(~\)</span></p>
+<p><strong>3. Help Files within <code>R</code></strong></p>
+<p>The <code>?</code> and <code>help()</code> commands are very
+powerful. For functions, placing the <code>?</code> before the name,
+will tell <code>R</code> to search for that name in all of the
+functions, in all of the packages you have installed.</p>
+<ul>
+<li><p>If it finds <em>one</em> <strong>identical match</strong>, it
+will display the help file for that function in the Help tab in the
+bottom-right corner.<br />
+</p></li>
+<li><p>If it finds <em>more than one</em> <strong>identical
+match</strong>, it will display the functions, in their respective
+packages, that you have to choose from.<br />
+</p></li>
+<li><p>If it finds <em>no</em> <strong>identical match</strong>, it will
+tell you that
+“<code>No documentation for ____ in specified packages and libraries:,</code>”
+and suggests you use a <code>??</code> instead.</p>
+<ul>
+<li>A <code>??</code> in front of the function name will search
+<strong>all of <code>R</code></strong> for named functions similar to
+what you typed.<br />
+</li>
+<li>The output will tell you what package the function is in, as well as
+the function’s name (<code>package::function</code>).</li>
+</ul></li>
+</ul>
+<p>If you would like help on a particular package, say one that you just
+downloaded, then you can use the same command(s) to get help. These
+commands will load up a help page (in RStudio) in the Help pane. Each
+help page is broken down into sections:</p>
+<ul>
+<li>Description: An extended description of what the function
+does.<br />
+</li>
+<li>Usage: The arguments of the function and their default values.<br />
+</li>
+<li>Arguments: An explanation of the object each argument is
+expecting.<br />
+</li>
+<li>Details: Any important details to be aware of.<br />
+</li>
+<li>Value: The object the function returns.<br />
+</li>
+<li>See Also: Any related functions that may be useful.<br />
+</li>
+<li>Examples: Some examples for how to use the function.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<p><strong>4. Stack Overflow</strong></p>
+<p>If you run in to issues when running through the code files prior to
+class, <a href="https://stackoverflow.com/">Stack Overflow</a> is a good
+resource to help you troubleshoot in <code>R</code> when you do not have
+your lead instructor available to ask.</p>
+<ul>
+<li>Regardless of how you solve an issues outside of class, it is good
+practice to communicate your issues and how you resolved it with your
+team prior to class. As we mentioned before, <strong>if you run into an
+issue, it is more than likely that students will run into the same
+problem</strong>. Being prepared to encounter these issues and know how
+to help students fix them is a big part of your role as a Teaching
+Assistant.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<p><strong>5. Further R Workshops</strong></p>
+<p>Both Eliot and Harley (your instructors today) have been a part of
+editing and updating a variety of other R Workshops which are
+co-organized by the Montana State University Library, Department of
+Mathematical Sciences, and Statistical Consulting and Research Services
+(SCRS, <a href="https://www.montana.edu/statisticalconsulting/"
+class="uri">https://www.montana.edu/statisticalconsulting/</a>).</p>
+<p>This series of R Workshops are <strong>free to all MSU Students and
+Employees</strong>. They are created to help participants gain a better
+understanding of how to use <code>R</code> and apply their skills to
+other projects. This workshop was very directed in terms of what you
+will encounter while TA’ing for STAT 216, but the other workshops are
+meant to help you learn <code>R</code> for personal and professional use
+in addition to/outside of STAT 216. More Information on the Fall 2022 R
+Workshops can be found in the following flyer:</p>
+<div class="figure">
+<img src="images/Fall2022Flyer.png" alt="" />
+<p class="caption">Fall 2022 R Workshops Flyer</p>
+</div>
 <hr />
 </div>
 <div id="section-montana-state-university-r-workshops-team"
@@ -923,6 +1129,7 @@ supported by Montana INBRE (National Institutes of Health, Institute of
 General Medical Sciences Grant Number P20GM103474). The workshops for
 2021-2022 are supported by Faculty Excellence Grants from MSU’s Center
 for Faculty Excellence.</p>
+<p><span class="math inline">\(~\)</span></p>
 <p>Research related to the development of these workshops is to appear
 in:</p>
 <ul>
@@ -930,39 +1137,14 @@ in:</p>
 Workshops for Data-Intensive Environmental Science Research, <em>Journal
 of Statistics Education</em>.</li>
 </ul>
-<p>The workshops for 2021-2022 involve modifications of materials and
+<p>The workshops for 2022-2023 involve modifications of materials and
 are licensed CC-BY. <img src="88x31.png"
 alt="Creative Commons License" /> This work is licensed under a <a
 href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
 Attribution 4.0 International License</a>.</p>
+<p><span class="math inline">\(~\)</span></p>
 <p>The workshops for 2021-2022 involve modifications of materials and
 are being taught by:</p>
-<div id="section-sara-mannheimer" class="section level3">
-<h3>Sara Mannheimer</h3>
-<ul>
-<li>Sara Mannheimer is an Associate Professor and Data Librarian at
-Montana State University, where she helps shape practices and theories
-for curation, publication, and preservation of data. Her research
-examines the social, ethical, and technical issues of a data-driven
-world. She is the project lead for the MSU Dataset Search, and she is
-working on a book about data curation to support responsible qualitative
-data reuse and big social research.</li>
-</ul>
-</div>
-<div id="section-greta-linse" class="section level3">
-<h3>Greta Linse</h3>
-<ul>
-<li>Greta Linse is the Interim Director of Statistical Consulting and
-Research Services (<a
-href="https://www.montana.edu/statisticalconsulting/"
-class="uri">https://www.montana.edu/statisticalconsulting/</a>) and the
-Project Manager for the Human Ecology Learning and Problem Solving
-(HELPS) Lab (<a href="https://helpslab.montana.edu"
-class="uri">https://helpslab.montana.edu</a>). Greta has been teaching,
-documenting and working with statistical software including R and
-RStudio for over 10 years.</li>
-</ul>
-</div>
 <div id="section-harley-clifton" class="section level3">
 <h3>Harley Clifton</h3>
 <ul>
@@ -995,6 +1177,32 @@ video games, and he restores vintage automobiles and motorcycles in his
 free time.</li>
 </ul>
 </div>
+<div id="section-sara-mannheimer" class="section level3">
+<h3>Sara Mannheimer</h3>
+<ul>
+<li>Sara Mannheimer is an Associate Professor and Data Librarian at
+Montana State University, where she helps shape practices and theories
+for curation, publication, and preservation of data. Her research
+examines the social, ethical, and technical issues of a data-driven
+world. She is the project lead for the MSU Dataset Search, and she is
+working on a book about data curation to support responsible qualitative
+data reuse and big social research.</li>
+</ul>
+</div>
+<div id="section-greta-linse" class="section level3">
+<h3>Greta Linse</h3>
+<ul>
+<li>Greta Linse is the Interim Director of Statistical Consulting and
+Research Services (<a
+href="https://www.montana.edu/statisticalconsulting/"
+class="uri">https://www.montana.edu/statisticalconsulting/</a>) and the
+Project Manager for the Human Ecology Learning and Problem Solving
+(HELPS) Lab (<a href="https://helpslab.montana.edu"
+class="uri">https://helpslab.montana.edu</a>). Greta has been teaching,
+documenting and working with statistical software including R and
+RStudio for over 10 years.</li>
+</ul>
+</div>
 <div id="section-mark-greenwood" class="section level3">
 <h3>Mark Greenwood</h3>
 <ul>
@@ -1021,8 +1229,8 @@ library(datasauRus)
 library(gridExtra)
 library(plotly)
 library(catstats)
-#library(gradethis)
-#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
+library(gradethis)
+knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
 
 # Put any code that needs to be run at beginning of App
 RollerCoasters <- read_csv("RollerCoasters.csv")
@@ -1061,12 +1269,12 @@ output$`tutorial-exercise-practice1pt1-output` <- renderUI({
 learnr:::store_exercise_cache(structure(list(label = "practice1pt1", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
 "library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "practice1pt1", code = "x <- 7", 
-        opts = list(label = "\"practice1pt1\"", exercise = "T"), 
+        opts = list(label = "\"practice1pt1\"", exercise = "TRUE"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
@@ -1084,11 +1292,12 @@ learnr:::store_exercise_cache(structure(list(label = "practice1pt1", global_setu
         aniopts = "controls,loop", warning = TRUE, error = FALSE, 
         message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "practice1pt1", exercise = TRUE, 
-        code = "x <- 7", out.width.px = 624, out.height.px = 384, 
-        params.src = "practice1pt1, exercise = T", fig.num = 0, 
-        exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "practice1pt1", exercise = TRUE, code = "x <- 7", 
+        out.width.px = 624, out.height.px = 384, params.src = "practice1pt1, exercise = TRUE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -1103,12 +1312,12 @@ output$`tutorial-exercise-practice1pt2-output` <- renderUI({
 learnr:::store_exercise_cache(structure(list(label = "practice1pt2", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
 "library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "practice1pt2", code = "x", opts = list(
-        label = "\"practice1pt2\"", exercise = "T"), engine = "r")), 
+        label = "\"practice1pt2\"", exercise = "TRUE"), engine = "r")), 
     code_check = NULL, error_check = NULL, check = NULL, solution = NULL, 
     tests = NULL, options = list(eval = FALSE, echo = TRUE, results = "markup", 
         tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
@@ -1126,11 +1335,12 @@ learnr:::store_exercise_cache(structure(list(label = "practice1pt2", global_setu
         aniopts = "controls,loop", warning = TRUE, error = FALSE, 
         message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "practice1pt2", exercise = TRUE, 
-        code = "x", out.width.px = 624, out.height.px = 384, 
-        params.src = "practice1pt2, exercise = T", fig.num = 0, 
-        exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "practice1pt2", exercise = TRUE, code = "x", 
+        out.width.px = 624, out.height.px = 384, params.src = "practice1pt2, exercise = TRUE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -1145,12 +1355,12 @@ output$`tutorial-exercise-practice1pt3-output` <- renderUI({
 learnr:::store_exercise_cache(structure(list(label = "practice1pt3", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
 "library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "practice1pt3", code = "x + x * x", 
-        opts = list(label = "\"practice1pt3\"", exercise = "T"), 
+        opts = list(label = "\"practice1pt3\"", exercise = "TRUE"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
@@ -1168,11 +1378,12 @@ learnr:::store_exercise_cache(structure(list(label = "practice1pt3", global_setu
         aniopts = "controls,loop", warning = TRUE, error = FALSE, 
         message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "practice1pt3", exercise = TRUE, 
-        code = "x + x * x", out.width.px = 624, out.height.px = 384, 
-        params.src = "practice1pt3, exercise = T", fig.num = 0, 
-        exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "practice1pt3", exercise = TRUE, code = "x + x * x", 
+        out.width.px = 624, out.height.px = 384, params.src = "practice1pt3, exercise = TRUE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -1187,12 +1398,12 @@ output$`tutorial-exercise-practice1pt4-output` <- renderUI({
 learnr:::store_exercise_cache(structure(list(label = "practice1pt4", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
 "library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "practice1pt4", code = "My_List <- c(1, 2, 'lettuce', 4, 'tomato')\n\nMy_List", 
-        opts = list(label = "\"practice1pt4\"", exercise = "T"), 
+        opts = list(label = "\"practice1pt4\"", exercise = "TRUE"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
@@ -1210,12 +1421,12 @@ learnr:::store_exercise_cache(structure(list(label = "practice1pt4", global_setu
         aniopts = "controls,loop", warning = TRUE, error = FALSE, 
         message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "practice1pt4", exercise = TRUE, 
-        code = c("My_List <- c(1, 2, 'lettuce', 4, 'tomato')", 
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "practice1pt4", exercise = TRUE, code = c("My_List <- c(1, 2, 'lettuce', 4, 'tomato')", 
         "", "My_List"), out.width.px = 624, out.height.px = 384, 
-        params.src = "practice1pt4, exercise = T", fig.num = 0, 
-        exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
+        params.src = "practice1pt4, exercise = TRUE", fig.num = 0, 
+        exercise.df_print = "paged"), engine = "r", version = "3"), class = "tutorial_exercise"))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -1230,12 +1441,12 @@ output$`tutorial-exercise-practice1pt5-output` <- renderUI({
 learnr:::store_exercise_cache(structure(list(label = "practice1pt5", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
 "library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "practice1pt5", code = "RollerCoasters <- read_csv('RollerCoasters.csv')", 
-        opts = list(label = "\"practice1pt5\"", exercise = "T"), 
+        opts = list(label = "\"practice1pt5\"", exercise = "TRUE"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
@@ -1253,11 +1464,12 @@ learnr:::store_exercise_cache(structure(list(label = "practice1pt5", global_setu
         aniopts = "controls,loop", warning = TRUE, error = FALSE, 
         message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "practice1pt5", exercise = TRUE, 
-        code = "RollerCoasters <- read_csv('RollerCoasters.csv')", 
-        out.width.px = 624, out.height.px = 384, params.src = "practice1pt5, exercise = T", 
-        fig.num = 0, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "practice1pt5", exercise = TRUE, code = "RollerCoasters <- read_csv('RollerCoasters.csv')", 
+        out.width.px = 624, out.height.px = 384, params.src = "practice1pt5, exercise = TRUE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -1272,12 +1484,12 @@ output$`tutorial-exercise-practice2-output` <- renderUI({
 learnr:::store_exercise_cache(structure(list(label = "practice2", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
 "library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "practice2", code = "RollerCoasters[1:5,1:3]", 
-        opts = list(label = "\"practice2\"", exercise = "T"), 
+        opts = list(label = "\"practice2\"", exercise = "TRUE"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
@@ -1295,11 +1507,12 @@ learnr:::store_exercise_cache(structure(list(label = "practice2", global_setup =
         aniopts = "controls,loop", warning = TRUE, error = FALSE, 
         message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "practice2", exercise = TRUE, 
-        code = "RollerCoasters[1:5,1:3]", out.width.px = 624, 
-        out.height.px = 384, params.src = "practice2, exercise = T", 
-        fig.num = 0, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "practice2", exercise = TRUE, code = "RollerCoasters[1:5,1:3]", 
+        out.width.px = 624, out.height.px = 384, params.src = "practice2, exercise = TRUE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -1314,12 +1527,12 @@ output$`tutorial-exercise-practice3pt1-output` <- renderUI({
 learnr:::store_exercise_cache(structure(list(label = "practice3pt1", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
 "library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "practice3pt1", code = "Counting <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n\nmean(Counting)\n\nsummary(Counting)", 
-        opts = list(label = "\"practice3pt1\"", exercise = "T"), 
+        opts = list(label = "\"practice3pt1\"", exercise = "TRUE"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
@@ -1337,12 +1550,13 @@ learnr:::store_exercise_cache(structure(list(label = "practice3pt1", global_setu
         aniopts = "controls,loop", warning = TRUE, error = FALSE, 
         message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "practice3pt1", exercise = TRUE, 
-        code = c("Counting <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)", 
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "practice3pt1", exercise = TRUE, code = c("Counting <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)", 
         "", "mean(Counting)", "", "summary(Counting)"), out.width.px = 624, 
-        out.height.px = 384, params.src = "practice3pt1, exercise = T", 
-        fig.num = 0, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
+        out.height.px = 384, params.src = "practice3pt1, exercise = TRUE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -1357,12 +1571,12 @@ output$`tutorial-exercise-practice3pt2-output` <- renderUI({
 learnr:::store_exercise_cache(structure(list(label = "practice3pt2", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
 "library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
     chunks = list(list(label = "practice3pt2", code = "2 + 2 #Look at how well R can add!", 
-        opts = list(label = "\"practice3pt2\"", exercise = "T"), 
+        opts = list(label = "\"practice3pt2\"", exercise = "TRUE"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
     check = NULL, solution = NULL, tests = NULL, options = list(
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
@@ -1380,115 +1594,36 @@ learnr:::store_exercise_cache(structure(list(label = "practice3pt2", global_setu
         aniopts = "controls,loop", warning = TRUE, error = FALSE, 
         message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "practice3pt2", exercise = TRUE, 
-        code = "2 + 2 #Look at how well R can add!", out.width.px = 624, 
-        out.height.px = 384, params.src = "practice3pt2, exercise = T", 
-        fig.num = 0, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "practice3pt2", exercise = TRUE, code = "2 + 2 #Look at how well R can add!", 
+        out.width.px = 624, out.height.px = 384, params.src = "practice3pt2, exercise = TRUE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-Intro-To-R-Exercise-1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-Intro-To-R-Exercise-1-code-editor`)), session)
-output$`tutorial-exercise-Intro-To-R-Exercise-1-output` <- renderUI({
-  `tutorial-exercise-Intro-To-R-Exercise-1-result`()
+`tutorial-exercise-IntroToRExercise1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-IntroToRExercise1-code-editor`)), session)
+output$`tutorial-exercise-IntroToRExercise1-output` <- renderUI({
+  `tutorial-exercise-IntroToRExercise1-result`()
 })
 </script>
 
 
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "Intro-To-R-Exercise-1", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
+learnr:::store_exercise_cache(structure(list(label = "IntroToRExercise1", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
 "library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
-    chunks = list(list(label = "Intro-To-R-Exercise-1", code = "", 
-        opts = list(label = "\"Intro-To-R-Exercise-1\"", exercise = "T"), 
+    chunks = list(list(label = "IntroToRExercise1", code = "", 
+        opts = list(label = "\"IntroToRExercise1\"", exercise = "TRUE"), 
         engine = "r")), code_check = NULL, error_check = NULL, 
-    check = NULL, solution = NULL, tests = NULL, options = list(
-        eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
-        tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
-        highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
-        strip.white = TRUE, cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
-        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
-        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
-        fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
-        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
-        fig.width = 6.5, fig.height = 4, fig.env = "figure", 
-        fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
-        fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
-        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
-        aniopts = "controls,loop", warning = TRUE, error = FALSE, 
-        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
-        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "Intro-To-R-Exercise-1", exercise = TRUE, 
-        code = "", out.width.px = 624, out.height.px = 384, params.src = "Intro-To-R-Exercise-1,exercise=T", 
-        fig.num = 0L, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-Server-Exercise-2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-Server-Exercise-2-code-editor`)), session)
-output$`tutorial-exercise-Server-Exercise-2-output` <- renderUI({
-  `tutorial-exercise-Server-Exercise-2-result`()
-})
-</script>
-
-
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "Server-Exercise-2", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
-"library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
-"library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
-"", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
-), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
-    chunks = list(list(label = "Server-Exercise-2", code = "", 
-        opts = list(label = "\"Server-Exercise-2\"", exercise = "T"), 
-        engine = "r")), code_check = NULL, error_check = NULL, 
-    check = NULL, solution = NULL, tests = NULL, options = list(
-        eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
-        tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
-        highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
-        strip.white = TRUE, cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
-        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
-        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
-        fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
-        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
-        fig.width = 6.5, fig.height = 4, fig.env = "figure", 
-        fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
-        fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
-        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
-        aniopts = "controls,loop", warning = TRUE, error = FALSE, 
-        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
-        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "Server-Exercise-2", exercise = TRUE, 
-        code = "", out.width.px = 624, out.height.px = 384, params.src = "Server-Exercise-2, exercise=T", 
-        fig.num = 0L, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-ggplot-troubleshooting-1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggplot-troubleshooting-1-code-editor`)), session)
-output$`tutorial-exercise-ggplot-troubleshooting-1-output` <- renderUI({
-  `tutorial-exercise-ggplot-troubleshooting-1-result`()
-})
-</script>
-
-
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-1", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
-"library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
-"library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
-"", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
-), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
-    chunks = list(list(label = "ggplot-troubleshooting-1", code = "ggplot(data = Rollercoasters,\n       mapping = aes(x = Design, y = Top_Speed)) + \n  geom_boxplot()", 
-        opts = list(label = "\"ggplot-troubleshooting-1\"", exercise = "T", 
-            warning = "F"), engine = "r")), code_check = NULL, 
-    error_check = NULL, check = NULL, solution = NULL, tests = NULL, 
+    check = structure("grade_code()", chunk_opts = list(label = "IntroToRExercise1-check")), 
+    solution = structure("RollerCoasters[5:8, ]", chunk_opts = list(
+        label = "IntroToRExercise1-solution")), tests = NULL, 
     options = list(eval = FALSE, echo = TRUE, results = "markup", 
         tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
         comment = NA, highlight = FALSE, size = "normalsize", 
@@ -1502,175 +1637,139 @@ learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-1",
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
         fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
         fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
+        aniopts = "controls,loop", warning = TRUE, error = FALSE, 
+        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
+        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "IntroToRExercise1", exercise = TRUE, code = "", 
+        out.width.px = 624, out.height.px = 384, params.src = "IntroToRExercise1, exercise = TRUE", 
+        fig.num = 0L, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+`tutorial-exercise-ServerExercise2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ServerExercise2-code-editor`)), session)
+output$`tutorial-exercise-ServerExercise2-output` <- renderUI({
+  `tutorial-exercise-ServerExercise2-result`()
+})
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::store_exercise_cache(structure(list(label = "ServerExercise2", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
+"library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
+"library(datasauRus)", "library(gridExtra)", "library(plotly)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"", "# Put any code that needs to be run at beginning of App", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "ServerExercise2", code = "summary(rollercoasters)", 
+        opts = list(label = "\"ServerExercise2\"", exercise = "TRUE"), 
+        engine = "r")), code_check = NULL, error_check = NULL, 
+    check = structure("grade_code()", chunk_opts = list(label = "ServerExercise2-check")), 
+    solution = structure("summary(RollerCoasters)", chunk_opts = list(
+        label = "ServerExercise2-solution")), tests = NULL, options = list(
+        eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
+        tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
+        highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
+        strip.white = TRUE, cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
+        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
+        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
+        fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
+        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
+        fig.width = 6.5, fig.height = 4, fig.env = "figure", 
+        fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
+        fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
+        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
+        aniopts = "controls,loop", warning = TRUE, error = FALSE, 
+        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
+        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "ServerExercise2", exercise = TRUE, code = "summary(rollercoasters)", 
+        out.width.px = 624, out.height.px = 384, params.src = "ServerExercise2, exercise = TRUE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+`tutorial-exercise-ggplotTroubleshooting1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggplotTroubleshooting1-code-editor`)), session)
+output$`tutorial-exercise-ggplotTroubleshooting1-output` <- renderUI({
+  `tutorial-exercise-ggplotTroubleshooting1-result`()
+})
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::store_exercise_cache(structure(list(label = "ggplotTroubleshooting1", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
+"library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
+"library(datasauRus)", "library(gridExtra)", "library(plotly)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"", "# Put any code that needs to be run at beginning of App", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "ggplotTroubleshooting1", code = "ggplot(data = Rollercoasters,\n       mapping = aes(x = Design, y = Top_Speed)) + \n  geom_boxplot()", 
+        opts = list(label = "\"ggplotTroubleshooting1\"", exercise = "TRUE", 
+            warning = "FALSE"), engine = "r")), code_check = NULL, 
+    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+        label = "ggplotTroubleshooting1-check")), solution = structure(c("ggplot(data = RollerCoasters,", 
+    "       mapping = aes(x = Design, y = Top_Speed)) + ", "  geom_boxplot()"
+    ), chunk_opts = list(label = "ggplotTroubleshooting1-solution", 
+        warning = FALSE)), tests = NULL, options = list(eval = FALSE, 
+        echo = TRUE, results = "markup", tidy = FALSE, tidy.opts = NULL, 
+        collapse = FALSE, prompt = FALSE, comment = NA, highlight = FALSE, 
+        size = "normalsize", background = "#F7F7F7", strip.white = TRUE, 
+        cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
+        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
+        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
+        fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
+        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
+        fig.width = 6.5, fig.height = 4, fig.env = "figure", 
+        fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
+        fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
+        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
         aniopts = "controls,loop", warning = FALSE, error = FALSE, 
         message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "ggplot-troubleshooting-1", 
-        exercise = TRUE, code = c("ggplot(data = Rollercoasters,", 
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "ggplotTroubleshooting1", exercise = TRUE, code = c("ggplot(data = Rollercoasters,", 
         "       mapping = aes(x = Design, y = Top_Speed)) + ", 
         "  geom_boxplot()"), out.width.px = 624, out.height.px = 384, 
-        params.src = "ggplot-troubleshooting-1, exercise = T, warning = F", 
-        fig.num = 0, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
+        params.src = "ggplotTroubleshooting1, exercise = TRUE, warning = FALSE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-ggplot-troubleshooting-2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggplot-troubleshooting-2-code-editor`)), session)
-output$`tutorial-exercise-ggplot-troubleshooting-2-output` <- renderUI({
-  `tutorial-exercise-ggplot-troubleshooting-2-result`()
+`tutorial-exercise-ggplotTroubleshooting2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggplotTroubleshooting2-code-editor`)), session)
+output$`tutorial-exercise-ggplotTroubleshooting2-output` <- renderUI({
+  `tutorial-exercise-ggplotTroubleshooting2-result`()
 })
 </script>
 
 
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-2", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
+learnr:::store_exercise_cache(structure(list(label = "ggplotTroubleshooting2", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
 "library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
 "library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
 "", "# Put any code that needs to be run at beginning of App", 
 "RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
 ), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
-    chunks = list(list(label = "ggplot-troubleshooting-2", code = "ggplot(data = RollerCoasters,\n       mapping = aes(x = Year_Opened))\n  + geom_histogram()", 
-        opts = list(label = "\"ggplot-troubleshooting-2\"", exercise = "T", 
-            warning = "F"), engine = "r")), code_check = NULL, 
-    error_check = NULL, check = NULL, solution = NULL, tests = NULL, 
-    options = list(eval = FALSE, echo = TRUE, results = "markup", 
-        tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
-        comment = NA, highlight = FALSE, size = "normalsize", 
-        background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "Stat-216-Workshop_cache/html/", cache.vars = NULL, 
-        cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
-        cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
-        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
-        fig.width = 6.5, fig.height = 4, fig.env = "figure", 
-        fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
-        fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
-        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
-        aniopts = "controls,loop", warning = FALSE, error = FALSE, 
-        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
-        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "ggplot-troubleshooting-2", 
-        exercise = TRUE, code = c("ggplot(data = RollerCoasters,", 
-        "       mapping = aes(x = Year_Opened))", "  + geom_histogram()"
-        ), out.width.px = 624, out.height.px = 384, params.src = "ggplot-troubleshooting-2, exercise = T, warning = F", 
-        fig.num = 0, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-ggplot-troubleshooting-3-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggplot-troubleshooting-3-code-editor`)), session)
-output$`tutorial-exercise-ggplot-troubleshooting-3-output` <- renderUI({
-  `tutorial-exercise-ggplot-troubleshooting-3-result`()
-})
-</script>
-
-
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-3", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
-"library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
-"library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
-"", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
-), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
-    chunks = list(list(label = "ggplot-troubleshooting-3", code = "ggplot(data = RollerCoasters,\n       mapping = aes(x = Duration, y = Length))) +\n  geom_point()", 
-        opts = list(label = "\"ggplot-troubleshooting-3\"", exercise = "T", 
-            warning = "F"), engine = "r")), code_check = NULL, 
-    error_check = NULL, check = NULL, solution = NULL, tests = NULL, 
-    options = list(eval = FALSE, echo = TRUE, results = "markup", 
-        tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
-        comment = NA, highlight = FALSE, size = "normalsize", 
-        background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "Stat-216-Workshop_cache/html/", cache.vars = NULL, 
-        cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
-        cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
-        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
-        fig.width = 6.5, fig.height = 4, fig.env = "figure", 
-        fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
-        fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
-        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
-        aniopts = "controls,loop", warning = FALSE, error = FALSE, 
-        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
-        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "ggplot-troubleshooting-3", 
-        exercise = TRUE, code = c("ggplot(data = RollerCoasters,", 
-        "       mapping = aes(x = Duration, y = Length))) +", 
-        "  geom_point()"), out.width.px = 624, out.height.px = 384, 
-        params.src = "ggplot-troubleshooting-3, exercise = T, warning = F", 
-        fig.num = 0, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-ggplot-troubleshooting-4-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggplot-troubleshooting-4-code-editor`)), session)
-output$`tutorial-exercise-ggplot-troubleshooting-4-output` <- renderUI({
-  `tutorial-exercise-ggplot-troubleshooting-4-result`()
-})
-</script>
-
-
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "ggplot-troubleshooting-4", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
-"library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
-"library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
-"", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
-), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
-    chunks = list(list(label = "ggplot-troubleshooting-4", code = "ggplot(data = ___,\n       mapping = aes(x = ___, y = ___))) +\n  geom_point()", 
-        opts = list(label = "\"ggplot-troubleshooting-4\"", exercise = "T", 
-            warning = "F"), engine = "r")), code_check = NULL, 
-    error_check = NULL, check = NULL, solution = NULL, tests = NULL, 
-    options = list(eval = FALSE, echo = TRUE, results = "markup", 
-        tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
-        comment = NA, highlight = FALSE, size = "normalsize", 
-        background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "Stat-216-Workshop_cache/html/", cache.vars = NULL, 
-        cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
-        cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
-        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
-        fig.width = 6.5, fig.height = 4, fig.env = "figure", 
-        fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
-        fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
-        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
-        aniopts = "controls,loop", warning = FALSE, error = FALSE, 
-        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
-        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "ggplot-troubleshooting-4", 
-        exercise = TRUE, code = c("ggplot(data = ___,", "       mapping = aes(x = ___, y = ___))) +", 
-        "  geom_point()"), out.width.px = 624, out.height.px = 384, 
-        params.src = "ggplot-troubleshooting-4, exercise = T, warning = F", 
-        fig.num = 0, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
-</script>
- 
-<script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-catstats-exercise-1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-catstats-exercise-1-code-editor`)), session)
-output$`tutorial-exercise-catstats-exercise-1-output` <- renderUI({
-  `tutorial-exercise-catstats-exercise-1-result`()
-})
-</script>
-
-
-<script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "catstats-exercise-1", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
-"library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
-"library(datasauRus)", "library(gridExtra)", "library(plotly)", 
-"library(catstats)", "#library(gradethis)", "#knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
-"", "# Put any code that needs to be run at beginning of App", 
-"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
-), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
-    chunks = list(list(label = "catstats-exercise-1", code = "one_proportion_test(\n  probability_success = 50,\n  sample_size = 10,\n  summary_measure = \"proportion\",\n  direction = \"greater\",\n  as_extreme_as = 0.6,\n  number_repetitions = 20\n)", 
-        opts = list(label = "\"catstats-exercise-1\"", exercise = "T"), 
-        engine = "r")), code_check = NULL, error_check = NULL, 
-    check = NULL, solution = NULL, tests = NULL, options = list(
-        eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
-        tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
-        highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
-        strip.white = TRUE, cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
+    chunks = list(list(label = "ggplotTroubleshooting2", code = "ggplot(data = RollerCoasters,\n       mapping = aes(x = Year_Opened))\n  + geom_histogram()", 
+        opts = list(label = "\"ggplotTroubleshooting2\"", exercise = "TRUE", 
+            warning = "FALSE"), engine = "r")), code_check = NULL, 
+    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+        label = "ggplotTroubleshooting2-check")), solution = structure(c("ggplot(data = RollerCoasters,", 
+    "       mapping = aes(x = Year_Opened)) +", "  geom_histogram()"
+    ), chunk_opts = list(label = "ggplotTroubleshooting2-solution", 
+        warning = FALSE)), tests = NULL, options = list(eval = FALSE, 
+        echo = TRUE, results = "markup", tidy = FALSE, tidy.opts = NULL, 
+        collapse = FALSE, prompt = FALSE, comment = NA, highlight = FALSE, 
+        size = "normalsize", background = "#F7F7F7", strip.white = TRUE, 
+        cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
         cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
         autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
         fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
@@ -1679,17 +1778,166 @@ learnr:::store_exercise_cache(structure(list(label = "catstats-exercise-1", glob
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
         fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
         fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
+        aniopts = "controls,loop", warning = FALSE, error = FALSE, 
+        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
+        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "ggplotTroubleshooting2", exercise = TRUE, code = c("ggplot(data = RollerCoasters,", 
+        "       mapping = aes(x = Year_Opened))", "  + geom_histogram()"
+        ), out.width.px = 624, out.height.px = 384, params.src = "ggplotTroubleshooting2, exercise = TRUE, warning = FALSE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+`tutorial-exercise-ggplotTroubleshooting3-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggplotTroubleshooting3-code-editor`)), session)
+output$`tutorial-exercise-ggplotTroubleshooting3-output` <- renderUI({
+  `tutorial-exercise-ggplotTroubleshooting3-result`()
+})
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::store_exercise_cache(structure(list(label = "ggplotTroubleshooting3", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
+"library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
+"library(datasauRus)", "library(gridExtra)", "library(plotly)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"", "# Put any code that needs to be run at beginning of App", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "ggplotTroubleshooting3", code = "ggplot(data = RollerCoasters,\n       mapping = aes(x = Duration, y = Length))) +\n  geom_point()", 
+        opts = list(label = "\"ggplotTroubleshooting3\"", exercise = "TRUE", 
+            warning = "FALSE"), engine = "r")), code_check = NULL, 
+    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+        label = "ggplotTroubleshooting3-check")), solution = structure(c("ggplot(data = RollerCoasters,", 
+    "       mapping = aes(x = Duration, y = Length)) +", "  geom_point()"
+    ), chunk_opts = list(label = "ggplotTroubleshooting3-solution", 
+        warning = FALSE)), tests = NULL, options = list(eval = FALSE, 
+        echo = TRUE, results = "markup", tidy = FALSE, tidy.opts = NULL, 
+        collapse = FALSE, prompt = FALSE, comment = NA, highlight = FALSE, 
+        size = "normalsize", background = "#F7F7F7", strip.white = TRUE, 
+        cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
+        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
+        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
+        fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
+        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
+        fig.width = 6.5, fig.height = 4, fig.env = "figure", 
+        fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
+        fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
+        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
+        aniopts = "controls,loop", warning = FALSE, error = FALSE, 
+        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
+        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "ggplotTroubleshooting3", exercise = TRUE, code = c("ggplot(data = RollerCoasters,", 
+        "       mapping = aes(x = Duration, y = Length))) +", 
+        "  geom_point()"), out.width.px = 624, out.height.px = 384, 
+        params.src = "ggplotTroubleshooting3, exercise = TRUE, warning = FALSE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+`tutorial-exercise-ggplotTroubleshooting4-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggplotTroubleshooting4-code-editor`)), session)
+output$`tutorial-exercise-ggplotTroubleshooting4-output` <- renderUI({
+  `tutorial-exercise-ggplotTroubleshooting4-result`()
+})
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::store_exercise_cache(structure(list(label = "ggplotTroubleshooting4", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
+"library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
+"library(datasauRus)", "library(gridExtra)", "library(plotly)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"", "# Put any code that needs to be run at beginning of App", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "ggplotTroubleshooting4", code = "ggplot(data = ___,\n       mapping = aes(x = ___, y = ___)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = FALSE)", 
+        opts = list(label = "\"ggplotTroubleshooting4\"", exercise = "TRUE", 
+            warning = "FALSE"), engine = "r")), code_check = NULL, 
+    error_check = NULL, check = structure("grade_code()", chunk_opts = list(
+        label = "ggplotTroubleshooting4-check")), solution = structure(c("ggplot(data = RollerCoasters,", 
+    "       mapping = aes(x = Duration, y = Max_Height)) +", 
+    "  geom_point() +", "  geom_smooth(method = \"lm\", se = FALSE)"
+    ), chunk_opts = list(label = "ggplotTroubleshooting4-solution", 
+        warning = FALSE)), tests = NULL, options = list(eval = FALSE, 
+        echo = TRUE, results = "markup", tidy = FALSE, tidy.opts = NULL, 
+        collapse = FALSE, prompt = FALSE, comment = NA, highlight = FALSE, 
+        size = "normalsize", background = "#F7F7F7", strip.white = TRUE, 
+        cache = 0, cache.path = "Stat-216-Workshop_cache/html/", 
+        cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
+        autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
+        fig.show = "asis", fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
+        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
+        fig.width = 6.5, fig.height = 4, fig.env = "figure", 
+        fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
+        fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
+        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
+        aniopts = "controls,loop", warning = FALSE, error = FALSE, 
+        message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
+        engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "ggplotTroubleshooting4", exercise = TRUE, code = c("ggplot(data = ___,", 
+        "       mapping = aes(x = ___, y = ___)) +", "  geom_point() +", 
+        "  geom_smooth(method = \"lm\", se = FALSE)"), out.width.px = 624, 
+        out.height.px = 384, params.src = "ggplotTroubleshooting4, exercise = TRUE, warning = FALSE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+`tutorial-exercise-catstatsExercise1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-catstatsExercise1-code-editor`)), session)
+output$`tutorial-exercise-catstatsExercise1-output` <- renderUI({
+  `tutorial-exercise-catstatsExercise1-result`()
+})
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::store_exercise_cache(structure(list(label = "catstatsExercise1", global_setup = structure(c("#remotes::install_github(\"rstudio-education/gradethis\")", 
+"library(remotes)", "library(ggplot2)", "library(learnr)", "library(tidyverse)", 
+"library(datasauRus)", "library(gridExtra)", "library(plotly)", 
+"library(catstats)", "library(gradethis)", "knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)", 
+"", "# Put any code that needs to be run at beginning of App", 
+"RollerCoasters <- read_csv(\"RollerCoasters.csv\")", "x <- 7"
+), chunk_opts = list(label = "setup", include = FALSE)), setup = NULL, 
+    chunks = list(list(label = "catstatsExercise1", code = "one_proportion_test(\n  probability_success = 50,\n  sample_size = 10,\n  summary_measure = \"proportion\",\n  \n  direction = \"greater\",\n  as_extreme_as = 0.6,\n  number_repetitions = 20\n)", 
+        opts = list(label = "\"catstatsExercise1\"", exercise = "TRUE"), 
+        engine = "r")), code_check = NULL, error_check = NULL, 
+    check = structure("grade_code()", chunk_opts = list(label = "catstatsExercise1-check")), 
+    solution = structure(c("one_proportion_test(", "  probability_success = .50,", 
+    "  sample_size = 10,", "  summary_measure = \"proportion\",", 
+    "  direction = \"greater\",", "  as_extreme_as = 0.6,", "  number_repetitions = 20", 
+    ")"), chunk_opts = list(label = "catstatsExercise1-solution")), 
+    tests = NULL, options = list(eval = FALSE, echo = TRUE, results = "markup", 
+        tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
+        comment = NA, highlight = FALSE, size = "normalsize", 
+        background = "#F7F7F7", strip.white = TRUE, cache = 0, 
+        cache.path = "Stat-216-Workshop_cache/html/", cache.vars = NULL, 
+        cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
+        cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
+        fig.align = "default", fig.path = "Stat-216-Workshop_files/figure-html/", 
+        dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
+        fig.width = 6.5, fig.height = 4, fig.env = "figure", 
+        fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
+        fig.pos = "", out.width = 624, out.height = NULL, out.extra = NULL, 
+        fig.retina = 2, external = TRUE, sanitize = FALSE, interval = 1, 
         aniopts = "controls,loop", warning = TRUE, error = FALSE, 
         message = TRUE, render = NULL, ref.label = NULL, child = NULL, 
         engine = "r", split = FALSE, include = TRUE, purl = TRUE, 
-        max.print = 1000, label = "catstats-exercise-1", exercise = TRUE, 
-        code = c("one_proportion_test(", "  probability_success = 50,", 
-        "  sample_size = 10,", "  summary_measure = \"proportion\",", 
-        "  direction = \"greater\",", "  as_extreme_as = 0.6,", 
-        "  number_repetitions = 20", ")"), out.width.px = 624, 
-        out.height.px = 384, params.src = "catstats-exercise-1, exercise=T", 
-        fig.num = 0, exercise.df_print = "paged", exercise.checker = "NULL"), 
-    engine = "r", version = "3"), class = "tutorial_exercise"))
+        max.print = 1000, exercise.timelimit = 60, exercise.checker = "function (...) \n{\n    lifecycle::deprecate_soft(\"0.2.2\", \"grade_learnr()\", \"gradethis_exercise_checker()\")\n    gradethis_exercise_checker(...)\n}", 
+        exercise.error.check.code = "gradethis_error_checker()", 
+        label = "catstatsExercise1", exercise = TRUE, code = c("one_proportion_test(", 
+        "  probability_success = 50,", "  sample_size = 10,", 
+        "  summary_measure = \"proportion\",", "  ", "  direction = \"greater\",", 
+        "  as_extreme_as = 0.6,", "  number_repetitions = 20", 
+        ")"), out.width.px = 624, out.height.px = 384, params.src = "catstatsExercise1, exercise = TRUE", 
+        fig.num = 0, exercise.df_print = "paged"), engine = "r", 
+    version = "3"), class = "tutorial_exercise"))
 </script>
 </li>
 </ul>
@@ -1700,7 +1948,7 @@ learnr:::store_exercise_cache(structure(list(label = "catstats-exercise-1", glob
 <!--/html_preserve-->
 <!--html_preserve-->
 <script type="application/shiny-prerendered" data-context="execution_dependencies">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98]}},"value":[{"type":"character","attributes":{},"value":["assertthat","backports","base","bit","bit64","broom","bslib","catstats","cellranger","checkmate","cli","colorspace","compiler","crayon","curl","data.table","datasauRus","datasets","DBI","dbplyr","digest","dplyr","ellipsis","evaluate","fansi","farver","fastmap","forcats","fs","generics","ggplot2","glue","graphics","grDevices","grid","gridExtra","gtable","haven","highr","hms","htmltools","htmlwidgets","httpuv","httr","jquerylib","jsonlite","knitr","labeling","later","lazyeval","learnr","lifecycle","lubridate","magrittr","markdown","methods","mime","modelr","munsell","parallel","pillar","pkgconfig","plotly","promises","purrr","R6","Rcpp","readr","readxl","remotes","reprex","rlang","rmarkdown","rprojroot","rstudioapi","rvest","sass","scales","shiny","stats","stringi","stringr","tibble","tidyr","tidyselect","tidyverse","tools","tzdb","utf8","utils","vctrs","viridisLite","vroom","withr","xfun","xml2","xtable","yaml"]},{"type":"character","attributes":{},"value":["0.2.1","1.4.1","4.2.0","4.0.4","4.0.5","0.8.0","0.3.1","0.1","1.1.0","2.1.0","3.3.0","2.0-3","4.2.0","1.5.1","4.3.2","1.14.2","0.1.6","4.2.0","1.1.2","2.2.0","0.6.29","1.0.9","0.3.2","0.15","1.0.3","2.1.0","1.1.0","0.5.1","1.5.2","0.1.2","3.3.6","1.6.2","4.2.0","4.2.0","4.2.0","2.3","0.3.0","2.5.0","0.9","1.1.1","0.5.2","1.5.4","1.6.5","1.4.3","0.1.4","1.8.0","1.39","0.4.2","1.3.0","0.2.2","0.10.3","1.0.1","1.8.0","2.0.3","1.1","4.2.0","0.12","0.1.8","0.5.0","4.2.0","1.7.0","2.0.3","4.10.0","1.2.0.1","0.3.4","2.5.1","1.0.8.3","2.1.2","1.4.0","2.4.2","2.0.1","1.0.2","2.14","2.0.3","0.13","1.0.2","0.4.1","1.2.0","1.7.1","4.2.0","1.7.6","1.4.0","3.1.7","1.2.0","1.1.2","1.3.1","4.2.0","0.3.0","1.2.2","4.2.0","0.4.1","0.4.0","1.5.7","2.5.0","0.31","1.3.3","1.8-4","2.3.5"]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99]}},"value":[{"type":"character","attributes":{},"value":["assertthat","backports","base","bit","bit64","broom","bslib","catstats","cellranger","checkmate","cli","colorspace","compiler","crayon","curl","data.table","datasauRus","datasets","DBI","dbplyr","digest","dplyr","ellipsis","evaluate","fansi","farver","fastmap","forcats","fs","generics","ggplot2","glue","gradethis","graphics","grDevices","grid","gridExtra","gtable","haven","highr","hms","htmltools","htmlwidgets","httpuv","httr","jquerylib","jsonlite","knitr","labeling","later","lazyeval","learnr","lifecycle","lubridate","magrittr","markdown","methods","mime","modelr","munsell","parallel","pillar","pkgconfig","plotly","promises","purrr","R6","Rcpp","readr","readxl","remotes","reprex","rlang","rmarkdown","rprojroot","rstudioapi","rvest","sass","scales","shiny","stats","stringi","stringr","tibble","tidyr","tidyselect","tidyverse","tools","tzdb","utf8","utils","vctrs","viridisLite","vroom","withr","xfun","xml2","xtable","yaml"]},{"type":"character","attributes":{},"value":["0.2.1","1.4.1","4.2.0","4.0.4","4.0.5","0.8.0","0.3.1","0.1","1.1.0","2.1.0","3.3.0","2.0-3","4.2.0","1.5.1","4.3.2","1.14.2","0.1.6","4.2.0","1.1.2","2.2.0","0.6.29","1.0.9","0.3.2","0.15","1.0.3","2.1.0","1.1.0","0.5.1","1.5.2","0.1.2","3.3.6","1.6.2","0.2.8.9000","4.2.0","4.2.0","4.2.0","2.3","0.3.0","2.5.0","0.9","1.1.1","0.5.2","1.5.4","1.6.5","1.4.3","0.1.4","1.8.0","1.39","0.4.2","1.3.0","0.2.2","0.10.3","1.0.1","1.8.0","2.0.3","1.1","4.2.0","0.12","0.1.8","0.5.0","4.2.0","1.7.0","2.0.3","4.10.0","1.2.0.1","0.3.4","2.5.1","1.0.8.3","2.1.2","1.4.0","2.4.2","2.0.1","1.0.2","2.14","2.0.3","0.13","1.0.2","0.4.1","1.2.0","1.7.1","4.2.0","1.7.6","1.4.0","3.1.7","1.2.0","1.1.2","1.3.1","4.2.0","0.3.0","1.2.2","4.2.0","0.4.1","0.4.0","1.5.7","2.5.0","0.31","1.3.3","1.8-4","2.3.5"]}]}]}
 </script>
 <!--/html_preserve-->
 </div>
