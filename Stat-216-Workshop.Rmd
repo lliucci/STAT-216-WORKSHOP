@@ -734,6 +734,8 @@ This series of R Workshops are **free to all MSU Students and Employees**. They 
 
 ![Fall 2022 R Workshops Flyer](images/Fall2022Flyer.png)
 
+More Information on these R Workshops can be found [here](https://www.montana.edu/datascience/training/).
+
 ------------------------------------------------------------------------
 
 ## Montana State University `R` Workshops Team
