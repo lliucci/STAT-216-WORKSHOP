@@ -165,11 +165,11 @@ $~$
 
 However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before `R` can read it in like above.
 
-In the Environment tab (top right), click _Import Dataset_ -> choose the _From Text (base)_ option 
+In the Environment tab (top right), click _Import Dataset_ --\> choose the _From Text (base)_ option 
 
 ![](images/ImportingData.jpg)
 
--> students will select the dataset from where the file is downloaded on their device.
+--\> students will select the dataset from where the file is downloaded on their device.
 
 Once they have selected the dataset, another window will appear. Here, it is critical that they **select YES for Heading** for the dataset to be uploaded correctly and usable.
 
@@ -185,7 +185,7 @@ $~$
 
 Once the dataset is imported into the RStudio Server, it can be viewed by clicking on the **Environment tab** in the upper right corner of the server and double clicking the dataset you want to view. The dataset will be opened as a new tab in the upper left corner of the server, allowing you to see all the variables and how their names are formatted! The formatting of variable names is very important when coding, and often is the source of early mistakes in STAT 216.
 
-If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row,column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset by typing the following into the **Console**:    
+If we want to get a summary of only a certain set of rows or columns from a dataset, we can write `[row, column]` after the dataset to get a subset of the data frame. The `View()` function can also be helpful to view the entire dataset by typing the following into the **Console**:    
 
 ```{r eval = FALSE, echo = TRUE}
 View(RollerCoasters)
@@ -251,7 +251,7 @@ One option is to go through [Montana State University Webpage](montana.edu), sea
 
 Students will also have a link available to them within the STAT 216 page in D2L.
 
-The `RStudio` Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources -\> RStudio.
+The `RStudio` Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources --\> RStudio.
 
 - Once students are directed to the RStudio Server, they will then be prompted to **Sign in** using their **MSU NetID and password** - this will be the same login information they use to access D2L.
 
@@ -319,7 +319,7 @@ $~$
 
 #### Importing Files
 
-In the bottom right corner of the server, select _Upload_ in the _Files_ tab -> _Choose File_ -> students should select the file where ever it was saved or download to their device -> _Select File_ -> _Open_. 
+In the bottom right corner of the server, select _Upload_ in the _Files_ tab --\> _Choose File_ --\> students should select the file where ever it was saved or download to their device --\> _Select File_ --\> _Open_. 
 
 This should automatically open the file in the top left panel of the server.
 
@@ -329,9 +329,9 @@ $~$
 
 There are two steps when exporting Files from the `RStudio` Server.
 
-First, it must be **saved to the server**. To do this, start in the top left section of the server. Make sure the student is on the tab of the file the want to save. In that top left section, click _File_ -> _Save As_ -> then students will be prompted to name their file -> select _Save_.
+First, it must be **saved to the server**. To do this, start in the top left section of the server. Make sure the student is on the tab of the file the want to save. In that top left section, click _File_ --\> _Save As_ --\> then students will be prompted to name their file --\> select _Save_.
 
-Now the file name should appear under the Files tab in the bottom right corner. Direct students to click the check box next to the file name -> then select _More_ -> click _Export_ -> _Download_. This process **saves the file from the server to their actual device**. Now students should have access to the file on their device so they can upload it to Gradescope if asked.
+Now the file name should appear under the Files tab in the bottom right corner. Direct students to click the check box next to the file name --\> then select _More_ --\> click _Export_ --\> _Download_. This process **saves the file from the server to their actual device**. Now students should have access to the file on their device so they can upload it to Gradescope if asked.
 
 ------------------------------------------------------------------------
 
