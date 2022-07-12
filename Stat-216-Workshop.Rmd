@@ -672,9 +672,6 @@ Most importantly, don't be afraid to ask questions yourself and learn things alo
 
 Luckily, this information will always be here for you to reference if you have any specific questions or just want a quick refresher.
 
-We all wish you good luck and a successful semester! :)
-
-
 ------------------------------------------------------------------------
 
 ## Resources for STAT 216/217 TA's
@@ -735,6 +732,13 @@ This series of R Workshops are **free to all MSU Students and Employees**. They 
 ![Fall 2022 R Workshops Flyer](images/Fall2022Flyer.png)
 
 More Information on these R Workshops can be found [here](https://www.montana.edu/datascience/training/).
+
+
+$~$
+$~$
+
+
+We all wish you good luck and a successful semester! :)
 
 ------------------------------------------------------------------------
 
