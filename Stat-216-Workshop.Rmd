@@ -25,7 +25,7 @@ x <- 7
 
 ## Getting a Feel for the Class and Your Role
 
-Congratulations on becoming a STAT 216 Teaching Assistant! You may know this from your personal experience if you took STAT 216 at Montana State University, but Teaching Assistants can make a world of difference to students.
+Congratulations on becoming a STAT 216 Teaching Assistant! As you may know from your personal experience if you took STAT 216 at Montana State University, Teaching Assistants can make a world of difference to students.
 
 Some students, especially college freshman, may feel intimidated with contacting a professor directly for help. That's where you come in! Your role as TA's consists of aiding students in gaining a nuanced understanding of introductory statistical methods, giving students real-time feedback, and troubleshooting any coding issues that arise.
 
