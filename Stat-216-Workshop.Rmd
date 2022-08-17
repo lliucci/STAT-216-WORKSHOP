@@ -107,21 +107,21 @@ There are a variety of other resources available for STAT 216 students:
 
 1. **Dr. Christopher B. Lofgren Center for Excellence in Mathematics and Statistics (MSC)**
 
-The [Math and Stat Center](https://math.montana.edu/undergrad/msc/) (MSC) is located on the same floor in Romney that the STAT 216 classes are held, so you can't miss it. There are always in-house tutors available that can help students with statistics. Students automatically have access to the MSC through enrolling in STAT 216, and can enter for free by swiping their CatCard. The MSC has the activity solutions so students can check their work and get more in-depth feedback by looking through them.
+    The [Math and Stat Center](https://math.montana.edu/undergrad/msc/) (MSC) is located on the same floor in Romney that the STAT 216 classes are held, so you can't miss it. There are always in-house tutors available that can help students with statistics. Students automatically have access to the MSC through enrolling in STAT 216, and can enter for free by swiping their CatCard. The MSC has the activity solutions so students can check their work and get more in-depth feedback by looking through them.
 
 $~$
 
 2. **SmartyCats Tutoring**
 
-If you aren't already aware, there are [SmartyCats Tutors](https://www.montana.edu/aycss/success/smartycats/) available for a wide variety of MSU classes. The majority of tutors have taken the courses before and have a good idea of the instructors expectations. Tutoring sessions only cost \$2 a piece, which mean they are very affordable for most students.
+    If you aren't already aware, there are [SmartyCats Tutors](https://www.montana.edu/aycss/success/smartycats/) available for a wide variety of MSU classes. The majority of tutors have taken the courses before and have a good idea of the instructors expectations. Tutoring sessions only cost \$2 a piece, which mean they are very affordable for most students.
 
 $~$
 
 3. **Other Tutoring Opportunities**
 
-There are multiple private tutors as well! There is a bulletin board near the Department of Mathematical Sciences Office in Wilson Hall (2nd floor) where student tutors post their contact information. Since Wilson is a maze and finding the bulletin board can be intimating, students can also reach out to the math department through email as well.
-
-If a student is a Veteran or is using a relative's Military Educational Benefits to help pay for school, there are free statistics tutors available to them through the [Veterans Center](https://www.montana.edu/veteran/) on Campus. The Veterans Support Center is also located in Romney, but on the first floor.
+    There are multiple private tutors as well! There is a bulletin board near the Department of Mathematical Sciences Office in Wilson Hall (2nd floor) where student tutors post their contact information. Since Wilson is a maze and finding the bulletin board can be intimating, students can also reach out to the math department through email as well.
+    
+    If a student is a Veteran or is using a relative's Military Educational Benefits to help pay for school, there are free statistics tutors available to them through the [Veterans Center](https://www.montana.edu/veteran/) on Campus. The Veterans Support Center is also located in Romney, but on the first floor.
 
 ------------------------------------------------------------------------
 
@@ -445,7 +445,7 @@ they can upload it to Gradescope if asked.
 
 ## Plotting with `ggplot2`
 
-### What is `ggplot`2?
+### What is `ggplot2`?
 
 `ggplot2` is an R package (housed within the `tidyverse` package)
 that uses a layer-based way of creating graphs. The main benefit of using functions in
@@ -621,7 +621,7 @@ $~$
 #### Exercise 6
 
 Another very common error is when a set of parenthesis is opened, but never closed.
-One way to avoid this is to turn on "Rainbow Parenthesis" by going to
+One way to avoid this is to turn on "Rainbow Parentheses" by going to
 **Tools --\> Global Options --\> Code --\> Display --\> Rainbow Parentheses**.
 However, it is still possible for stray parentheses to be involved in code.
 
@@ -898,9 +898,11 @@ Luckily, this information will always be here for you to reference if you have a
 **1. Your Instruction Team**
 
 We have already stressed the importance of communicating with your lead instructor and instruction team. This is because your lead instructor and team can be incredibly helpful if you are struggling with running through the code before class, trying to fix an error in real time, or even just explaining a concept to a student. Don't hesitate to admit if you are unsure and ask your lead instructor or another TA to help. They may be able to better assist a student or answer a question with more clarity, which you can learn from and use that information when helping others afterwards! You can connect with your team:
- * In Person before/during/after Class
- * In your section's Microsoft Teams Channel
- * Over Email or text 
+
+* In Person before/during/after Class
+* In your section's Microsoft Teams Channel
+* Over Email or text 
+
 It is a good idea to make sure to exchange contact information and discuss which methods of communication are preferred by your team.
 
 $~$
