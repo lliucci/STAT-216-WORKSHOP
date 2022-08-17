@@ -702,80 +702,112 @@ grade_code()
 
 $~$
 
-### Recurrent phrases and words that students will need to find and *replace*:
+### Recurrent phrases and words that students will need to find and *replace* in the provided R script files:
 
 -   "**datasetname**" : Students should replace this phrase with the name of the dataset *exactly* how it appears in the Environment window.
 
--   "**variable**" : This one is pretty straight forward. When only dealing with one variable of interest, this is where the should put the name of the variable, *making sure to replicate how it appears in the dataset*. Pay attention to Capitalization and lowercase, underscores, and other potentially tricky formatting with variable names.
+-   "**variable**" : This one is pretty straight forward. When only dealing with one variable of interest, this is where they should put the name of the variable, *making sure to replicate how it appears in the dataset*. Pay attention to capitalization and lowercase, underscores, and other potentially tricky formatting with variable names.
 
--   "**explanatory**" & "**response**" : Students will need to identify and correctly enter the variable names as they appear in the dataset. Sometimes, if they identify them incorrectly or switch them, output may be incorrect or the code my not run altogether.
+-   "**explanatory**" & "**response**" : Students will need to identify and correctly enter the variable names as they appear in the dataset. Sometimes, if they identify them incorrectly or switch them, output may be incorrect or the code may not run altogether.
 
--   "**xx**" : Further into the semester, this phrase will pop up often. Usually, students are expected to replace this with a numeric value, variable name, or level of a variable. To discern which is expected, a comment with almost always follow on the same line of code and describe exactly what should be entered there.
+-   "**xx**" : Further into the semester, this phrase will pop up often. Usually, students are expected to replace this with a numeric value, variable name, or level of a variable. To discern which is expected, a comment will almost always follow on the same line of code and describe exactly what should be entered there.
 
 $~$
 
-**Note**: students will often need to *replace* these phrases, not type the answer next to it! When replacing a word or phrase, often students will accidentally delete quotation marks, commas, or parentheses that are necessary for the function to run correctly. You will be expected to be able to look at catstats functions and ggplot code, assess what is incorrect or missing, and fix the issue.
+**Note**: students will often need to *replace* these phrases, not type the answer next to it!
+When replacing a word or phrase, often students will accidentally delete quotation marks, commas,
+or parentheses that are necessary for the function to run correctly.
+You will be expected to be able to look at `catstats` and `ggplot2` functions,
+assess what is incorrect or missing, and help the student fix the issue.
 
 $~$
 $~$
 
 ### Common Mistakes include:
 
-**A**. Replacing the word, or 'call', that functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else R will not recognize it.
+**A**. Replacing the word, or 'call', that functions will use to reference the
+dataset instead of the word `datasetname`. The actual name of the uploaded dataset,
+which will usually be read in from a text file or .csv file, will appear in the
+Environment and **must be typed exactly how it appears there** or else R will not recognize it.
 
 Here is an example of a given line of code with no edits:
-```{r eval = FALSE}
+```{r eval = FALSE, echo = TRUE}
 Coasters <- datasetname # Read data set in
 ```
 
 Here is an example the code edited incorrectly:
-```{r eval = FALSE}
+```{r eval = FALSE, echo = TRUE}
 RollerCoasters <- datasetname # Read data set in
 ```
 
 This is how they were supposed to have edited the code:
-```{r eval = FALSE}
+```{r eval = FALSE, echo = TRUE}
 Coasters <- RollerCoasters # Read data set in
 ```
 
-It is likely that functions further in the document will use 'Coasters' to reference the dataset. They will not be able to identify it properly if the mistake above is made.
+It is likely that functions further in the document will use `Coasters` to reference the dataset. They will not be able to identify it properly if the mistake above is made.
 
 $~$
 
-**B**. Not running the `library( )` codes **prior** to attempting to run other code. This is a good time to bring up that handy light bulb metaphor from before. Students must run these each time a new session in the RStudio Server is started.
+**B**. Not running the `library( )` codes **prior** to attempting to run other code.
+This is a good time to bring up that handy light bulb metaphor from before.
+Students must run these each time a new session in the RStudio Server is started.
 
 $~$
 
-**C**. Students may trying to **run functions before reading in the dataset**. The dataset code must be edited correctly and run for R to know what it is referencing and what variable names it is dealing with.
+**C**. Students may trying to **run functions before reading in the dataset**.
+The dataset code must be edited correctly and run for R to know what it is
+referencing and what variable names it is dealing with.
 
-- In general, it is important that students run the code **in the order that it appears**. Otherwise, they may run into issues.
+>
+> In general, it is important that students run the code **in the order that it appears**. Otherwise, they may run into issues.
+>
 
 $~$
 
-**D**. ***NOT Reading!*** Students are often in a hurry to complete to activity or lab for the day, and do not read the instructions as closely as they should. Thus, they may to skip over explicit instructions commented within the code and ask you instead. Many exercises will be presented to the students like this:
+**D**. ***NOT Reading!*** Students are often in a hurry to complete to activity
+or lab for the day, and do not read the instructions as closely as they should.
+Thus, they may to skip over explicit instructions commented within the code
+and ask you instead. Many exercises will be presented to the students like this:
 
 ```{r, eval = FALSE}
 two_proportion_test(formula = response~explanatory, # response ~ explanatory
-                    data= iliad, # Name of data set
+                    data = iliad, # Name of data set
                     first_in_subtraction = "xx", # Order of subtraction: enter the name of Group 1
                     number_repetitions = 1000, # Always use a minimum of 1000 repetitions
                     response_value_numerator = "xx", # Define which outcome is a success 
                     as_extreme_as = xx, # Calculated observed statistic (difference in sample proportions)
-                    direction="xx") # Alternative hypothesis direction ("greater","less","two-sided")
+                    direction = "xx") # Alternative hypothesis direction ("greater","less","two-sided")
 ```
 
-Notice how there is a comment to the right of each line in the code **explicitly telling the student what to replace the corresponding key phrase with**. Despite this, students may call you over to ask what they should replace the phrase with anyway. Just a word of advice, this can get very repetitive so it may be wise to give them some slack early on but still point out where they can find the answer on their own.
+Notice how there is a comment to the right of each line in the code
+**explicitly telling the student what to replace the corresponding key phrase with**.
+Despite this, students may call you over to ask what they should replace the phrase with anyway.
+In this case (as in many others), ask questions back to the student rather than
+telling them the answer right away, e.g., "Let's look at the comment after the data argument---what does it say?",
+or "Great question---if you look above you'll see where the instructions point that out."
 
 $~$
 
-**E**. Accidentally deleting quotation marks or commas after an argument within a function. If you are unsure if this has occurred, don't hesitate to ask the student to open another unedited version of the same file under a different name (so it doesn't override all of the edits and progress they have made on their current R file) to double check that area of the template code.
+**E**. Accidentally deleting quotation marks or commas after an argument within a function.
+If you are unsure if this has occurred, don't hesitate to ask the student to open
+another unedited version of the same file under a different name (so it doesn't
+override all of the edits and progress they have made on their current R file)
+to double check that area of the template code.
 
 $~$
 $~$
 
 ### Errors vs. Warning Messages
 
-Another good thing to note while working in R, and especially when working with the `catstats` package and its functions, **an Error message is *NOT* the same as a Warning message**. An Error prevents the highlighted code from running altogether, while a warning will still run the code but bring important notes to the users attention. Students may occasionally call you over and ask why they are getting a red message, assuming it means an error has occurred, when the are actually just seeing a warning message built into a function and it is completely possible that they have done nothing wrong.
+Another good thing to note while working in R, and especially when working with
+the `catstats` package and its functions, **an Error message is *NOT* the same as a Warning message**.
+An Error prevents the highlighted code from running altogether, while a warning
+will still run the code but bring important notes to the users attention.
+Students may occasionally call you over and ask why they are getting a red message,
+assuming it means an error has occurred, when the are actually just seeing
+a warning message built into a function and it is completely possible
+that they have done nothing wrong.
 
 ------------------------------------------------------------------------
 
