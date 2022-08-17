@@ -72,17 +72,17 @@ If a student is a Veteran or is using a relative's Military Educational Benefits
 ## Introduction to R
 
 >
-> Coding can be very intimidating, especially for students with no prior coding experience. Thus, the `R` script files accompanying activities and labs require pretty minimal amount of alterations by the students. Students will be expected to gradually contribute more in `R`, but are not expected to be expert coders at any point during the course.
+> Coding can be very intimidating, especially for students with no prior coding experience. Thus, the R script files accompanying activities and labs require pretty minimal amount of alterations by the students. Students will be expected to gradually contribute more in R, but are not expected to be expert coders at any point during the course.
 >
 
 $~$
 
-### `RStudio` Layout
+### RStudio Layout
 
-In order to get started with `R` and `RStudio`, it will be beneficial to understand the User Interface. `RStudio` has the following layout:
+In order to get started with R and RStudio, it will be beneficial to understand the User Interface. RStudio has the following layout:
 
 -   the **Editor** for your scripts and documents (top-left)\
--   the `R` **Console** (bottom-left)\
+-   the R **Console** (bottom-left)\
 -   your **Environment (Objects/Variables)/History** (top-right)\
 -   and your **Files/Plots/Packages/Help/Viewer** (bottom-right).
 
@@ -91,19 +91,19 @@ In order to get started with `R` and `RStudio`, it will be beneficial to underst
 
 $~$
 
-### Personalize `RStudio` Appearance
+### Personalize RStudio Appearance
 
-The color scheme of `RStudio` can also be changed by going to **Tools --\> Global Options --\> Appearance --\> Editor Theme**. This can make the long days of coding a lot easier on the eyes. 
+The color scheme of RStudio can also be changed by going to **Tools --\> Global Options --\> Appearance --\> Editor Theme**. This can make the long days of coding a lot easier on the eyes. 
 
-Another way to personalize `RStudio` is to change the pane layout. This can be done in **Tools --\> Global Options --\> Pane Layout**.
+Another way to personalize RStudio is to change the pane layout. This can be done in **Tools --\> Global Options --\> Pane Layout**.
 
-Font size is another feature that can be altered for aesthetics and accessibility reasons. To change the font size in `RStudio`, click **Tools** in the upper left panel --\> select **Global Options** --\> choose the fourth option from the top titled **Appearance** --\> change the **editor font size** --\>  click **Apply** to see what the font size will look like --\> once satisfied, select **OK**.
+Font size is another feature that can be altered for aesthetics and accessibility reasons. To change the font size in RStudio, click **Tools** in the upper left panel --\> select **Global Options** --\> choose the fourth option from the top titled **Appearance** --\> change the **editor font size** --\>  click **Apply** to see what the font size will look like --\> once satisfied, select **OK**.
 
 $~$
 
-### Basics of Coding in `R`
+### Basics of Coding in R
 
-Now that `RStudio` is personalized to your specifications, we can start diving into the basics of coding with `R`. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below. It is important to note that this only goes one direction.
+Now that RStudio is personalized to your specifications, we can start diving into the basics of coding with R. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below. It is important to note that this only goes one direction.
 
 ```{r practice1pt1, exercise = TRUE}
 x <- 7
@@ -115,13 +115,13 @@ We can then check the value of our variable by simply typing the name of the var
 x
 ```
 
-We can also use `R` to do math. This can be combined with variables to do some fun stuff.
+We can also use R to do math. This can be combined with variables to do some fun stuff.
 
 ```{r practice1pt3, exercise = TRUE}
 x + x * x
 ```
 
-Similarly to how we store values as a variable, we can do the same with vectors or even whole data sets! To store a vector as a variable, write the vector inside of the concatenate function `c()`, being sure to add commas between separate values and quotations around words, to let `R` know you have a list of values. Vectors can be letters, numbers, or a combination of the two.
+Similarly to how we store values as a variable, we can do the same with vectors or even whole data sets! To store a vector as a variable, write the vector inside of the concatenate function `c()`, being sure to add commas between separate values and quotations around words, to let R know you have a list of values. Vectors can be letters, numbers, or a combination of the two.
 
 ```{r practice1pt4, exercise = TRUE}
 My_List <- c(1, 2, 'lettuce', 4, 'tomato')
@@ -129,7 +129,7 @@ My_List <- c(1, 2, 'lettuce', 4, 'tomato')
 My_List
 ```
 
-To store a dataset in `R`, we can do something similar. However, we must also include the function `read_csv()` from the `tidyverse` package. We can do this to read a .csv file (Comma Separated Values) into the environment window in `R`.
+To store a dataset in R, we can do something similar. However, we must also include the function `read_csv()` from the `tidyverse` package. We can do this to read a .csv file (Comma Separated Values) into the environment window in R.
 
 ```{r practice1pt5, exercise = TRUE}
 RollerCoasters <- read_csv('RollerCoasters.csv')
@@ -163,7 +163,7 @@ $~$
 
 ### Importing a Dataset using the Drop-Down Menu
 
-However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before `R` can read it in like above.
+However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before R can read it in like above.
 
 In the Environment tab (top right), click _Import Dataset_ --\> choose the _From Text (base)_ option 
 
@@ -209,7 +209,7 @@ mean(Counting)
 summary(Counting)
 ```
 
-Another important component to `R` is commenting on code without affecting the code itself. This can be done by typing a pound symbol `#` before the comment.
+Another important component to R is commenting on code without affecting the code itself. This can be done by typing a pound symbol `#` before the comment.
 
 ```{r practice3pt2, exercise = TRUE}
 2 + 2 #Look at how well R can add!
@@ -245,13 +245,13 @@ $~$
 
 ### Where to Access it
 
-Students will have multiple modes of accessing the `RStudio` Server.
+Students will have multiple modes of accessing the RStudio Server.
 
 One option is to go through [Montana State University Webpage](montana.edu), search "rstudio server", and click the [login link](https://rstudio.math.montana.edu/).
 
 Students will also have a link available to them within the STAT 216 page in D2L.
 
-The `RStudio` Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources --\> RStudio.
+The RStudio Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources --\> RStudio.
 
 - Once students are directed to the RStudio Server, they will then be prompted to **Sign in** using their **MSU NetID and password** - this will be the same login information they use to access D2L.
 
@@ -262,11 +262,11 @@ $~$
 
 You may have heard this if you took STAT 216 at MSU, but what does this really mean?
 
-Essentially, `R` is very literal and not always good at reading our minds. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions.
+Essentially, R is very literal and not always good at reading our minds. It matters whether words are capitalized or lowercase when storing or calling a dataset, variables, or functions.
 
-For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", `R` will not recognize or understand what you are trying to reference.
+For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", R will not recognize or understand what you are trying to reference.
 
-- You can also use **Tab-Completion** to reduce issues with case sensitivity. This is where `R` will suggest auto-complete options when you start typing in a variable name. By selecting one of these options, you are sure to reference something that `R` will recognize. Here is an example of what this looks like:
+- You can also use **Tab-Completion** to reduce issues with case sensitivity. This is where R will suggest auto-complete options when you start typing in a variable name. By selecting one of these options, you are sure to reference something that R will recognize. Here is an example of what this looks like:
 
 ![](images/tabcomplete.png)
 
@@ -275,7 +275,7 @@ $~$
 
 #### Excercise 2
 
-**Referencing the RollerCoasters Dataset, can you find and correct the mistake? (Hint: remember that `R` is case-sensitive!)**
+**Referencing the RollerCoasters Dataset, can you find and correct the mistake? (Hint: remember that R is case-sensitive!)**
 
 ```{r ServerExercise2, exercise = TRUE}
 summary(rollercoasters)
@@ -294,7 +294,7 @@ $~$
 
 ### Using Packages
 
-What is a Package in `R`? According to [TutorialsPoint.com](https://www.tutorialspoint.com/r/r_packages.htm):
+What is a Package in R? According to [TutorialsPoint.com](https://www.tutorialspoint.com/r/r_packages.htm):
 
 >
 > "R packages are a collection of R functions, complied code and sample data. They are stored under a directory called _library_ in the R environment. By default, R installs a set of packages during installation. More packages are added later, when they are needed for some specific purpose. When we start the R console, only the default packages are available by default. Other packages which are already installed have to be loaded explicitly to be used by the R program that is going to use them."
@@ -302,11 +302,11 @@ What is a Package in `R`? According to [TutorialsPoint.com](https://www.tutorial
 
 When working with packages, there are two different steps.
 
--   First, a package must be installed onto the `RStudio` server. This step only needs to be done once.
+-   First, a package must be installed onto the RStudio server. This step only needs to be done once.
 
--   Second, you must library the package to use any of the functions in it. This must be done each time a new session in the `RStudio` server is started.
+-   Second, you must library the package to use any of the functions in it. This must be done each time a new session in the RStudio server is started.
 
-Here is an analogy that has been extremely helpful when explaining why students must run the `library( )` codes first whenever they open an `R` script file:
+Here is an analogy that has been extremely helpful when explaining why students must run the `library( )` codes first whenever they open an R script file:
 
 ![](images/RInstallvsLibrary.jpeg)
 
@@ -327,7 +327,7 @@ $~$
 
 #### Exporting Files
 
-There are two steps when exporting Files from the `RStudio` Server.
+There are two steps when exporting Files from the RStudio Server.
 
 First, it must be **saved to the server**. To do this, start in the top left section of the server. Make sure the student is on the tab of the file the want to save. In that top left section, click _File_ --\> _Save As_ --\> then students will be prompted to name their file --\> select _Save_.
 
@@ -388,7 +388,7 @@ ggplot(data = RollerCoasters,
 # Colors the all of the points in the plot blue
 ```
 
-If we wanted to add a categorical variable to this graph, we could tell `R` to color the points based on that variable. For the next graph, lets color the points based on the roller coaster `Type`. This will be added into the `aes()` section as it is a variable associated with an aesthetic of our graph.
+If we wanted to add a categorical variable to this graph, we could tell R to color the points based on that variable. For the next graph, lets color the points based on the roller coaster `Type`. This will be added into the `aes()` section as it is a variable associated with an aesthetic of our graph.
 
 ```{r warning = FALSE}
 ggplot(data = RollerCoasters,
@@ -498,7 +498,7 @@ $~$
 
 ### Installing catstats
 
-If you are running `RStudio` locally rather than from the server, you must install `catstats`. This can be done by first installing the `remotes` package, which allows us to install packages from github repositories. See the code chunk below for installing `remotes`.
+If you are running RStudio locally rather than from the server, you must install `catstats`. This can be done by first installing the `remotes` package, which allows us to install packages from github repositories. See the code chunk below for installing `remotes`.
 
 ```{r remotes-installation, eval = FALSE}
 install.packages("remotes")
@@ -590,7 +590,7 @@ $~$
 
 ### Common Mistakes include:
 
-**A**. Replacing the word, or 'call', that functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else `R` will not recognize it.
+**A**. Replacing the word, or 'call', that functions will use to reference the dataset instead of the word 'datasetname'. The actually name of the uploaded dataset, which will usually be read in from a text file or .csv file, will appear in the Environment and **must be typed exactly how it appears there** or else R will not recognize it.
 
 Here is an example of a given line of code with no edits:
 ```{r eval = FALSE}
@@ -611,11 +611,11 @@ It is likely that functions further in the document will use 'Coasters' to refer
 
 $~$
 
-**B**. Not running the `library( )` codes **prior** to attempting to run other code. This is a good time to bring up that handy light bulb metaphor from before. Students must run these each time a new session in the `RStudio` Server is started.
+**B**. Not running the `library( )` codes **prior** to attempting to run other code. This is a good time to bring up that handy light bulb metaphor from before. Students must run these each time a new session in the RStudio Server is started.
 
 $~$
 
-**C**. Students may trying to **run functions before reading in the dataset**. The dataset code must be edited correctly and run for `R` to know what it is referencing and what variable names it is dealing with.
+**C**. Students may trying to **run functions before reading in the dataset**. The dataset code must be edited correctly and run for R to know what it is referencing and what variable names it is dealing with.
 
 - In general, it is important that students run the code **in the order that it appears**. Otherwise, they may run into issues.
 
@@ -644,7 +644,7 @@ $~$
 
 ### Errors vs. Warning Messages
 
-Another good thing to note while working in `R`, and especially when working with the `catstats` package and its functions, **an Error message is *NOT* the same as a Warning message**. An Error prevents the highlighted code from running altogether, while a warning will still run the code but bring important notes to the users attention. Students may occasionally call you over and ask why they are getting a red message, assuming it means an error has occurred, when the are actually just seeing a warning message built into a function and it is completely possible that they have done nothing wrong.
+Another good thing to note while working in R, and especially when working with the `catstats` package and its functions, **an Error message is *NOT* the same as a Warning message**. An Error prevents the highlighted code from running altogether, while a warning will still run the code but bring important notes to the users attention. Students may occasionally call you over and ask why they are getting a red message, assuming it means an error has occurred, when the are actually just seeing a warning message built into a function and it is completely possible that they have done nothing wrong.
 
 ------------------------------------------------------------------------
 
@@ -692,15 +692,15 @@ The MSC can be another good resource for TA's if they have coding questions. Aga
 
 $~$
 
-**3. Help Files within `R`**
+**3. Help Files within R**
 
-The `?` and `help()` commands are very powerful. For functions, placing the `?` before the name, will tell `R` to search for that name in all of the functions, in all of the packages you have installed.  
+The `?` and `help()` commands are very powerful. For functions, placing the `?` before the name, will tell R to search for that name in all of the functions, in all of the packages you have installed.  
 
 * If it finds _one_ __identical match__, it will display the help file for that function in the Help tab in the bottom-right corner.  
 * If it finds _more than one_ __identical match__, it will display the functions, in their respective packages, that you have to choose from.  
 * If it finds _no_ __identical match__, it will tell you that "`No documentation for ____ in specified packages and libraries:,`" and suggests you use a `??` instead.  
     
-    + A `??` in front of the function name will search __all of `R`__ for named functions similar to what you typed.  
+    + A `??` in front of the function name will search __all of R__ for named functions similar to what you typed.  
     + The output will tell you what package the function is in, as well as the function's name (`package::function`).  
 
 If you would like help on a particular package, say one that you just downloaded, then you can use the same command(s) to get help.  These commands will load up a help page (in RStudio) in the Help pane. Each help page is broken down into sections:  
@@ -717,7 +717,7 @@ $~$
 
 **4. Stack Overflow**
 
-If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in `R` when you do not have your lead instructor available to ask.
+If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in R when you do not have your lead instructor available to ask.
 
 * Regardless of how you solve an issues outside of class, it is good practice to communicate your issues and how you resolved it with your team prior to class. As we mentioned before, **if you run into an issue, it is more than likely that students will run into the same problem**. Being prepared to encounter these issues and know how to help students fix them is a big part of your role as a Teaching Assistant.
 
@@ -727,7 +727,7 @@ $~$
 
 Both Eliot and Harley (your instructors today) have been a part of editing and updating a variety of other R Workshops which are co-organized by the Montana State University Library, Department of Mathematical Sciences, and Statistical Consulting and Research Services (SCRS, <https://www.montana.edu/statisticalconsulting/>).
 
-This series of R Workshops are **free to all MSU Students and Employees**. They are created to help participants gain a better understanding of how to use `R` and apply their skills to other projects. This workshop was very directed in terms of what you will encounter while TA'ing for STAT 216, but the other workshops are meant to help you learn `R` for personal and professional use in addition to/outside of STAT 216. More Information on the Fall 2022 R Workshops can be found in the following flyer:
+This series of R Workshops are **free to all MSU Students and Employees**. They are created to help participants gain a better understanding of how to use R and apply their skills to other projects. This workshop was very directed in terms of what you will encounter while TA'ing for STAT 216, but the other workshops are meant to help you learn R for personal and professional use in addition to/outside of STAT 216. More Information on the Fall 2022 R Workshops can be found in the following flyer:
 
 ![Fall 2022 R Workshops Flyer](images/Fall2022Flyer.png)
 
@@ -742,7 +742,7 @@ We all wish you good luck and a successful semester! :)
 
 ------------------------------------------------------------------------
 
-## Montana State University `R` Workshops Team
+## Montana State University R Workshops Team
 
 These materials were adapted from materials generated by the Data Carpentries (<https://datacarpentry.org/>) and were originally developed at MSU by Dr. Allison Theobold. The workshop series is co-organized by the Montana State University Library, Department of Mathematical Sciences, and Statistical Consulting and Research Services (SCRS, <https://www.montana.edu/statisticalconsulting/>). SCRS is supported by Montana INBRE (National Institutes of Health, Institute of General Medical Sciences Grant Number P20GM103474). The workshops for 2021-2022 are supported by Faculty Excellence Grants from MSU's Center for Faculty Excellence.
 
