@@ -27,9 +27,9 @@ x <- 7
 
 Congratulations on becoming a STAT 216 Teaching Assistant! As you may know from your personal experience if you took STAT 216 at Montana State University, Teaching Assistants can make a world of difference to students.
 
-Some students, especially college freshman, may feel intimidated with contacting a professor directly for help. That's where you come in! Your role as TA's consists of aiding students in gaining a nuanced understanding of introductory statistical methods, giving students real-time feedback, and troubleshooting any coding issues that arise.
+Some students, especially college freshman, may feel intimidated with contacting a professor directly for help. That's where you come in! Your role as a TA consists of aiding students in gaining a nuanced understanding of introductory statistical methods, giving students real-time feedback, and troubleshooting any coding issues that arise.
 
-A large part of your position is to maintain communication between the students and lead instructors. If you see a common issues arising, be sure to communicate this to your lead instructor so they can get everyone on the same page and clear up any misconceptions.
+A large part of your position is to maintain communication between the students and lead instructors. If you see common issues arising, be sure to communicate this to your lead instructor so they can get everyone on the same page and clear up any misconceptions.
 
 $~$
 $~$
@@ -38,34 +38,34 @@ $~$
 
 Students will be required to purchase a **Coursepack** which will contain the activities and labs they will work through and complete over the course of the semester. This will be available for them to purchase at the MSU Bookstore.
 
-There is also a **Textbook** for the course. Note: **The course textbook is NOT the same thing as the coursepack!** Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) which is located under *Course Materials and Resources*. Here is a direct link to the [Online Textbook](https://mtstateintrostats.github.io/IntroStatTextbook/) as well.
+There is also a **Textbook** for the course. Note: **The course textbook is NOT the same thing as the coursepack!** Many students confuse this, especially early on. Students can access a free copy of the STAT 216 Textbook online. They can find this by going to the [STAT 216 Course page](https://math.montana.edu/courses/s216/) on montana.edu, through a link posted on D2L, or through a link on the [STAT 216 Syllabus](https://mtstateintrostats.github.io/Syllabus/). Here is a direct link to the [Online Textbook](https://mtstateintrostats.github.io/IntroStatTextbook/) as well.
 
-The **activities** and **labs** in the coursepack with often require students to use an `R` script file to complete. This R Bootcamp is meant to help you get a better understand of coding in `R` so you can help students when they run into issues.
+The **activities** and **labs** in the coursepack with often require students to use an R script file to complete. This R Bootcamp is meant to help you get a better understand of coding in R so you can help students when they run into issues.
 
 $~$
 $~$
 
 ### Other Resources Available
 
-There are a variety of other resources available for STAT 216 Students:
+There are a variety of other resources available for STAT 216 students:
 
 **1. The Mathematics and Statistics Center (MSC)**
 
-The MSC is located on the same floor in Romney that the STAT 216 classes are held, so you can't miss it. There are always in-house tutors available that can help students with statistics. Students automatically have access to the MSC through enrolling in STAT 216, and can enter for free by swiping their CatCard. The MSC has the activity solutions so students can check their work and get more in-depth feedback by looking through them.
+The [Math and Stat Center](https://math.montana.edu/undergrad/msc/) (MSC) is located on the same floor in Romney that the STAT 216 classes are held, so you can't miss it. There are always in-house tutors available that can help students with statistics. Students automatically have access to the MSC through enrolling in STAT 216, and can enter for free by swiping their CatCard. The MSC has the activity solutions so students can check their work and get more in-depth feedback by looking through them.
 
 $~$
 
 **2. SmartyCats Tutoring**
 
-If you aren't already aware, there are SmartyCats Tutors available for a wide variety of MSU classes. The majority of tutors have taken the courses before and have a good idea of the instructors expectations. Tutoring Session only cost \$2 a piece, which mean they are very affordable for most students.
+If you aren't already aware, there are [SmartyCats Tutors](https://www.montana.edu/aycss/success/smartycats/) available for a wide variety of MSU classes. The majority of tutors have taken the courses before and have a good idea of the instructors expectations. Tutoring sessions only cost \$2 a piece, which mean they are very affordable for most students.
 
 $~$
 
 **3. Other Tutoring Opportunities**
 
-There are multiple private tutors as well! There is a bulletin board in the Wilson building where student tutors post their contact information. Since Wilson is a maze and finding the bulletin board can be intimating, students can also reach out to the math department through email as well.
+There are multiple private tutors as well! There is a bulletin board near the Department of Mathematical Sciences Office in Wilson Hall (2nd floor) where student tutors post their contact information. Since Wilson is a maze and finding the bulletin board can be intimating, students can also reach out to the math department through email as well.
 
-If a student is a Veteran or is using a relative's Military Educational Benefits to help pay for school, there are free statistics tutors available to them through the Veterans Center on Campus. The Veterans Support Center is also located in Romney, but on the first floor.
+If a student is a Veteran or is using a relative's Military Educational Benefits to help pay for school, there are free statistics tutors available to them through the [Veterans Center](https://www.montana.edu/veteran/) on Campus. The Veterans Support Center is also located in Romney, but on the first floor.
 
 ------------------------------------------------------------------------
 
