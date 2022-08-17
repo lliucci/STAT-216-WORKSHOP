@@ -532,7 +532,7 @@ we can pipe the dataset into `ggplot()` and just start with the
 `mapping` argument:
 
 ```{r warning = FALSE}
-RollerCoaster %>% ggplot(mapping = aes(x = Year_Opened, y = Top_Speed, color = Type)) +
+RollerCoasters %>% ggplot(mapping = aes(x = Year_Opened, y = Top_Speed, color = Type)) +
   geom_point()
 
 # Same plot as above
