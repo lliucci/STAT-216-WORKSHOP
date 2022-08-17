@@ -171,21 +171,24 @@ $~$
 
 ### Importing a Dataset using the Drop-Down Menu
 
-However, students will often have to upload the dataset .csv file to the server ***using the drop down menu*** before R can read it in like above.
+If a data set does not already live in the folder where R is operating (called the "working directory"), students will have to upload the dataset .csv file to the server ***using the drop down menu*** before R can read it in like above.
 
-In the Environment tab (top right), click _Import Dataset_ --\> choose the _From Text (base)_ option 
+In the Environment tab (top right), click _Import Dataset_ and choose the _From Text (base)_ option.
 
 ![](images/ImportingData.jpg)
 
---\> students will select the dataset from where the file is downloaded on their device.
 
-Once they have selected the dataset, another window will appear. Here, it is critical that they **select YES for Heading** for the dataset to be uploaded correctly and usable.
+Select the dataset from where the file is downloaded on your device.
+Once you have selected the dataset, another window will appear.
+Here, it is critical that you **select YES for Heading** for the dataset to be uploaded correctly and usable
+(since all datasets in this course will include a header row of variable names).
 
 ![](images/ImportHeading.jpg)
 
 After 'Yes' is selected, click 'Import' and you are done! 
 
-If a student claims they imported the dataset but it still is not reading in correctly for them, walk through this process with them to double check.
+If a student claims they imported the dataset but it still is not reading in
+correctly for them, walk through this process with them to double check.
 
 $~$
 
@@ -207,23 +210,41 @@ RollerCoasters[1:5,1:3]
 
 The code above is providing rows 1 through 5 and columns 1 through 3 of the `RollerCoasters` dataset.
 
+You can also select individual variables from a dataset using `$`. The code below selects the
+`Top_Speed` column from the `RollerCoasters` dataset.
+
+```{r practice2, exercise = TRUE}
+RollerCoasters$Top_Speed
+```
+
 We can also run functions on vectors, like `mean()` or `summary()`, that allow us to determine key information.
 
 ```{r practice3pt1, exercise = TRUE}
-Counting <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+mean(RollerCoasters$Top_Speed)
 
-mean(Counting)
-
-summary(Counting)
+summary(RollerCoasters$Top_Speed)
 ```
 
-Another important component to R is commenting on code without affecting the code itself. This can be done by typing a pound symbol `#` before the comment.
+Notice that when you tried to calculate the mean top speed of rollercoasters above,
+the result was `NA` (or missing). This is because there are missing values in
+the dataset itself---some rollercoasters did not report a top speed. You
+can calculate the mean of the non-missing observations by using the argument
+`na.rm = TRUE`.
+
+```{r practice3pt1, exercise = TRUE}
+mean(RollerCoasters$Top_Speed, na.rm = TRUE)
+```
+
+Another important component to R is commenting on code without affecting the code itself.
+This can be done by typing a pound symbol `#` before the comment.
 
 ```{r practice3pt2, exercise = TRUE}
 2 + 2 #Look at how well R can add!
 ```
 
-Comments do not need to be ran for the code to work. If comments are run, they do not effect the output. However, it is good practice to good documentation of your code through comments so others can easily understand it. Comments can exist on a line alone, after a line with a section of a function, but cannot exist between code on the same line.
+Comments do not need to be run for the code to work. If comments are run, they do not effect the output.
+However, it is good practice to document your code through comments so others can easily understand it.
+Comments can exist on a line alone, after a line with a section of a function, but cannot exist between code on the same line.
 
 $~$
 
@@ -231,7 +252,7 @@ $~$
 
 #### Exercise 1
 
-**Write code to print out the 5th and 18th rows from the `RollerCoasters` dataset.**
+**Write code to print out the 5th through 8th rows from the `RollerCoasters` dataset.**
 
 ```{r IntroToRExercise1, exercise = TRUE}
 
@@ -255,13 +276,13 @@ $~$
 
 Students will have multiple modes of accessing the RStudio Server.
 
-One option is to go through [Montana State University Webpage](montana.edu), search "rstudio server", and click the [login link](https://rstudio.math.montana.edu/).
+- One option is to go through [Montana State University Webpage](https://www.montana.edu/), search "RStudio server", and click the [RStudio Sign In](https://rstudio.math.montana.edu/) link.
 
-Students will also have a link available to them within the STAT 216 page in D2L.
+- Students will also have a link available to them within the STAT 216 page in D2L.
 
-The RStudio Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/SummerSyllabus/) under Course Materials and Resources --\> RStudio.
+- The RStudio Server can also be accessed through the [Syllabus](https://mtstateintrostats.github.io/Syllabus/) under Course Materials and Resources --\> RStudio.
 
-- Once students are directed to the RStudio Server, they will then be prompted to **Sign in** using their **MSU NetID and password** - this will be the same login information they use to access D2L.
+Once students are directed to the RStudio Server, they will then be prompted to **Sign in** using their **MSU NetID and password**---this will be the same login information they use to access D2L.
 
 $~$
 $~$
@@ -274,16 +295,16 @@ Essentially, R is very literal and not always good at reading our minds. It matt
 
 For example, if you are trying to use a variable named "Year" but accidentally type "year" with a lowercase "y", R will not recognize or understand what you are trying to reference.
 
-- You can also use **Tab-Completion** to reduce issues with case sensitivity. This is where R will suggest auto-complete options when you start typing in a variable name. By selecting one of these options, you are sure to reference something that R will recognize. Here is an example of what this looks like:
+You can use **Tab-Completion** to reduce issues with case sensitivity. This is where R will suggest auto-complete options when you start typing in a variable name. By selecting one of these options, you are sure to reference something that R will recognize. Here is an example of what this looks like:
 
 ![](images/tabcomplete.png)
 
 $~$
 $~$
 
-#### Excercise 2
+#### Exercise 2
 
-**Referencing the RollerCoasters Dataset, can you find and correct the mistake? (Hint: remember that R is case-sensitive!)**
+**Referencing the `RollerCoasters` Dataset, can you find and correct the mistake? (Hint: Remember that R is case-sensitive!)**
 
 ```{r ServerExercise2, exercise = TRUE}
 summary(rollercoasters)
@@ -312,16 +333,31 @@ When working with packages, there are two different steps.
 
 -   First, a package must be installed onto the RStudio server. This step only needs to be done once.
 
--   Second, you must library the package to use any of the functions in it. This must be done each time a new session in the RStudio server is started.
+-   Second, you must load the package (using the `library()` function) to use any of the functions in it. This must be done each time a new session in the RStudio server is started.
 
 Here is an analogy that has been extremely helpful when explaining why students must run the `library( )` codes first whenever they open an R script file:
 
 ![](images/RInstallvsLibrary.jpeg)
 
+Any package that is used in STAT 216 will already be installed on the RStudio server.
+However, if students are running RStudio on their own laptop or a different device,
+they first may need to install the package. This can be done by clicking the
+"Packages" tab in the lower right, clicking "Install", then searching for the package name.
+Packages commonly used in STAT 216 include: `tidyverse` (which is actually a suite
+of packages, including `ggplot2` for graphics and `dplyr` for data wrangling),
+`openintro`, and `mosaic`.
+
+STAT 216 also has its own R package called `catstats` hosted on 
+Github (which means it cannot be installed through the "Packages" tab in R)
+We will explore `catstat` later in this tutorial.
+
 $~$
 $~$
 
 ### Importing and Exporting Files within the Server
+
+Students should be saving their R code in R script files (.R). These script files
+will be posted in D2L and will need to be imported into their RStudio session.
 
 $~$
 
@@ -337,9 +373,17 @@ $~$
 
 There are two steps when exporting Files from the RStudio Server.
 
-First, it must be **saved to the server**. To do this, start in the top left section of the server. Make sure the student is on the tab of the file the want to save. In that top left section, click _File_ --\> _Save As_ --\> then students will be prompted to name their file --\> select _Save_.
+- First, it must be **saved to the server**. To do this, start in the top left section of the server.
+Make sure the student is on the tab of the file they want to save.
+In that top left section, click _File_ --\> _Save As_ --\> then students will
+be prompted to name their file --\> select _Save_.
 
-Now the file name should appear under the Files tab in the bottom right corner. Direct students to click the check box next to the file name --\> then select _More_ --\> click _Export_ --\> _Download_. This process **saves the file from the server to their actual device**. Now students should have access to the file on their device so they can upload it to Gradescope if asked.
+- Now the file name should appear under the Files tab in the bottom right corner.
+Direct students to click the check box next to the file name --\> then
+select _More_ --\> click _Export_ --\> _Download_. This process
+**saves the file from the server to their actual device**.
+Now students should have access to the file on their device so
+they can upload it to Gradescope if asked.
 
 ------------------------------------------------------------------------
 
