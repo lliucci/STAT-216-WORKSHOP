@@ -34,6 +34,61 @@ A large part of your position is to maintain communication between the students 
 $~$
 $~$
 
+### Characteristics of an Effective TA
+
+Our overall goal in this course is to guide students through learning, understanding, and
+appreciating Statistics. There are some general characteristics of effective teachers and tutors
+that are important to keep in mind^[Taken from ["Ten Characteristics of an Effective Tutor"](https://www.sac.edu/AcademicProgs/ScienceMathHealth/MathCenter/PDF/Tutor%20Training/Module%203/10%20Characteristics%20of%20a%20Good%20Tutor.pdf) by the Santa Ana College Math Center]:
+
+1. **Empathetic**. Understand what it's like to be a student who may lack confidence,
+feel stressed, be overwhelmed or just not understand the material.
+
+2. **Honest**. Don’t hesitate to say that you do not know about a particular concept.
+Trying to bluff your way through will only hurt the student and your reputation in the long
+run. 
+
+3. **Enthusiastic**. Display a positive attitude and love for the subject that can rub off
+on the students and help them enjoy learning the material.
+
+4. **Good listener**. Develop and use good listening skills so that you will better
+understand students' misconceptions and errors.
+
+5. **Ask good, open-ended questions**. Ask probing questions in order to evaluate a
+students' understanding. Try to get the student to answer their own questions by guiding them
+through the steps. Giving students the opportunity to discover the answers themselves
+will **encourage independence** and effective learning.
+
+6. **Patient.** This is probably one of the most important characteristics of an effective TA.
+Never act annoyed or judgmental that the student does not know something. Even if they ask the most basic
+question, always demonstrate your patience. Try to remember how you felt when you first
+started learning something new.
+
+7. **Maintains confidentiality**. Any personal information such as medical conditions,
+handicaps, test scores should be between you and the student. However, **all TAs are
+"mandatory reporters" according to MSU policy**, which means you are legally obligated
+to report discriminatory or harassing incidents. If you are concerned that this has occurred,
+please talk to one of the Student Successes Coordinators or the Faculty Course Supervisor
+for STAT 216. For more information, visit the [Office of Institutional Equity webpage](https://www.montana.edu/equity/index.html).
+
+8. **Motivator**. Encourage students to strive to be the best they can, to reach their goals,
+to recognize their strengths, to focus on learning _how_ to learn (metacognition) so that they will be
+successful in the future.
+
+9. **Allows for periods of silence**. Avoid feeling like you have to interrupt a moment of
+silence by talking. Allow the student to reflect on the subject at hand before going on. 
+
+10. **Shows respect for students as persons**. Try to understand their struggles.
+
+11. **Maintains professional boundaries**. A TA is a professional and person of authority,
+who represents the university.
+
+12. **Can explain material in multiple ways**. Understand that not all students understand
+concepts the same way and the first time; sense when students do not
+understand and try another approach of presenting the material.
+
+$~$
+$~$
+
 ### STAT 216 Course Materials
 
 Students will be required to purchase a **Coursepack** which will contain the activities and labs they will work through and complete over the course of the semester. This will be available for them to purchase at the MSU Bookstore.
@@ -44,6 +99,7 @@ The **activities** and **labs** in the coursepack with often require students to
 
 $~$
 $~$
+
 
 ### Other Resources Available
 
