@@ -487,9 +487,14 @@ $~$
 
 ### Troubleshooting Common ggplot2 Coding Issues
 
+Let's take a look at some common errors students encounter when using the `ggplot2` R functions.
+
+#### Exercise 3
+
 One of the most common issues that can come up when working with functions in `ggplot2`
 is datasets being misspelled or incorrectly typed.
-Let's take a look at what this looks like. Additionally, try to correct the error.
+
+**Try to correct the error in the following code.**
 
 ```{r ggplotTroubleshooting1, exercise = TRUE, warning = FALSE}
 ggplot(data = Rollercoasters,
@@ -509,8 +514,12 @@ grade_code()
 
 $~$
 
+#### Exercise 4
+
 The next most common is the `+` being in the incorrect spot in the code.
-The `+` must be placed at the end of a line rather than at the beginning of a new one. Let's take a look at an example of this. Additionally, try to correct the error.
+The `+` must be placed at the end of a line rather than at the beginning of a new one.
+
+**Try to correct the error in the following code.**
 
 ```{r ggplotTroubleshooting2, exercise = TRUE, warning = FALSE}
 ggplot(data = RollerCoasters,
@@ -530,8 +539,11 @@ grade_code()
 
 $~$
 
+#### Exercise 5
+
 Sometimes, students will mix up the use of `%>%` and `+` when creating plots.
-Try to correct the error in the following code.
+
+**Try to correct the error in the following code.**
 
 ```{r ggplotTroubleshooting2b, exercise = TRUE, warning = FALSE}
 RollerCoasters %>% ggplot(mapping = aes(x = Year_Opened)) %>%
@@ -550,12 +562,14 @@ grade_code()
 
 $~$
 
+#### Exercise 6
+
 Another very common error is when a set of parenthesis is opened, but never closed.
 One way to avoid this is to turn on "Rainbow Parenthesis" by going to
 **Tools --\> Global Options --\> Code --\> Display --\> Rainbow Parentheses**.
-
 However, it is still possible for stray parentheses to be involved in code.
-Let's take a look at an example of this. Fix the code by adding or removing parentheses.
+
+**Try to correct the error in the following code.**
 
 ```{r ggplotTroubleshooting3, exercise = TRUE, warning = FALSE}
 ggplot(data = RollerCoasters,
@@ -575,9 +589,9 @@ grade_code()
 
 $~$
 
-Now, fill in the template below to create a plot with the duration of the roller coaster
-ride on the x-axis and its maximum height on the y-axis.
-(Hint: _Replace_ the underscores with the data set name and variable names.)
+#### Exercise 7
+
+**Fill in the template below to create a plot with the duration of the roller coaster ride on the x-axis and its maximum height on the y-axis. (Hint: _Replace_ the underscores with the data set name and variable names.)**
 
 ```{r ggplotTroubleshooting4, exercise = TRUE, warning = FALSE}
 ___ %>% ggplot(mapping = aes(x = ___, y = ___)) +
@@ -601,23 +615,31 @@ grade_code()
 
 ### What is catstats?
 
-`catstats` is a package containing useful functions and data that is designed for the STAT 216 and STAT 217 courses at Montana State University. For more information, visit the [github repository for catstats](https://github.com/greenwood-stat/catstats).
+`catstats` is a package containing useful functions and data that are designed
+for the STAT 216 and STAT 217 courses at Montana State University.
+For more information, visit the [github repository for catstats](https://github.com/greenwood-stat/catstats).
 
 $~$
 
 ### Installing catstats
 
-If you are running RStudio locally rather than from the server, you must install `catstats`. This can be done by first installing the `remotes` package, which allows us to install packages from github repositories. See the code chunk below for installing `remotes`.
+If you are running RStudio locally rather than from the server, you must install `catstats`.
+This can be done by first installing the `remotes` package, which allows us to
+install packages from github repositories.
+See the code chunk below for installing `remotes`.
 
-```{r remotes-installation, eval = FALSE}
+```{r remotes-installation, eval = FALSE, echo = TRUE}
 install.packages("remotes")
 ```
 
 Once `remotes` is installed, we can install `catstats` using the code below.
 
-```{r catstats-installation, eval = FALSE}
+```{r catstats-installation, eval = FALSE, echo = TRUE}
 remotes::install_github("greenwood-stat/catstats")
 ```
+
+These instructions are also included in the "Preliminaries" chapter of the
+[STAT 216 textbook](https://mtstateintrostats.github.io/IntroStatTextbook/rstudio.html).
 
 $~$
 
@@ -627,22 +649,27 @@ One of the first issues that you may run into is if a student tries to install `
 
 Another common error may be **Error: Failed to install 'unknown package' from GitHub**. This likely means that there is a spelling error in the path within the `install_github` function.
 
+If a student does not follow directions to download `catstats` using `remotes`, and instead attempts to download it using the "Packages" tab in the lower right panel, they will encounter the following error:
+
+![Incorrectly Downloading catstats](images/downloaderror.png)
+
+$~$
+
 `catstats` was designed with errors in mind. That is to say that if an error is caused, there will likely be a message that appears in the Console window that lets the student know what might be the problem. Make sure students are always checking spelling and error codes if they are having issues.
 
 $~$
 
 ### Now You Try!
 
-#### Exercise 3
+#### Exercise 8
 
-**Fix the following code.**
+**Fix the following code. Hint: Look up the help file for the `one_proportion_test` function by typing `?one_proportion_test` in the console; the help file will display the arguments of the function and their descriptions.**
 
 ```{r catstatsExercise1, exercise = TRUE}
 one_proportion_test(
   probability_success = 50,
   sample_size = 10,
   summary_measure = "proportion",
-  
   direction = "greater",
   as_extreme_as = 0.6,
   number_repetitions = 20
@@ -664,11 +691,6 @@ one_proportion_test(
 grade_code()
 ```
 
-$~$
-
-If a student does not follow directions to download `catstats` using `remotes`, and instead attempts to download it using the "Packages" tab in the lower right panel, they will encounter the following error:
-
-![Incorrectly Downloading catstats](images/downloaderror.png)
 
 ------------------------------------------------------------------------
 
