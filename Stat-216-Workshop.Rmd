@@ -72,14 +72,14 @@ If a student is a Veteran or is using a relative's Military Educational Benefits
 ## Introduction to R
 
 >
-> Coding can be very intimidating, especially for students with no prior coding experience. Thus, the R script files accompanying activities and labs require pretty minimal amount of alterations by the students. Students will be expected to gradually contribute more in R, but are not expected to be expert coders at any point during the course.
+> Coding can be very intimidating, especially for students with no prior coding experience. Thus, the R script files accompanying activities and labs are heavily scaffolded---requiring minimal alterations by students. Students will be expected to gradually contribute more in R, but are not expected to be expert coders at any point during the course.
 >
 
 $~$
 
 ### RStudio Layout
 
-In order to get started with R and RStudio, it will be beneficial to understand the User Interface. RStudio has the following layout:
+R is the programming language that runs computations, while RStudio is the interface in which you engage with R (called an "integrated development environment", or IDE). We often use "R" and "RStudio" interchangeably. In order to get started with R and RStudio, it will be beneficial to first understand the RStudio User Interface. RStudio has the following layout:
 
 -   the **Editor** for your scripts and documents (top-left)\
 -   the R **Console** (bottom-left)\
@@ -103,33 +103,41 @@ $~$
 
 ### Basics of Coding in R
 
-Now that RStudio is personalized to your specifications, we can start diving into the basics of coding with R. One of the most useful concepts is to store values as a variable. This can be done using an arrow `<-` as shown below. It is important to note that this only goes one direction.
+Now that RStudio is personalized to your specifications, we can start diving into the basics of coding with R. R is called an "object-oriented language"---one of the most useful concepts is to store values as an "object". This can be done using an arrow `<-` (called "assignment") as shown below. It is important to note that this only goes one direction.
 
 ```{r practice1pt1, exercise = TRUE}
 x <- 7
 ```
 
-We can then check the value of our variable by simply typing the name of the variable.
+We can then check the value of our object by simply typing its name.
 
 ```{r practice1pt2, exercise = TRUE}
 x
 ```
 
-We can also use R to do math. This can be combined with variables to do some fun stuff.
+We can also use R to do math. This can be combined with objects to do some fun stuff.
 
 ```{r practice1pt3, exercise = TRUE}
 x + x * x
 ```
 
-Similarly to how we store values as a variable, we can do the same with vectors or even whole data sets! To store a vector as a variable, write the vector inside of the concatenate function `c()`, being sure to add commas between separate values and quotations around words, to let R know you have a list of values. Vectors can be letters, numbers, or a combination of the two.
+Similarly to how we store values as an object, we can do the same with vectors or even whole data sets! To store a vector as an object, write the vector inside of the concatenate function `c()`, being sure to add commas between separate values and quotations around words, to let R know you have a list of values. Vectors can be letters, numbers, or a combination of the two.
 
 ```{r practice1pt4, exercise = TRUE}
-My_List <- c(1, 2, 'lettuce', 4, 'tomato')
+My_Vector <- c(1, 2, 'lettuce', 4, 'tomato')
 
-My_List
+My_Vector
 ```
 
-To store a dataset in R, we can do something similar. However, we must also include the function `read_csv()` from the `tidyverse` package. We can do this to read a .csv file (Comma Separated Values) into the environment window in R.
+Note that if any of the values in the vector are characters, R will store all the values as a character. You can check the type of a vector with the `typeof()` function. Possible types you may encounter include: 'character', 'double' (a real number), 'integer', and 'logical' (TRUE/FALSE).
+
+```{r practice1pt4, exercise = TRUE}
+typeof(My_Vector)
+
+typeof(x)
+```
+
+To store a dataset in R, we can do something similar. However, we must first import the dataset into the R environment by using a function such as the `read_csv()` from the `tidyverse` package. The code below reads a .csv file (Comma Separated Values) into the environment window in R and stores it as the object `RollerCoasters`.
 
 ```{r practice1pt5, exercise = TRUE}
 RollerCoasters <- read_csv('RollerCoasters.csv')
