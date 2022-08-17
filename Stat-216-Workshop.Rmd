@@ -389,22 +389,31 @@ they can upload it to Gradescope if asked.
 
 ## Plotting with `ggplot2`
 
-### What is ggplot?
+### What is `ggplot`2?
 
-`ggplot` is a layer-based way of creating graphs within the `tidyverse` package. The main benefit of it over typical graphing code is that it allows us to build on a graph to make it as complex as we would like. Let's take a look at some examples and build them up as we go. For this, we will be working with the `RollerCoasters` data set.
+`ggplot2` is an R package (housed within the `tidyverse` package)
+that uses a layer-based way of creating graphs. The main benefit of using functions in
+`ggplot2` over base R functions (like `plot()` or `hist()`) is that it allows us
+to build onto a graph to make it as complex as we would like.
+Let's take a look at some examples and build them up as we go.
+For this, we will be working with the `RollerCoasters` data set.
 
-```{r warning = FALSE}
+```{r warning = FALSE, echo = TRUE}
 ggplot(data = RollerCoasters)
 
 ## Creates a blank ggplot(), referencing the RollerCoasters dataset
 ## Don't worry! It is supposed to look like that!
 ```
 
-We can see that this code simply creates a blank graph. This is because we have not specified what variables we would like to use. Let's take a look at the relationship between the year that the coaster was opened and its top speed.
+We can see that this code simply creates a blank graph. This is because we have
+not specified what variables we would like to use. Let's take a look at the
+relationship between the year that the coaster was opened and its top speed.
 
-To accomplish this, we can define a mapping (using the aesthetic (`aes`) function), by selecting the variables to be plotted and specifying how to present them in the graph, e.g. as x/y positions or characteristics such as size, shape, color, etc.
+To accomplish this, we can define a mapping (using the aesthetic (`aes`) function),
+by selecting the variables to be plotted and specifying how to present them in the graph,
+e.g., as x/y positions or characteristics such as size, shape, color, etc.
 
-```{r warning = FALSE}
+```{r warning = FALSE, echo = TRUE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed))
 
@@ -412,17 +421,21 @@ ggplot(data = RollerCoasters,
 # ggplot() knows where the variables live, since you have defined the data to use
 ```
 
-Now we can see that the variables of interest are on our graph, but the data itself is still absent. That is because we have not specified a way for the data to be presented. There are several ways to do this, the most common of which are as follows:
+Now we can see that the variables of interest are on our graph, but the data
+itself is still absent. That is because we have not specified a way for the data
+to be presented. There are several ways to do this, the most common of which are as follows:
     
-      * `geom_point()` adds points to the plot
-      * `geom_bar()` for bar charts 
-      * `geom_histogram()` for histograms
-      * `geom_boxplot()` for boxplots   
-      * `geom_smooth()` for regression lines 
+- `geom_point()` adds points to the plot
+- `geom_bar()` for bar charts 
+- `geom_histogram()` for histograms
+- `geom_boxplot()` for boxplots   
+- `geom_smooth()` for regression lines 
 
-For this example, lets create a scatter plot. We can do this by adding the `geom_point` argument to our graph. Note that for each layer that is added on, we must separate the lines with a plus (+).
+For this example, lets create a scatterplot. We can do this by adding the
+`geom_point` argument to our graph. Note that for each layer that is added on,
+we must separate the lines with a plus (+).
 
-```{r warning = FALSE}
+```{r warning = FALSE, echo = TRUE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed)) +
   geom_point()
@@ -430,9 +443,10 @@ ggplot(data = RollerCoasters,
  # Adds a point for each row (observation) in the data 
 ```
 
-If we wanted to color all of the points the same color, we can put the `color =` argument in the `geom_point()` layer.
+If we wanted to color all of the points the same color, we can put the
+`color =` argument in the `geom_point()` layer.
 
-```{r warning = FALSE}
+```{r warning = FALSE, echo = TRUE}
 ggplot(data = RollerCoasters,
        mapping = aes(x = Year_Opened, y = Top_Speed)) +
   geom_point(color = 'blue')
@@ -440,7 +454,10 @@ ggplot(data = RollerCoasters,
 # Colors the all of the points in the plot blue
 ```
 
-If we wanted to add a categorical variable to this graph, we could tell R to color the points based on that variable. For the next graph, lets color the points based on the roller coaster `Type`. This will be added into the `aes()` section as it is a variable associated with an aesthetic of our graph.
+If we wanted to add a categorical variable to this graph, we could tell R
+to color the points based on that variable. For the next graph, lets color
+the points based on the roller coaster `Type`. This will be added into the
+`aes()` section as it is a variable associated with an aesthetic of our graph.
 
 ```{r warning = FALSE}
 ggplot(data = RollerCoasters,
@@ -451,12 +468,28 @@ ggplot(data = RollerCoasters,
 # Notice how it automatically adds a legend to the plot! How nice is that?!
 ```
 
+Often, in STAT 216 we use the "pipe" operator (`%>%`) to string together
+a series of R functions. Whatever is on the left side of the pipe will be
+"piped into" the first argument of the next function.
+The first argument of the `ggplot()` function is the data set. Thus,
+we can pipe the dataset into `ggplot()` and just start with the
+`mapping` argument:
+
+```{r warning = FALSE}
+RollerCoaster %>% ggplot(mapping = aes(x = Year_Opened, y = Top_Speed, color = Type)) +
+  geom_point()
+
+# Same plot as above
+# Achieved using the pipe operator
+```
 $~$
 $~$
 
 ### Troubleshooting Common ggplot2 Coding Issues
 
-One of the most common issues that can come up when working with `ggplot` is data sets being misspelled or incorrectly typed. Let's take a look at what this looks like. Additionally, try to correct the error.
+One of the most common issues that can come up when working with functions in `ggplot2`
+is datasets being misspelled or incorrectly typed.
+Let's take a look at what this looks like. Additionally, try to correct the error.
 
 ```{r ggplotTroubleshooting1, exercise = TRUE, warning = FALSE}
 ggplot(data = Rollercoasters,
@@ -476,7 +509,8 @@ grade_code()
 
 $~$
 
-The next most common is the + being in the incorrect spot in the code. The + must be placed at the end of a line rather than at the beginning of a new one. Let's take a look at an example of this. Additionally, try to correct the error.
+The next most common is the `+` being in the incorrect spot in the code.
+The `+` must be placed at the end of a line rather than at the beginning of a new one. Let's take a look at an example of this. Additionally, try to correct the error.
 
 ```{r ggplotTroubleshooting2, exercise = TRUE, warning = FALSE}
 ggplot(data = RollerCoasters,
@@ -496,9 +530,32 @@ grade_code()
 
 $~$
 
-Another very common error is when a set of parenthesis is opened, but never closed. One way to avoid this is to turn on "Rainbow Parenthesis" by going to **Tools --\> Global Options --\> Code --\> Display --\> Rainbow Parenthesis**.
+Sometimes, students will mix up the use of `%>%` and `+` when creating plots.
+Try to correct the error in the following code.
 
-However, it is still possible for stray parenthesis to be involved in code. Let's take a look at an example of this. Fix the code by adding or removing parenthesis.
+```{r ggplotTroubleshooting2b, exercise = TRUE, warning = FALSE}
+RollerCoasters %>% ggplot(mapping = aes(x = Year_Opened)) %>%
+  geom_histogram()
+```
+
+```{r ggplotTroubleshooting2b-solution, warning = FALSE}
+RollerCoasters %>% ggplot(mapping = aes(x = Year_Opened)) +
+  geom_histogram()
+```
+
+```{r ggplotTroubleshooting2b-check}
+grade_code()
+```
+
+
+$~$
+
+Another very common error is when a set of parenthesis is opened, but never closed.
+One way to avoid this is to turn on "Rainbow Parenthesis" by going to
+**Tools --\> Global Options --\> Code --\> Display --\> Rainbow Parentheses**.
+
+However, it is still possible for stray parentheses to be involved in code.
+Let's take a look at an example of this. Fix the code by adding or removing parentheses.
 
 ```{r ggplotTroubleshooting3, exercise = TRUE, warning = FALSE}
 ggplot(data = RollerCoasters,
@@ -518,18 +575,18 @@ grade_code()
 
 $~$
 
-Now, fill in the template below to create a plot with Duration on the x-axis and Maximum Height on the y-axis. (Hint: _replace_ the underscores with the data set name and variable names.)
+Now, fill in the template below to create a plot with the duration of the roller coaster
+ride on the x-axis and its maximum height on the y-axis.
+(Hint: _Replace_ the underscores with the data set name and variable names.)
 
 ```{r ggplotTroubleshooting4, exercise = TRUE, warning = FALSE}
-ggplot(data = ___,
-       mapping = aes(x = ___, y = ___)) +
+___ %>% ggplot(mapping = aes(x = ___, y = ___)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
 ```
 
 ```{r ggplotTroubleshooting4-solution, warning = FALSE}
-ggplot(data = RollerCoasters,
-       mapping = aes(x = Duration, y = Max_Height)) +
+RollerCoasters %>% ggplot(mapping = aes(x = Duration, y = Max_Height)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE)
 ```
