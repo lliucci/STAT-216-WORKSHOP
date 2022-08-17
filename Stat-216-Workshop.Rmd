@@ -6,7 +6,7 @@ runtime: shiny_prerendered
 ---
 
 ```{r setup, include=FALSE}
-#remotes::install_github("rstudio-education/gradethis")
+#remotes::install_github("rstudio/gradethis")
 library(remotes)
 library(ggplot2)
 library(learnr)
