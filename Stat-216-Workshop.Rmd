@@ -38,7 +38,7 @@ $~$
 
 Our overall goal in this course is to guide students through learning, understanding, and
 appreciating Statistics. There are some general characteristics of effective teachers and tutors
-that are important to keep in mind^[Taken from ["Ten Characteristics of an Effective Tutor"](https://www.sac.edu/AcademicProgs/ScienceMathHealth/MathCenter/PDF/Tutor%20Training/Module%203/10%20Characteristics%20of%20a%20Good%20Tutor.pdf) by the Santa Ana College Math Center]:
+that are important to keep in mind (adapted from ["Ten Characteristics of an Effective Tutor"](https://www.sac.edu/AcademicProgs/ScienceMathHealth/MathCenter/PDF/Tutor%20Training/Module%203/10%20Characteristics%20of%20a%20Good%20Tutor.pdf) by the Santa Ana College Math Center):
 
 1. **Empathetic**. Understand what it's like to be a student who may lack confidence,
 feel stressed, be overwhelmed or just not understand the material.
@@ -86,6 +86,7 @@ who represents the university.
 concepts the same way and the first time; sense when students do not
 understand and try another approach of presenting the material.
 
+
 $~$
 $~$
 
@@ -97,7 +98,6 @@ There is also a **Textbook** for the course. Note: **The course textbook is NOT 
 
 The **activities** and **labs** in the coursepack with often require students to use an R script file to complete. This R Bootcamp is meant to help you get a better understand of coding in R so you can help students when they run into issues.
 
-$~$
 $~$
 
 
@@ -867,7 +867,7 @@ that they have done nothing wrong.
 
 ------------------------------------------------------------------------
 
-## Advice from Former STAT 216/217 TA's for a Successful Semester
+## Advice from Former STAT 216/217 TAs for a Successful Semester
 
 -   ***Make sure Students are Aware of their resources EARLY in the semester.*** The beginning of the semester can be a bit overwhelming for everyone, so they may have trouble remembering all of the resources available to them. If a students begins to struggle with the material, it can be very discouraging if they are unaware of where to go for help. Don't hesitate to reiterate where they can find resources, even if you think you may be getting pretty repetitive. This also allows you to start the semester on the right foot, and students will understand that you care about their success.
 
@@ -893,15 +893,15 @@ Luckily, this information will always be here for you to reference if you have a
 
 ------------------------------------------------------------------------
 
-## Resources for STAT 216/217 TA's
+## Resources for STAT 216/217 TAs
 
 **1. Your Instruction Team**
 
 We have already stressed the importance of communicating with your lead instructor and instruction team. This is because your lead instructor and team can be incredibly helpful if you are struggling with running through the code before class, trying to fix an error in real time, or even just explaining a concept to a student. Don't hesitate to admit if you are unsure and ask your lead instructor or another TA to help. They may be able to better assist a student or answer a question with more clarity, which you can learn from and use that information when helping others afterwards! You can connect with your team:
 
-* In Person before/during/after Class
+* In person before/during/after Class
 * In your section's Microsoft Teams Channel
-* Over Email or text 
+* Over email or text 
 
 It is a good idea to make sure to exchange contact information and discuss which methods of communication are preferred by your team.
 
@@ -921,7 +921,7 @@ The `?` and `help()` commands are very powerful. For functions, placing the `?` 
 * If it finds _more than one_ __identical match__, it will display the functions, in their respective packages, that you have to choose from.  
 * If it finds _no_ __identical match__, it will tell you that "`No documentation for ____ in specified packages and libraries:,`" and suggests you use a `??` instead.  
     
-    + A `??` in front of the function name will search __all of R__ for named functions similar to what you typed.  
+    + A `??` in front of the function name will search all of R for named functions __similar__ to what you typed.  
     + The output will tell you what package the function is in, as well as the function's name (`package::function`).  
 
 If you would like help on a particular package, say one that you just downloaded, then you can use the same command(s) to get help.  These commands will load up a help page (in RStudio) in the Help pane. Each help page is broken down into sections:  
@@ -940,7 +940,7 @@ $~$
 
 If you run in to issues when running through the code files prior to class, [Stack Overflow](https://stackoverflow.com/) is a good resource to help you troubleshoot in R when you do not have your lead instructor available to ask.
 
-* Regardless of how you solve an issues outside of class, it is good practice to communicate your issues and how you resolved it with your team prior to class. As we mentioned before, **if you run into an issue, it is more than likely that students will run into the same problem**. Being prepared to encounter these issues and know how to help students fix them is a big part of your role as a Teaching Assistant.
+* Regardless of how you solve an issue outside of class, it is good practice to communicate your issue and how you resolved it with your team prior to class. As we mentioned before, **if you run into an issue, it is more than likely that students will run into the same problem**. Being prepared to encounter these issues and know how to help students fix them is a big part of your role as a Teaching Assistant.
 
 $~$
 
@@ -948,7 +948,7 @@ $~$
 
 Both Eliot and Harley (your instructors today) have been a part of editing and updating a variety of other R Workshops which are co-organized by the Montana State University Library, Department of Mathematical Sciences, and Statistical Consulting and Research Services (SCRS, <https://www.montana.edu/statisticalconsulting/>).
 
-This series of R Workshops are **free to all MSU Students and Employees**. They are created to help participants gain a better understanding of how to use R and apply their skills to other projects. This workshop was very directed in terms of what you will encounter while TA'ing for STAT 216, but the other workshops are meant to help you learn R for personal and professional use in addition to/outside of STAT 216. More Information on the Fall 2022 R Workshops can be found in the following flyer:
+This series of R Workshops are **free to all MSU Students and Employees**. They are created to help participants gain a better understanding of how to use R and apply their skills to other projects. This workshop was targeted to what a TA will typically encounter in STAT 216, but the other workshops are meant to help you learn R for personal and professional use in addition to/outside of STAT 216. More Information on the Fall 2022 R Workshops can be found in the following flyer:
 
 ![Fall 2022 R Workshops Flyer](images/Fall2022Flyer.png)
 
@@ -969,15 +969,15 @@ These materials were adapted from materials generated by the Data Carpentries (<
 
 $~$
 
-Research related to the development of these workshops is to appear in:
+Research related to the development of these workshops appears in:
 
--   Theobold, A., Hancock, S., & Mannheimer, S.. Data Science Workshops for Data-Intensive Environmental Science Research, *Journal of Statistics Education*.
+-   Theobold, A. S., Hancock, S. A., & Mannheimer, S. (2021). Designing Data Science Workshops for Data-Intensive Environmental Science Research, *Journal of Statistics Education*, 29(1), p. S83-S94. <https://doi.org/10.1080/10691898.2020.1854636>
 
 The workshops for 2022-2023 involve modifications of materials and are licensed CC-BY. ![Creative Commons License](images/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 $~$
 
-The workshops for 2021-2022 involve modifications of materials and are being taught by:
+The workshops for 2022-2023 are being taught by:
 
 ### Harley Clifton
 
