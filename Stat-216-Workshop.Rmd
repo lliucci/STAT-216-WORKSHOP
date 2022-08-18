@@ -21,6 +21,7 @@ knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
 # Put any code that needs to be run at beginning of App
 RollerCoasters <- read_csv("RollerCoasters.csv")
 x <- 7
+My_Vector <- c(1, 2, 'lettuce', 4, 'tomato')
 ```
 
 ## Getting a Feel for the Class and Your Role
