@@ -194,13 +194,21 @@ typeof(My_Vector)
 typeof(x)
 ```
 
-To store a dataset in R, we can do something similar. However, we must first import the dataset into the R environment by using a function such as the `read_csv()` from the `tidyverse` package. The code below reads a .csv file (Comma Separated Values) into the environment window in R and stores it as the object `RollerCoasters`.
+To store a dataset in R, we can do something similar. However, we must first import the dataset into the R environment by using a function such as the `read_csv()` from the `tidyverse` package. The code below would read a .csv file (Comma Separated Values) into the environment window in R and store it as the object `RollerCoasters`.
 
-```{r practice1pt6, exercise = TRUE}
+```r
 RollerCoasters <- read_csv('RollerCoasters.csv')
 ```
 
 When this is done, we can see some information show up in the Console. We see how many rows and columns the dataset has as well as the variables and their type. Variables can either be 'double' if they are numbers of 'character' if they are words.
+
+```r
+Rows: 157 Columns: 15                                                                                                            
+-- Column specification ----------------------------------------------------------------------
+Delimiter: ","
+chr (8): Age_Group, Coaster, Park, City, State, Type, Design, Inversions
+dbl (7): Year_Opened, Top_Speed, Max_Height, Drop, Length, Duration, Num_of_Inversions
+```
 
 $~$
 
@@ -406,7 +414,7 @@ of packages, including `ggplot2` for graphics and `dplyr` for data wrangling),
 
 STAT 216 also has its own R package called `catstats` hosted on 
 Github (which means it cannot be installed through the "Packages" tab in R)
-We will explore `catstat` later in this tutorial.
+We will explore `catstats` later in this tutorial.
 
 $~$
 $~$
@@ -947,13 +955,11 @@ $~$
 
 **5. Further R Workshops**
 
-Both Eliot and Harley (your instructors today) have been a part of editing and updating a variety of other R Workshops which are co-organized by the Montana State University Library, Department of Mathematical Sciences, and Statistical Consulting and Research Services (SCRS, <https://www.montana.edu/statisticalconsulting/>).
+There are a variety of other workshops which are co-organized by the Montana State University Library, Department of Mathematical Sciences, and Statistical Consulting and Research Services (SCRS, <https://www.montana.edu/statisticalconsulting/>).
 
-This series of R Workshops are **free to all MSU Students and Employees**. They are created to help participants gain a better understanding of how to use R and apply their skills to other projects. This workshop was targeted to what a TA will typically encounter in STAT 216, but the other workshops are meant to help you learn R for personal and professional use in addition to/outside of STAT 216. More Information on the Fall 2022 R Workshops can be found in the following flyer:
+This series of workshops are **free to all MSU Students and Employees**. They are created to help participants gain a better understanding of how to use R, Python, and apply their skills to other projects. This workshop was targeted to what a TA will typically encounter in STAT 216, but the other workshops are meant to help you learn R for personal and professional use in addition to/outside of STAT 216. More Information on upcoming workshops, you can go to [here](https://calendar.lib.montana.edu/calendar/workshops/?cid=707&t=d&d=0000-00-00&cal=707&ct=43429&inc=0)
 
-![Fall 2022 R Workshops Flyer](images/Fall2022Flyer.png)
-
-More Information on these R Workshops can be found [here](https://www.montana.edu/datascience/training/).
+More Information on these workshops and recordings of past sessions can be found [here](https://www.montana.edu/datascience/training/).
 
 
 $~$
@@ -978,15 +984,15 @@ The workshops for 2022-2023 involve modifications of materials and are licensed 
 
 $~$
 
-The workshops for 2022-2023 are being taught by:
+The workshops have been taught by:
 
 ### Harley Clifton
 
--   Harley Clifton is an undergraduate senior pursuing a degree in Mathematics (Statistics Option) with a minor in Psychology. She enjoys teaching nuanced coding skills and Data Visualization strategies through her experience as a Teaching Assistant for STAT 216 and STAT 408. Harley recently attended the Summer Institute in Biostatistics and Undergraduate Data Science at the University of California Irvine, funded by the National Institute Of Allergy And Infectious Diseases of the National Institutes of Health (under Award Number R25AI170491). Her areas of interest include quantifying behaviors and societal attitudes, behavior modification to reduce discrimination, Deaf culture and history, and women's health.
+-   Harley Clifton was an undergraduate senior pursuing a degree in Mathematics (Statistics Option) with a minor in Psychology. She enjoys teaching nuanced coding skills and Data Visualization strategies through her experience as a Teaching Assistant for STAT 216 and STAT 408. Harley recently attended the Summer Institute in Biostatistics and Undergraduate Data Science at the University of California Irvine, funded by the National Institute Of Allergy And Infectious Diseases of the National Institutes of Health (under Award Number R25AI170491). Her areas of interest include quantifying behaviors and societal attitudes, behavior modification to reduce discrimination, Deaf culture and history, and women's health.
 
 ### Eliot Liucci
 
--   Eliot Liucci is a senior in the Mathematics (Statistics Option) Program here at Montana State University. He is currently working on a research project with the Mathematics and Statistics Center to analyze the impact of different time based variables on overall MSC foot traffic and usage. Throughout his experience as a Teaching Assistant for STAT 216 and STAT 217, Eliot has gained a deeper understanding of statistical methods and educational approaches. Eliot will graduate at the end of Fall 2022 with his Bachelors and will start the M.S. in Statistics program in Spring 2023. His interests include environmental statistics, video games, and he restores vintage automobiles and motorcycles in his free time.
+-   Eliot Liucci is a graduate student in the Statistics MS Program here at Montana State University. He is currently working on a research project with the Mathematics and Statistics Center to analyze the impact of different time based variables on overall MSC foot traffic and usage. Throughout his experience as a Teaching Assistant for STAT 216 and STAT 217, Eliot has gained a deeper understanding of statistical methods and educational approaches. His interests include environmental statistics, video games, and he restores vintage automobiles and motorcycles in his free time.
 
 ### Sara Mannheimer
 
@@ -998,4 +1004,4 @@ The workshops for 2022-2023 are being taught by:
 
 ### Mark Greenwood
 
--   Mark Greenwood is a Professor of Statistics in the Department of Mathematical Sciences at Montana State University and the former Director of Statistical Consulting and Research Services (<https://www.montana.edu/statisticalconsulting/>). His research interests have involved statistical methods and applications in environmental sciences, education, and biological sciences. Recent work has involved researching diagnostic methods for Multiple Sclerosis. His current research grants include funding from the Mountain West IDeA Clinical and Translational Research - Infrastructure Network (National Institute of General Medical Sciences Grant 5U54GM104944-08) and a grant from the National Multiple Sclerosis Society (RG-1907-34348).
+-   Mark Greenwood is a Professor of Statistics in the Department of Mathematical Sciences at Montana State University and the former Director of Statistical Consulting and Research Services (<https://www.montana.edu/statisticalconsulting/>). His research interests have involved statistical methods and applications in environmental sciences, education, and biological sciences. Recent work has involved researching diagnostic methods for Multiple Sclerosis. His current research grants include funding from the Mountain West IDeA Clinical and Translational Research - Infrastructure Network (National Institute of General Medical Sciences Grant 5U54GM104944-09) and a grant from the National Multiple Sclerosis Society (RG-1907-34348).
